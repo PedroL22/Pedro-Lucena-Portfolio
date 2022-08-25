@@ -2,7 +2,7 @@ nav {
 	height: 100px;
 	z-index: 1;
 	position: fixed;
-	background-color: rgba(225, 225, 225, 0.1);
+	background-color: transparent;
 	width: 100vw;
 	display: flex;
 	justify-content: space-between;
@@ -23,7 +23,7 @@ ul, li, li a {
 	display: flex;
 	text-transform: capitalize;
 	text-decoration: none;
-	padding: 10px;
+	padding: 20px 10px;
 	display: flex;
 	justify-content: space-between;
 	font-weight: 400;
@@ -32,13 +32,15 @@ ul, li, li a {
 
 li a img {
 	height: 22px;
+	transition: all ease-in-out 0.2s;
+}
+
+li a img:hover {
+	opacity: 0.8;
+	transition: all ease-in-out 0.2s;
 }
 
 li a:active, li a:hover {
 	color: white;
 	transition: all ease-in-out 0.2s;
-}
-
-a button {
-	cursor: pointer;
 }

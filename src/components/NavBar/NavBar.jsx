@@ -3,6 +3,7 @@ import './styles.css';
 import icon1 from '../../assets/images/nav-icon1.svg';
 import icon2 from '../../assets/images/nav-icon2.png';
 import icon3 from '../../assets/images/nav-icon3.png';
+import NavButton from './NavButton/NavButton';
 
 function NavBar() {
   return (
@@ -35,14 +36,12 @@ function NavBar() {
               </a>
             </li>
             <li>
-              <a href="">
-                <img src={icon3} alt="https://twitter.com/lucena_l22/" target="_blank" />
+              <a href="https://twitter.com/lucena_l22/" target="_blank" rel="noreferrer">
+                <img src={icon3} alt="" />
               </a>
             </li>
             <li>
-              <a href="#hire">
-                <button>hire me</button>
-              </a>
+              <NavButton text="Let's Connect" />
             </li>
           </ul>
         </div>

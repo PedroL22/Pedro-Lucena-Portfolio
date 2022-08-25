@@ -1,0 +1,16 @@
+button {
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 20px 30px;
+	transition: all ease 0.2s;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: white;
+	color: rgba(1, 1, 1, 0.8);
+	transition: all ease 0.2s;
+}
