@@ -1,6 +1,6 @@
 nav {
 	height: 100px;
-	z-index: 1;
+	z-index: 2;
 	position: fixed;
 	background-color: transparent;
 	width: 100vw;
@@ -15,7 +15,8 @@ nav {
 	color: white;
 	text-decoration: none;
 	text-transform: capitalize;
-	font-weight: 400
+	font-weight: 400;
+	white-space: nowrap;
 }
 
 ul, li, li a {
@@ -28,6 +29,10 @@ ul, li, li a {
 	justify-content: space-between;
 	font-weight: 400;
 	transition: all ease-in-out 0.2s;
+}
+
+.icons {
+	padding: 0px 0px;
 }
 
 li a img {
@@ -43,4 +48,54 @@ li a img:hover {
 li a:active, li a:hover {
 	color: white;
 	transition: all ease-in-out 0.2s;
+}
+
+.hamburger {
+	display: none;
+	cursor: pointer;
+}
+
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all ease-in-out 0.3s;
+	transition: all ease-in-out 0.3s;
+	background-color: white;
+}
+
+@media (max-width: 840px) {
+	.hamburger {
+		display: block;
+	}
+
+	.hamburgerx .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	.hamburgerx .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.hamburgerx .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.header-right {
+		position: fixed;
+		right: -100%;
+		top: 70px;
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, 0.8);
+		align-items: center;
+		transition: all ease-in-out 0.3s;
+		padding-bottom: 100vh;
+	}
+
+	.header-right-active {
+		right: 0;
+	}
 }

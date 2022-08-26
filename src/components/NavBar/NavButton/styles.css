@@ -6,6 +6,7 @@ button {
 	font-weight: 600;
 	padding: 20px 30px;
 	transition: all ease 0.2s;
+	white-space: nowrap;
 }
 
 button:hover {
