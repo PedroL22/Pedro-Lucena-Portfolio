@@ -8,7 +8,12 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 30px;
-	transition: all ease 0.2s;
+	transition: all ease-in-out 0.2s;
+}
+
+nav.dark {
+	background-color: rgba(0, 0, 0, 0.8);
+	transition: all ease-in-out 0.2s;
 }
 
 .logo a h1, .logo a {

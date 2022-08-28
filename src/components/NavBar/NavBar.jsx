@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles.css';
-import icon1 from '../../assets/images/nav-icon1.svg';
+import icon1 from '../../assets/images/nav-icon.png';
 import icon2 from '../../assets/images/nav-icon2.png';
 import icon3 from '../../assets/images/nav-icon3.png';
 import NavButton from './NavButton/NavButton';
 
-function NavBar() {
+function NavBar({ dark }) {
   const [active, setActive] = useState('header-right');
   const [toggleIcon, setToggleIcon] = useState('hamburger');
   const hamburger = () => {
@@ -16,7 +16,7 @@ function NavBar() {
   };
 
   return (
-    <nav>
+    <nav className={dark ? 'dark' : ''}>
       <div className="logo">
         <a href="/">
           <h1>pedro lucena</h1>
@@ -36,17 +36,17 @@ function NavBar() {
           <ul className="icons">
             <li>
               <a href="https://www.linkedin.com/in/pedrolucena22/" target="_blank" rel="noreferrer">
-                <img src={icon1} alt="" />
+                <img src={icon1} alt="linkedin icon" />
               </a>
             </li>
             <li>
               <a href="https://github.com/PedroL22/" target="_blank" rel="noreferrer">
-                <img src={icon2} alt="" />
+                <img src={icon2} alt="github icon" />
               </a>
             </li>
             <li>
               <a href="https://twitter.com/lucena_l22/" target="_blank" rel="noreferrer">
-                <img src={icon3} alt="" />
+                <img src={icon3} alt="twitter icon" />
               </a>
             </li>
           </ul>
