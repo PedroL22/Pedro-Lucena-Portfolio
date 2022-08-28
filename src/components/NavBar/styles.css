@@ -90,7 +90,8 @@ li a:active, li a:hover {
 	.header-right {
 		position: fixed;
 		right: -100%;
-		top: 70px;
+		top: 0px;
+		padding-top: 70px;
 		width: 100%;
 		height: auto;
 		flex-direction: column;
