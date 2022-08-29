@@ -87,3 +87,9 @@
 
 	}
 }
+
+@media (min-width: 2560px) {
+	.text {
+		padding: 0 28vw;
+	}
+}

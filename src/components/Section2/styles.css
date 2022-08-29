@@ -1,6 +1,6 @@
 .section2 {
 	height: 100vh;
-	margin: 10vh 0;
+	margin-top: 10vh;
 	overflow: hidden;
 }
 
@@ -19,7 +19,8 @@
 }
 
 .square {
-	background-color: #092334;
+	background: rgb(9, 35, 52);
+	background: linear-gradient(225deg, rgba(9, 35, 52, 1) 0%, rgba(13, 59, 88, 1) 100%);
 	margin: 0 auto;
 	width: 90vw;
 	height: min-content;
@@ -39,7 +40,7 @@
 .frontend, .backend {
 	background-color: transparent;
 	width: 400px;
-	height: 300px;
+	height: 320px;
 	border-radius: 25px;
 	margin: auto;
 	color: white;
@@ -52,6 +53,10 @@
 }
 
 @media (max-width: 970px) {
+	.section2 {
+		margin-bottom: 10vh;
+	}
+
 	.wrapper {
 		display: block;
 		overflow: hidden;
@@ -73,5 +78,11 @@
 		height: fit-content;
 		padding-bottom: 30px;
 		margin-bottom: 30px;
+	}
+}
+
+@media (min-width: 2560px) {
+	.square, .wrapper {
+		width: 45vw;
 	}
 }

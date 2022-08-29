@@ -7,7 +7,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 30px;
+	padding: 0 5vw;
 }
 
 nav.dark {
@@ -65,6 +65,10 @@ li a:active, li a:hover {
 }
 
 @media (max-width: 840px) {
+	nav {
+		padding: 0 30px;
+	}
+
 	.hamburger {
 		display: block;
 	}
@@ -97,5 +101,11 @@ li a:active, li a:hover {
 
 	.header-right-active {
 		right: 0;
+	}
+}
+
+@media (min-width: 2560px) {
+	nav {
+		padding: 0 28vw;
 	}
 }
