@@ -8,12 +8,10 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 30px;
-	transition: all ease-in-out 0.2s;
 }
 
 nav.dark {
 	background-color: rgba(0, 0, 0, 0.8);
-	transition: all ease-in-out 0.2s;
 }
 
 .logo a h1, .logo a {
@@ -33,7 +31,6 @@ ul, li, li a {
 	display: flex;
 	justify-content: space-between;
 	font-weight: 400;
-	transition: all ease-in-out 0.2s;
 }
 
 .icons {
@@ -42,17 +39,14 @@ ul, li, li a {
 
 li a img {
 	height: 22px;
-	transition: all ease-in-out 0.2s;
 }
 
 li a img:hover {
 	opacity: 0.8;
-	transition: all ease-in-out 0.2s;
 }
 
 li a:active, li a:hover {
 	color: white;
-	transition: all ease-in-out 0.2s;
 }
 
 .hamburger {

@@ -1,0 +1,9 @@
+h2 {
+	font-weight: 400;
+	padding: 30px 0;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: auto auto;
+}
