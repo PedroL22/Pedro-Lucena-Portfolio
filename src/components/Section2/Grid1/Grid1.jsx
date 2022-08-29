@@ -7,11 +7,11 @@ function Grid1() {
     <>
       <h2>Frontend Development</h2>
       <div className="grid">
-        <Skill className="skills" skillName="sla meu" levelOfSkill="ruim" />
-        <Skill className="skills" skillName="sla meu" levelOfSkill="ruim" />
-        <Skill className="skills" skillName="sla meu" levelOfSkill="ruim" />
-        <Skill className="skills" skillName="sla meu" levelOfSkill="ruim" />
-        <Skill className="skills" skillName="sla meu" levelOfSkill="ruim" />
+        <Skill skillName="HTML" levelOfSkill="experienced" />
+        <Skill skillName="CSS" levelOfSkill="experienced" />
+        <Skill skillName="javaScript" levelOfSkill="intermediate" />
+        <Skill skillName="react" levelOfSkill="intermediate" />
+        <Skill skillName="bootstrap" levelOfSkill="experienced" />
       </div>
     </>
   );

@@ -3,7 +3,13 @@ h2 {
 	padding: 30px 0;
 }
 
+.grid p {
+	font-size: 15px;
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: auto auto;
+	text-align: left;
+	justify-content: space-around;
 }

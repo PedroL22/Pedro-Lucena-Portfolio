@@ -6,11 +6,14 @@ function Grid2() {
     <>
       <h2>Backend Development</h2>
       <div className="grid">
-        <Skill skillName="sla meu" levelOfSkill="ruim" />
-        <Skill skillName="sla meu" levelOfSkill="ruim" />
-        <Skill skillName="sla meu" levelOfSkill="ruim" />
-        <Skill skillName="sla meu" levelOfSkill="ruim" />
-        <Skill skillName="sla meu" levelOfSkill="ruim" />
+        <Skill skillName="node" levelOfSkill="intermediate" />
+        <Skill skillName="python" levelOfSkill="experienced" />
+        <Skill skillName="django" levelOfSkill="experienced" />
+        <Skill skillName="flask" levelOfSkill="basic" />
+        <Skill skillName="mySQL" levelOfSkill="basic" />
+        <Skill skillName="sqLite" levelOfSkill="intermediate" />
+        <Skill skillName="mongoDB" levelOfSkill="basic" />
+        <Skill skillName="aWS s3" levelOfSkill="basic" />
       </div>
     </>
   );
