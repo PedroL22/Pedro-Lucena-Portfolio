@@ -97,3 +97,13 @@
 		padding: 0 28vw;
 	}
 }
+
+@media (max-height:670px) {
+	.text {
+		padding-top: 150px;
+	}
+
+	.text h1 {
+		font-size: 50px;
+	}
+}
