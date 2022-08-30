@@ -2,13 +2,17 @@
 	height: 100vh;
 	overflow-x: hidden;
 	width: 100%;
+	margin-top: 100px;
 }
 
 .text {
 	padding: 0 5vw;
 	color: white;
 	position: absolute;
-	top: 35vh;
+	top: 55%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .welcome {
@@ -55,7 +59,7 @@
 	}
 
 	.text {
-		top: 20vh;
+		padding-top: 100px;
 	}
 
 	.welcome {
