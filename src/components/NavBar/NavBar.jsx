@@ -19,6 +19,10 @@ function NavBar({ dark }) {
     setActive('header-right');
     setToggleIcon('hamburger');
   };
+  const topAndClose = () => {
+    animateScroll.scrollToTop();
+    handleClick();
+  };
 
   return (
     <nav className={dark ? 'dark' : ''}>
@@ -30,12 +34,7 @@ function NavBar({ dark }) {
       <div>
         <ul className={active}>
           <li>
-            <a
-              to="section1"
-              onClick={() => {
-                animateScroll.scrollToTop();
-              }}
-            >
+            <a to="section1" onClick={topAndClose}>
               home
             </a>
           </li>
@@ -45,7 +44,7 @@ function NavBar({ dark }) {
             </Link>
           </li>
           <li>
-            <Link to="section3" smooth duration={500}>
+            <Link to="section3" smooth duration={500} onClick={handleClick}>
               projects
             </Link>
           </li>
