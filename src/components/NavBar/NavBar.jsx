@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { Link, animateScroll } from 'react-scroll';
 import './styles.css';
 import icon1 from '../../assets/images/nav-icon.png';
 import icon2 from '../../assets/images/nav-icon2.png';
@@ -14,6 +15,10 @@ function NavBar({ dark }) {
       : setActive('header-right');
     toggleIcon === 'hamburger' ? setToggleIcon('hamburger hamburgerx') : setToggleIcon('hamburger');
   };
+  const handleClick = (event) => {
+    setActive('header-right');
+    setToggleIcon('hamburger');
+  };
 
   return (
     <nav className={dark ? 'dark' : ''}>
@@ -25,13 +30,24 @@ function NavBar({ dark }) {
       <div>
         <ul className={active}>
           <li>
-            <a href="/">home</a>
+            <a
+              to="section1"
+              onClick={() => {
+                animateScroll.scrollToTop();
+              }}
+            >
+              home
+            </a>
+          </li>
+          <li onClick={handleClick}>
+            <Link to="section2" smooth duration={500} onClick={handleClick}>
+              skills
+            </Link>
           </li>
           <li>
-            <a href="#skills">skills</a>
-          </li>
-          <li>
-            <a href="#projects">projects</a>
+            <Link to="section3" smooth duration={500}>
+              projects
+            </Link>
           </li>
           <ul className="icons">
             <li>

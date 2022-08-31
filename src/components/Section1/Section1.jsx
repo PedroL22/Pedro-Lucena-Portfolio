@@ -4,7 +4,7 @@ import rightArrow from '../../assets/images/right-arrow.png';
 
 function Section1() {
   return (
-    <section className="section1">
+    <section className="section1" id="section1">
       <div className="text">
         <h2 className="welcome">Welcome to my Portfolio</h2>
         <h1>

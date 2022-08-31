@@ -5,7 +5,7 @@ import Grid2 from './Grid2/Grid2';
 
 function Section2() {
   return (
-    <section className="section2">
+    <section className="section2" id="section2">
       <div className="square">
         <h1>Skills</h1>
         <p className="description">What Skills Do I have?</p>
