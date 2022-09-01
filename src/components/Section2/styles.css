@@ -1,6 +1,6 @@
 .section2 {
-	height: 100vh;
 	overflow: hidden;
+	margin-bottom: 10vh;
 }
 
 .square h1 {
@@ -54,14 +54,9 @@
 }
 
 @media (max-width: 970px) {
-	.section2 {
-		margin-bottom: 10vh;
-	}
-
 	.wrapper {
 		display: block;
 		overflow: hidden;
-		: fit-content;
 		padding-bottom: 80px;
 		padding-top: 40px;
 	}
@@ -87,3 +82,5 @@
 		width: 45vw;
 	}
 }
+
+@media (min-width:)
