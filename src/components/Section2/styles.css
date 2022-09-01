@@ -15,6 +15,7 @@
 	text-transform: none;
 	text-align: center;
 	padding: 15px 0;
+	font-weight: 400;
 }
 
 .square {
@@ -39,7 +40,7 @@
 .frontend, .backend {
 	background-color: transparent;
 	width: 400px;
-	height: 320px;
+	height: 350px;
 	border-radius: 25px;
 	margin: auto;
 	color: white;

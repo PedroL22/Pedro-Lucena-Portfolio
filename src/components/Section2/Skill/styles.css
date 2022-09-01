@@ -1,6 +1,7 @@
 .skill-title {
 	display: inline-flex;
 	align-items: center;
+	padding: 5px 0;
 }
 
 .skill-title img {
@@ -10,12 +11,12 @@
 
 h3 {
 	text-transform: capitalize;
-	font-weight: 300;
+	font-weight: 400;
 	color: white;
 }
 
 p {
 	text-transform: capitalize;
-	font-weight: 100;
+	font-weight: 300;
 	color: #d3d3d3;
 }

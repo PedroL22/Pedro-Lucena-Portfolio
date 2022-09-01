@@ -66,6 +66,10 @@ li a:active, li a:hover {
 }
 
 @media (max-width: 840px) {
+	nav.dark {
+		background-color: #0d3b58;
+	}
+
 	nav {
 		padding: 0 30px;
 	}
@@ -94,7 +98,7 @@ li a:active, li a:hover {
 		width: 100%;
 		height: auto;
 		flex-direction: column;
-		background-color: rgba(0, 0, 0, 0.8);
+		background-color: #0d3b58;
 		align-items: center;
 		transition: all ease-in-out 0.3s;
 		padding-bottom: 100vh;
