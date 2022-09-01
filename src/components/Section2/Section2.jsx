@@ -8,7 +8,7 @@ function Section2() {
     <section className="section2" id="section2">
       <div className="square">
         <h1>Skills</h1>
-        <p className="description">What Skills Do I have?</p>
+        <p className="description">What Skills do I have?</p>
         <div className="wrapper">
           <div className="frontend">
             <Grid1 />
