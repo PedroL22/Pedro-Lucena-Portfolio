@@ -18,7 +18,7 @@ function Section3() {
           name="React Netflix Clone"
           image="https://user-images.githubusercontent.com/40894497/186737672-fde01140-8eb1-4f22-80b3-d76db2576d9a.PNG"
           github="https://github.com/PedroL22/React-Netflix-Clone"
-          live="https://imaginative-quokka-c53a8c.netlify.app/"
+          live="https://react-js-netflix-clone-tmdb-api.netlify.app/"
         />
         <Project
           name="Automotive Solutions Django"
@@ -30,7 +30,7 @@ function Section3() {
           name="Simple HTML CSS Landing Page"
           image="https://user-images.githubusercontent.com/40894497/187776471-ff01e309-42dc-491d-be87-72aef41300a3.jpg"
           github="https://github.com/PedroL22/Simple-HTML-CSS-Landing-Page"
-          live="https://loving-wilson-defabf.netlify.app/"
+          live="https://simple-html-css-landing-page.netlify.app/"
         />
       </div>
     </div>
