@@ -24,6 +24,12 @@ function NavBar({ dark }) {
     handleClick();
   };
 
+  const handleClick2 = (event) => {
+    animateScroll.scrollTo(3000, { smooth: true, duration: 500 });
+    setActive('header-right');
+    setToggleIcon('hamburger');
+  };
+
   return (
     <nav className={dark ? 'dark' : ''}>
       <div className="logo">
@@ -65,8 +71,8 @@ function NavBar({ dark }) {
               </a>
             </li>
           </ul>
-          <li>
-            <NavButton text="Let's Connect" />
+          <li onClick={handleClick2}>
+            <NavButton onClick={handleClick2} text="Let's Connect" />
           </li>
         </ul>
       </div>

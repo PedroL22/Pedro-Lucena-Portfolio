@@ -4,7 +4,7 @@ import './styles.css';
 
 function Section3() {
   return (
-    <div className="section3" id="section3">
+    <div className="section3">
       <h1 className="projects">Projects</h1>
       <p className="description2">My recent Work</p>
       <div className="grid2">

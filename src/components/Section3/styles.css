@@ -27,6 +27,12 @@
 	align-content: center
 }
 
+@media (min-width: 1920px) {
+	.grid2 {
+		grid-template-columns: auto auto auto auto;
+	}
+}
+
 @media (max-width: 990px) {
 	.grid2 {
 		grid-template-columns: auto auto;

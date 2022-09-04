@@ -1,8 +1,15 @@
 import React from 'react';
+import { animateScroll } from 'react-scroll';
 import './styles.css';
 import rightArrow from '../../assets/images/right-arrow.png';
 
 function Section1() {
+  const handleClick2 = (event) => {
+    animateScroll.scrollTo(3000, { smooth: true, duration: 500 });
+    setActive('header-right');
+    setToggleIcon('hamburger');
+  };
+
   return (
     <section className="section1" id="section1">
       <div className="text">
@@ -19,7 +26,7 @@ function Section1() {
           Django Framework, I have a lot of experience with HTML, CSS and Bootstrap. I've worked
           with Amazon Web Services and Heroku.
         </p>
-        <div className="connect">
+        <div className="connect" onClick={handleClick2}>
           <h2 className="connect-text">Let's connect!</h2>
           <img src={rightArrow} alt="arrow" />
         </div>
