@@ -25,7 +25,7 @@ function NavBar({ dark }) {
   };
 
   const handleClick2 = (event) => {
-    animateScroll.scrollTo(3000, { smooth: true, duration: 500 });
+    animateScroll.scrollTo(3500, { smooth: true, duration: 500 });
     setActive('header-right');
     setToggleIcon('hamburger');
   };
@@ -45,12 +45,12 @@ function NavBar({ dark }) {
             </a>
           </li>
           <li onClick={handleClick}>
-            <Link to="section2" smooth duration={500} onClick={handleClick}>
+            <Link to="section2" offset={-100} smooth duration={500} onClick={handleClick}>
               skills
             </Link>
           </li>
           <li>
-            <Link to="section3" smooth duration={500} onClick={handleClick}>
+            <Link to="section3" offset={-100} smooth duration={500} onClick={handleClick}>
               projects
             </Link>
           </li>
