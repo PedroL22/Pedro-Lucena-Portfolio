@@ -60,6 +60,22 @@
 	padding-bottom: 30%;
 }
 
+.form-button {
+	padding: 10px 25px;
+	border-radius: 5px;
+	background-color: #28b6d5;
+	color: #092334;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.form-button:hover {
+	cursor: pointer;
+	background-color: #249cb6;
+	color: #061823;
+}
+
 @media (max-width: 1100px) {
 	.form-wrapper {
 		display: block;
