@@ -29,13 +29,7 @@ function Section4() {
           <h1 className="title3">Get In Touch</h1>
           <form ref={form} onSubmit={sendEmail}>
             <label className="label1">
-              <input
-                className="input-form"
-                id="name"
-                type="text"
-                placeholder="First Name"
-                name="name"
-              />
+              <input className="input-form" id="name" type="text" placeholder="Name" name="name" />
               <input
                 className="input-form"
                 id="email"
