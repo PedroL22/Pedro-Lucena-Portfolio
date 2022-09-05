@@ -81,6 +81,26 @@
 	color: #061823;
 }
 
+.success-message {
+	position: fixed;
+	display: flex;
+	width: 90vw;
+	top: 140px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 60px;
+	border-radius: 10px;
+	background-color: #51cd80;
+}
+
+.success-message h3 {
+	margin: auto 0;
+	padding: 0 30px;
+	color: white;
+	font-weight: 600;
+	text-transform: none;
+}
+
 @media (max-width: 1100px) {
 	.form-wrapper {
 		display: block;
