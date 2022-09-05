@@ -8,7 +8,6 @@ function Section4() {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm('service_p8f68rz', 'template_ixeh0fe', form.current, '-xo0bQBMsXWq4CwN9')
       .then();
@@ -35,13 +34,21 @@ function Section4() {
           <h1 className="title3">Get In Touch</h1>
           <form ref={form} onSubmit={sendEmail}>
             <label className="label1">
-              <input className="input-form" id="name" type="text" placeholder="Name" name="name" />
+              <input
+                className="input-form"
+                id="name"
+                type="text"
+                placeholder="Name"
+                name="name"
+                required
+              />
               <input
                 className="input-form"
                 id="email"
                 type="email"
                 placeholder="Email Address"
                 name="email"
+                required
               />
             </label>
             <label>
@@ -51,6 +58,7 @@ function Section4() {
                 type="text"
                 placeholder="Subject"
                 name="subject"
+                required
               />
               <input
                 className="input-form"
@@ -58,6 +66,7 @@ function Section4() {
                 type="textarea"
                 placeholder="Message"
                 name="message"
+                required
               />
             </label>
             <button className="form-button" type="submit">
