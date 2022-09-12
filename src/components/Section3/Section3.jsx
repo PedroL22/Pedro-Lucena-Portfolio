@@ -21,6 +21,12 @@ function Section3() {
           live="https://react-js-netflix-clone-tmdb-api.netlify.app/"
         />
         <Project
+          name="React Cats Facts"
+          image="https://user-images.githubusercontent.com/40894497/189728252-65f556fb-7930-45ea-9c23-756db1db7f93.jpg"
+          github="https://github.com/PedroL22/React-Cats-Facts"
+          live="https://react-cats-facts.netlify.app/"
+        />
+        <Project
           name="Automotive Solutions Django"
           image="https://user-images.githubusercontent.com/40894497/187775469-ae2d31ec-1b91-4c9b-b1c9-c747aabbac21.jpg"
           github="https://github.com/PedroL22/Automotive-Solutions-Django"
