@@ -22,7 +22,7 @@ function Section3() {
         />
         <Project
           name="React Cats Facts"
-          image="https://user-images.githubusercontent.com/40894497/189728252-65f556fb-7930-45ea-9c23-756db1db7f93.jpg"
+          image="https://user-images.githubusercontent.com/40894497/189736293-377aaaae-8b67-46db-93c3-a4b0258e1cbe.jpg"
           github="https://github.com/PedroL22/React-Cats-Facts"
           live="https://react-cats-facts.netlify.app/"
         />
