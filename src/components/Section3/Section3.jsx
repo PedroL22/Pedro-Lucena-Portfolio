@@ -27,6 +27,12 @@ function Section3() {
           live="https://react-cats-facts.netlify.app/"
         />
         <Project
+          name="Django Dogs Facts"
+          image="https://user-images.githubusercontent.com/40894497/190247289-6a315083-59fe-48ba-a021-e0e7e3a280cd.jpg"
+          github="https://github.com/PedroL22/Django-Dogs-Facts"
+          live="https://django-dogs-facts.herokuapp.com/"
+        />
+        <Project
           name="Automotive Solutions Django"
           image="https://user-images.githubusercontent.com/40894497/187775469-ae2d31ec-1b91-4c9b-b1c9-c747aabbac21.jpg"
           github="https://github.com/PedroL22/Automotive-Solutions-Django"
