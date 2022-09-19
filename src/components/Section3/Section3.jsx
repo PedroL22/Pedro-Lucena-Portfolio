@@ -10,36 +10,48 @@ function Section3() {
       <div className="grid2">
         <Project
           name="Django Social Network"
+          skills="Django Python HTML CSS"
+          projectdesc="Just a basic social media prototype made with Django."
           image="https://user-images.githubusercontent.com/40894497/186735837-58588ed4-3130-4ce6-9a08-ce62a63c456a.jpg"
           github="https://github.com/PedroL22/Django-Social-Network"
           live="https://djangosocial-network.herokuapp.com/"
         />
         <Project
           name="React Netflix Clone"
+          skills="React API JavaScript HTML CSS"
+          projectdesc="A Netflix clone made with React JS and the TMDB API."
           image="https://user-images.githubusercontent.com/40894497/186737672-fde01140-8eb1-4f22-80b3-d76db2576d9a.PNG"
           github="https://github.com/PedroL22/React-Netflix-Clone"
           live="https://react-js-netflix-clone-tmdb-api.netlify.app/"
         />
         <Project
           name="React Cats Facts"
+          skills="React API JavaScript HTML CSS"
+          projectdesc="A basic website that displays random cats facts from https://catfact.ninja/ API and a random cat photo from https://cataas.com/."
           image="https://user-images.githubusercontent.com/40894497/189736293-377aaaae-8b67-46db-93c3-a4b0258e1cbe.jpg"
           github="https://github.com/PedroL22/React-Cats-Facts"
           live="https://react-cats-facts.netlify.app/"
         />
         <Project
           name="Django Dogs Facts"
+          skills="Django API Python HTML CSS"
+          projectdesc="Random dogs facts from https://kinduff.github.io/dog-api/ API and random dog photo from https://dog.ceo/dog-api/ API."
           image="https://user-images.githubusercontent.com/40894497/190247289-6a315083-59fe-48ba-a021-e0e7e3a280cd.jpg"
           github="https://github.com/PedroL22/Django-Dogs-Facts"
           live="https://django-dogs-facts.herokuapp.com/"
         />
         <Project
           name="Automotive Solutions Django"
+          projectdesc="Website I made with Django for a Nashville mechanic."
+          skills="Django Python HTML CSS"
           image="https://user-images.githubusercontent.com/40894497/187775469-ae2d31ec-1b91-4c9b-b1c9-c747aabbac21.jpg"
           github="https://github.com/PedroL22/Automotive-Solutions-Django"
           live="https://automotivesolutions.herokuapp.com/"
         />
         <Project
-          name="Simple HTML CSS Landing Page"
+          name="HTML CSS Landing Page"
+          skills="HTML CSS"
+          projectdesc="A simple landing page I created with HTML and CSS only."
           image="https://user-images.githubusercontent.com/40894497/187776471-ff01e309-42dc-491d-be87-72aef41300a3.jpg"
           github="https://github.com/PedroL22/Simple-HTML-CSS-Landing-Page"
           live="https://simple-html-css-landing-page.netlify.app/"

@@ -2,7 +2,7 @@
 	overflow: hidden;
 	background-color: #0b3149;
 	width: 275px;
-	height: 300px;
+	height: 375px;
 	border-radius: 25px;
 	margin: 15px 15px;
 }
@@ -33,8 +33,29 @@
 .name {
 	text-align: left;
 	margin-left: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	font-weight: 500;
+}
+
+.skills {
+	color: lightgrey;
+	font-size: 14px;
+	font-weight: 500;
+	margin-left: 15px;
+	padding: 0;
+	padding-bottom: 5px;
+	max-width: 90%;
+}
+
+.projectdesc {
+	text-transform: none;
+	color: whitesmoke;
+	font-size: 14px;
+	font-weight: 400;
+	margin-left: 15px;
+	height: 95px;
+	max-width: 90%;
+	user-select: text;
 }
 
 .github {
