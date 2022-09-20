@@ -1,6 +1,7 @@
 import React from 'react';
-import { animateScroll } from 'react-scroll';
 import './styles.css';
+import { animateScroll } from 'react-scroll';
+import Typed from 'react-typed';
 import rightArrow from '../../assets/images/right-arrow.png';
 
 function Section1() {
@@ -19,7 +20,16 @@ function Section1() {
           {' '}
           <br />
           {' '}
-          Full Stack Developer
+          <Typed
+            strings={['Full Stack', 'React', 'Django']}
+            typeSpeed={50}
+            backSpeed={60}
+            loop
+            className="typed"
+          />
+          <br className="breakline" />
+          {' '}
+          Developer
         </h1>
         <p>
           I'm a Full Stack Developer capable of creating useful applications with React JS and

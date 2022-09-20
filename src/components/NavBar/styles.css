@@ -20,6 +20,7 @@ nav.dark {
 	text-transform: capitalize;
 	font-weight: 400;
 	white-space: nowrap;
+
 }
 
 ul, li, li a {
@@ -27,8 +28,7 @@ ul, li, li a {
 	display: flex;
 	text-transform: capitalize;
 	text-decoration: none;
-	padding: 2vh 10px;
-	display: flex;
+	padding: 15px 10px;
 	justify-content: space-between;
 	font-weight: 400;
 }
@@ -63,6 +63,10 @@ li a:active, li a:hover {
 	-webkit-transition: all ease-in-out 0.3s;
 	transition: all ease-in-out 0.3s;
 	background-color: white;
+}
+
+.div2 {
+	padding-top: 16px;
 }
 
 @media (max-width: 840px) {

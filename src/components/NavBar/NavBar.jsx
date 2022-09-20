@@ -37,7 +37,7 @@ function NavBar({ dark }) {
           <h1>pedro lucena</h1>
         </a>
       </div>
-      <div>
+      <div className="div2">
         <ul className={active}>
           <li>
             <a to="section1" onClick={topAndClose}>
@@ -71,7 +71,7 @@ function NavBar({ dark }) {
               </a>
             </li>
           </ul>
-          <li onClick={handleClick2}>
+          <li onClick={handleClick2} className="button-connect">
             <NavButton onClick={handleClick2} text="Let's Connect" />
           </li>
         </ul>
