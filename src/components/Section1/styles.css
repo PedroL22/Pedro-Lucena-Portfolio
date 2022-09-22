@@ -58,7 +58,7 @@
 
 .connect img {
 	height: 25px;
-	margin: 30px 10px;
+	margin: auto 10px;
 }
 
 @media (max-width: 600px) {
