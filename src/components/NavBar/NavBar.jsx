@@ -25,7 +25,7 @@ function NavBar({ dark }) {
   };
 
   const handleClick2 = (event) => {
-    animateScroll.scrollTo(3500, { smooth: true, duration: 500 });
+    animateScroll.scrollTo(5000, { smooth: true, duration: 500 });
     setActive('header-right');
     setToggleIcon('hamburger');
   };
