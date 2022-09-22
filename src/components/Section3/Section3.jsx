@@ -22,7 +22,7 @@ function Section3() {
           projectdesc="A Netflix clone made with React JS and the TMDB API."
           image="https://user-images.githubusercontent.com/40894497/186737672-fde01140-8eb1-4f22-80b3-d76db2576d9a.PNG"
           github="https://github.com/PedroL22/React-Netflix-Clone"
-          live="https://react-js-netflix-clone-tmdb-api.netlify.app/"
+          live="https://react-js-netflix-clone.vercel.app/"
         />
         <Project
           name="React Cats Facts"
@@ -30,7 +30,7 @@ function Section3() {
           projectdesc="A basic website that displays random cats facts from https://catfact.ninja/ API and a random cat photo from https://cataas.com/."
           image="https://user-images.githubusercontent.com/40894497/189736293-377aaaae-8b67-46db-93c3-a4b0258e1cbe.jpg"
           github="https://github.com/PedroL22/React-Cats-Facts"
-          live="https://react-cats-facts.netlify.app/"
+          live="https://react-cats-facts.vercel.app/"
         />
         <Project
           name="Django Dogs Facts"
@@ -54,7 +54,7 @@ function Section3() {
           projectdesc="A simple landing page I created with HTML and CSS only."
           image="https://user-images.githubusercontent.com/40894497/187776471-ff01e309-42dc-491d-be87-72aef41300a3.jpg"
           github="https://github.com/PedroL22/Simple-HTML-CSS-Landing-Page"
-          live="https://simple-html-css-landing-page.netlify.app/"
+          live="https://simple-html-css-landing-page.vercel.app/"
         />
       </div>
     </div>
