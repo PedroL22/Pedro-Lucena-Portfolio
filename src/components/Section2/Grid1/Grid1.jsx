@@ -11,6 +11,7 @@ function Grid1() {
         <Skill skillName="CSS" levelOfSkill="experienced" />
         <Skill skillName="javaScript" levelOfSkill="intermediate" />
         <Skill skillName="react" levelOfSkill="intermediate" />
+        <Skill skillName="tailwind" levelOfSkill="experienced" />
         <Skill skillName="bootstrap" levelOfSkill="experienced" />
       </div>
     </>
