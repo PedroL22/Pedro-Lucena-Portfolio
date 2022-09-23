@@ -9,6 +9,14 @@ function Section3() {
       <p className="description2">My recent Work</p>
       <div className="grid2">
         <Project
+          name="React Twitter Clone"
+          skills="React TypeScript Tailwind HTML"
+          projectdesc="A Twitter clone I made from scratch with React JS and Tailwind CSS."
+          image="https://user-images.githubusercontent.com/40894497/192005338-7b4dc8a6-fcf2-44c0-95ff-eae159588a87.jpg"
+          github="https://github.com/PedroL22/React-Twitter-Clone"
+          live="https://react-twitter-clone.vercel.app/"
+        />
+        <Project
           name="Django Social Network"
           skills="Django Python HTML CSS"
           projectdesc="Just a basic social media prototype made with Django."
