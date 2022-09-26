@@ -9,6 +9,14 @@ function Section3() {
       <p className="description2">My recent Work</p>
       <div className="grid2">
         <Project
+          name="React Facebook Register Clone"
+          skills="React TypeScript Tailwind HTML"
+          projectdesc="A Facebook Register clone I made from scratch with React JS and Tailwind CSS."
+          image="https://user-images.githubusercontent.com/40894497/192394381-3d026518-3c1b-43b2-9ed0-3db1c3a17907.jpg"
+          github="https://github.com/PedroL22/React-Facebook-Register-Clone"
+          live="https://react-facebook-register-clone.vercel.app/"
+        />
+        <Project
           name="React Twitter Clone"
           skills="React TypeScript Tailwind HTML"
           projectdesc="A Twitter clone I made from scratch with React JS and Tailwind CSS."
