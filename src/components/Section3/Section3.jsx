@@ -9,20 +9,28 @@ function Section3() {
       <p className="description2">My recent Work</p>
       <div className="grid2">
         <Project
-          name="React Facebook Register Clone"
-          skills="React TypeScript Tailwind HTML"
-          projectdesc="A Facebook Register clone I made from scratch with React JS and Tailwind CSS."
-          image="https://user-images.githubusercontent.com/40894497/192394381-3d026518-3c1b-43b2-9ed0-3db1c3a17907.jpg"
-          github="https://github.com/PedroL22/React-Facebook-Register-Clone"
-          live="https://react-facebook-register-clone.vercel.app/"
+          name="The News Website"
+          skills="NextJS API JavaScript Tailwind HTML"
+          projectdesc="A news website made with The Guardian API, Next JS, and Tailwind CSS based on Globo's G1."
+          image="https://user-images.githubusercontent.com/40894497/193134525-37adbf5a-f7a4-4199-a15f-bfacdcd35fc8.jpg"
+          github="https://github.com/PedroL22/The-News-Website"
+          live="https://the-news-website.vercel.app/"
         />
         <Project
           name="React Twitter Clone"
-          skills="React TypeScript Tailwind HTML"
+          skills="ReactJS TypeScript Tailwind HTML"
           projectdesc="A Twitter clone I made from scratch with React JS and Tailwind CSS."
           image="https://user-images.githubusercontent.com/40894497/192005338-7b4dc8a6-fcf2-44c0-95ff-eae159588a87.jpg"
           github="https://github.com/PedroL22/React-Twitter-Clone"
           live="https://react-twitter-clone.vercel.app/"
+        />
+        <Project
+          name="React Facebook Register Clone"
+          skills="ReactJS TypeScript Tailwind HTML"
+          projectdesc="A Facebook Register clone I made from scratch with React JS and Tailwind CSS."
+          image="https://user-images.githubusercontent.com/40894497/192394381-3d026518-3c1b-43b2-9ed0-3db1c3a17907.jpg"
+          github="https://github.com/PedroL22/React-Facebook-Register-Clone"
+          live="https://react-facebook-register-clone.vercel.app/"
         />
         <Project
           name="Django Social Network"
@@ -34,7 +42,7 @@ function Section3() {
         />
         <Project
           name="React Netflix Clone"
-          skills="React API JavaScript HTML CSS"
+          skills="ReactJS API JavaScript HTML CSS"
           projectdesc="A Netflix clone made with React JS and the TMDB API."
           image="https://user-images.githubusercontent.com/40894497/186737672-fde01140-8eb1-4f22-80b3-d76db2576d9a.PNG"
           github="https://github.com/PedroL22/React-Netflix-Clone"
@@ -42,7 +50,7 @@ function Section3() {
         />
         <Project
           name="React Cats Facts"
-          skills="React API JavaScript HTML CSS"
+          skills="ReactJS API JavaScript HTML CSS"
           projectdesc="A basic website that displays random cats facts from https://catfact.ninja/ API and a random cat photo from https://cataas.com/."
           image="https://user-images.githubusercontent.com/40894497/189736293-377aaaae-8b67-46db-93c3-a4b0258e1cbe.jpg"
           github="https://github.com/PedroL22/React-Cats-Facts"
