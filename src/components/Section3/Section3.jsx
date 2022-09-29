@@ -10,8 +10,8 @@ function Section3() {
       <div className="grid2">
         <Project
           name="The News Website"
-          skills="NextJS API JavaScript Tailwind HTML"
-          projectdesc="A news website made with The Guardian API, Next JS, and Tailwind CSS based on Globo's G1."
+          skills="NextJS API PostgreSQL Tailwind"
+          projectdesc="A news website made with The Guardian API, Next JS, PostgreSQL, and Tailwind CSS based on Globo's G1."
           image="https://user-images.githubusercontent.com/40894497/193134525-37adbf5a-f7a4-4199-a15f-bfacdcd35fc8.jpg"
           github="https://github.com/PedroL22/The-News-Website"
           live="https://the-news-website.vercel.app/"
