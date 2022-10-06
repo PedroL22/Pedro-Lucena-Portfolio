@@ -20,7 +20,7 @@ function Section3() {
           name="Country Flag Search"
           skills="ReactJS API JavaScript Tailwind HTML"
           projectdesc="A simple website for country searching made with React JS, Tailwind CSS and REST Countries API."
-          image="https://user-images.githubusercontent.com/40894497/194185749-6b939ee3-b4bb-4b4e-95ef-6da4a268f37d.PNG"
+          image="https://user-images.githubusercontent.com/40894497/194392787-682d99dc-ad31-49a6-8213-036261518ab1.jpg"
           github="https://github.com/PedroL22/Country-Flags-Search"
           live="https://country-flags-search.vercel.app/"
         />
