@@ -10,11 +10,19 @@ function Section3() {
       <div className="grid2">
         <Project
           name="The News Website"
-          skills="NextJS API PostgreSQL Tailwind"
+          skills="NextJS API PostgreSQL Tailwind HTML"
           projectdesc="A news website made with The Guardian API, Next JS, PostgreSQL, and Tailwind CSS based on Globo's G1."
           image="https://user-images.githubusercontent.com/40894497/193134525-37adbf5a-f7a4-4199-a15f-bfacdcd35fc8.jpg"
           github="https://github.com/PedroL22/The-News-Website"
           live="https://the-news-website.vercel.app/"
+        />
+        <Project
+          name="Country Flag Search"
+          skills="ReactJS API JavaScript Tailwind HTML"
+          projectdesc="A simple website for country searching made with React JS, Tailwind CSS and REST Countries API."
+          image="https://user-images.githubusercontent.com/40894497/194185749-6b939ee3-b4bb-4b4e-95ef-6da4a268f37d.PNG"
+          github="https://github.com/PedroL22/Country-Flags-Search"
+          live="https://country-flags-search.vercel.app/"
         />
         <Project
           name="React Twitter Clone"
