@@ -27,10 +27,10 @@ function Section1() {
           <br className="breakline" /> Developer
         </h1>
         <p>
-          I'm a Full Stack Developer capable of creating useful applications
-          with React JS and Django Framework. I have a lot of experience with
-          HTML, CSS and Bootstrap. I've worked with Amazon Web Services and
-          Heroku.
+          Hi, my name is Pedro, I'm a 20 years old Full Stack Developer with a
+          focus on JavaScript/TypeScript. Having more than 20 projects and 5
+          years of practice, I have experience with Front-End, Back-End and also
+          Mobile development.
         </p>
         <div className="connect" onClick={handleClick2}>
           <h2 className="connect-text">Let's connect!</h2>
