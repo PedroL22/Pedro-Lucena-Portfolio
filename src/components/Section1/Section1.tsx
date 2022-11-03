@@ -5,7 +5,7 @@ import Typed from "react-typed";
 import rightArrow from "../../assets/images/right-arrow.png";
 
 function Section1() {
-  const handleClick2 = (event) => {
+  const handleClick2 = (event: any) => {
     animateScroll.scrollTo(5000, { smooth: true, duration: 500 });
     setActive("header-right");
     setToggleIcon("hamburger");

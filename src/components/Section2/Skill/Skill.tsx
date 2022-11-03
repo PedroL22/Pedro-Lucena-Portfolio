@@ -2,7 +2,12 @@ import React from "react";
 import "./styles.css";
 import Verified from "../../../assets/images/verified.png";
 
-function Skill({ skillName, levelOfSkill }) {
+interface text {
+  skillName: string;
+  levelOfSkill: string;
+}
+
+function Skill({ skillName, levelOfSkill }: text) {
   return (
     <div>
       <div className="skill-title">

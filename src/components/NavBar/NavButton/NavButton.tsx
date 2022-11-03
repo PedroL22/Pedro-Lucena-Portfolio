@@ -1,7 +1,11 @@
-import React from 'react';
-import './styles.css';
+import React from "react";
+import "./styles.css";
 
-function NavButton({ text }) {
+interface Props {
+  text: string;
+}
+
+function NavButton({ text }: Props) {
   return <button className="connect-button">{text}</button>;
 }
 
