@@ -1,26 +1,21 @@
-import React, { useState, useRef } from "react";
-import "./styles.css";
-import emailjs from "emailjs-com";
-import PersonalText from "../../assets/images/undraw_personal_text.svg";
+import React, { useState, useRef } from 'react';
+import './styles.css';
+import emailjs from 'emailjs-com';
+import PersonalText from '../../assets/images/undraw_personal_text.svg';
 
 function Section4() {
   const [message, setMessage] = useState(false);
   const form = useRef();
-  const sendEmail = (e: any) => {
+  const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(
-        "service_p8f68rz",
-        "template_ixeh0fe",
-        form.current,
-        "-xo0bQBMsXWq4CwN9"
-      )
+      .sendForm('service_p8f68rz', 'template_ixeh0fe', form.current, '-xo0bQBMsXWq4CwN9')
       .then();
     e.target.reset();
     setMessage(
       setTimeout(() => {
         setMessage(false);
-      }, 3000)
+      }, 3000),
     );
   };
 

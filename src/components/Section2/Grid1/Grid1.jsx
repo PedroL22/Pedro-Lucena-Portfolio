@@ -1,6 +1,6 @@
-import React from "react";
-import Skill from "../Skill/Skill";
-import "./styles.css";
+import React from 'react';
+import Skill from '../Skill/Skill';
+import './styles.css';
 
 function Grid1() {
   return (

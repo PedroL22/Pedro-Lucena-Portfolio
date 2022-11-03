@@ -1,5 +1,5 @@
-import React from "react";
-import Skill from "../Skill/Skill";
+import React from 'react';
+import Skill from '../Skill/Skill';
 
 function Grid2() {
   return (

@@ -1,16 +1,9 @@
-import React from "react";
-import "./styles.css";
+import React from 'react';
+import './styles.css';
 
-interface text {
-  name: string;
-  skills: string;
-  projectdesc: string;
-  image: string;
-  github: string;
-  live: string;
-}
-
-function Project({ name, skills, projectdesc, image, github, live }: text) {
+function Project({
+  name, skills, projectdesc, image, github, live,
+}) {
   return (
     <div className="project">
       <div className="image-wrapper">
