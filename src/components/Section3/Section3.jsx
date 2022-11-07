@@ -1,6 +1,6 @@
-import React from 'react';
-import Project from './Project/Project';
-import './styles.css';
+import React from "react";
+import Project from "./Project/Project";
+import "./styles.css";
 
 function Section3() {
   return (
@@ -8,6 +8,14 @@ function Section3() {
       <h1 className="projects">Projects</h1>
       <p className="description2">My recent Work</p>
       <div className="grid2">
+        <Project
+          name="NLW Copa"
+          skills="React Native Next JS Node JS API"
+          projectdesc="FIFA World Cup Polls - NLW Copa Rocketseat"
+          image="https://user-images.githubusercontent.com/40894497/200389011-5b4fd681-a09d-4828-925c-56fed8694937.png"
+          github="https://github.com/PedroL22/NLW-Copa"
+          live="https://github.com/PedroL22/NLW-Copa"
+        />
         <Project
           name="The News Website"
           skills="NextJS API PostgreSQL Tailwind HTML"
