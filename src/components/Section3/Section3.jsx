@@ -9,12 +9,12 @@ function Section3() {
       <p className="description2">My recent Work</p>
       <div className="grid2">
         <Project
-          name="NLW Copa"
-          skills="React Native Next JS Node JS API"
-          projectdesc="FIFA World Cup Polls - NLW Copa Rocketseat"
-          image="https://user-images.githubusercontent.com/40894497/200389011-5b4fd681-a09d-4828-925c-56fed8694937.png"
-          github="https://github.com/PedroL22/NLW-Copa"
-          live="https://github.com/PedroL22/NLW-Copa"
+          name="Mobile Country Flags Search"
+          skills="React Native Expo Native Base"
+          projectdesc="Mobile version of Country Flags Search made with React Native, Expo and Native Base."
+          image="https://user-images.githubusercontent.com/40894497/201456268-ee5950ed-e696-4755-b3a8-04718c1f8d75.jpg"
+          github="https://github.com/PedroL22/React-Native-Country-Flags-Search"
+          live="https://github.com/PedroL22/React-Native-Country-Flags-Search/releases"
         />
         <Project
           name="The News Website"
@@ -55,6 +55,14 @@ function Section3() {
           image="https://user-images.githubusercontent.com/40894497/186735837-58588ed4-3130-4ce6-9a08-ce62a63c456a.jpg"
           github="https://github.com/PedroL22/Django-Social-Network"
           live="https://djangosocial-network.herokuapp.com/"
+        />
+        <Project
+          name="NLW Copa"
+          skills="React Native Next JS Node JS API"
+          projectdesc="FIFA World Cup Polls - NLW Copa Rocketseat"
+          image="https://user-images.githubusercontent.com/40894497/200389011-5b4fd681-a09d-4828-925c-56fed8694937.png"
+          github="https://github.com/PedroL22/NLW-Copa"
+          live="https://github.com/PedroL22/NLW-Copa"
         />
         <Project
           name="React Netflix Clone"
