@@ -1,5 +1,5 @@
-import React from 'react';
-import Skill from '../Skill/Skill';
+import React from "react";
+import Skill from "../Skill/Skill";
 
 function Grid2() {
   return (
@@ -10,10 +10,10 @@ function Grid2() {
         <Skill skillName="python" levelOfSkill="experienced" />
         <Skill skillName="django" levelOfSkill="experienced" />
         <Skill skillName="flask" levelOfSkill="basic" />
+        <Skill skillName="postgreSQL" levelOfSkill="basic" />
+        <Skill skillName="mongoDB" levelOfSkill="basic" />
         <Skill skillName="mySQL" levelOfSkill="basic" />
         <Skill skillName="sqLite" levelOfSkill="intermediate" />
-        <Skill skillName="mongoDB" levelOfSkill="basic" />
-        <Skill skillName="aWS s3" levelOfSkill="basic" />
       </div>
     </>
   );
