@@ -9,6 +9,14 @@ function Section3() {
       <p className="description2">My recent Work</p>
       <div className="grid2">
         <Project
+          name="Next JS Social Network"
+          skills="NextJS Prisma Tailwind Daisy UI"
+          projectdesc="A Next JS social network prototype built with Tailwind CSS, Daisy UI and Prisma."
+          image="https://user-images.githubusercontent.com/40894497/206275578-af670bc6-09be-45a0-9d8e-bab37bb1581d.jpg"
+          github="https://github.com/PedroL22/Next-JS-Social-Network"
+          live="http://next-js-social-network.vercel.app/"
+        />
+        <Project
           name="Mobile Country Flags Search"
           skills="React Native Expo Native Base"
           projectdesc="Mobile version of Country Flags Search made with React Native, Expo and Native Base."
