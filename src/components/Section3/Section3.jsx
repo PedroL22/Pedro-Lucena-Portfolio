@@ -25,20 +25,28 @@ function Section3() {
           live="https://github.com/PedroL22/React-Native-Country-Flags-Search/releases"
         />
         <Project
-          name="The News Website"
-          skills="NextJS API PostgreSQL Tailwind HTML"
-          projectdesc="A news website made with The Guardian API, Next JS, PostgreSQL, and Tailwind CSS based on Globo's G1."
-          image="https://user-images.githubusercontent.com/40894497/193134525-37adbf5a-f7a4-4199-a15f-bfacdcd35fc8.jpg"
-          github="https://github.com/PedroL22/The-News-Website"
-          live="https://the-news-website.vercel.app/"
-        />
-        <Project
           name="Country Flag Search"
           skills="ReactJS API JavaScript Tailwind HTML"
           projectdesc="A simple website for country searching made with React JS, Tailwind CSS and REST Countries API."
           image="https://user-images.githubusercontent.com/40894497/194392787-682d99dc-ad31-49a6-8213-036261518ab1.jpg"
           github="https://github.com/PedroL22/Country-Flags-Search"
           live="https://country-flags-search.vercel.app/"
+        />
+        <Project
+          name="Pokémon Search"
+          skills="ReactJS API Styled Components"
+          projectdesc="A modern website for Pokémon searching made with Next JS, React JS, React Query and Styled Components."
+          image="https://user-images.githubusercontent.com/40894497/219380777-9b8bda85-7496-485b-8374-f0c659473765.png"
+          github="https://github.com/PedroL22/Pokemon-Search"
+          live="https://pokemon-list-search.vercel.app/"
+        />
+        <Project
+          name="The News Website"
+          skills="NextJS API PostgreSQL Tailwind HTML"
+          projectdesc="A news website made with The Guardian API, Next JS, PostgreSQL, and Tailwind CSS based on Globo's G1."
+          image="https://user-images.githubusercontent.com/40894497/193134525-37adbf5a-f7a4-4199-a15f-bfacdcd35fc8.jpg"
+          github="https://github.com/PedroL22/The-News-Website"
+          live="https://the-news-website.vercel.app/"
         />
         <Project
           name="React Twitter Clone"
@@ -63,22 +71,6 @@ function Section3() {
           image="https://user-images.githubusercontent.com/40894497/186735837-58588ed4-3130-4ce6-9a08-ce62a63c456a.jpg"
           github="https://github.com/PedroL22/Django-Social-Network"
           live="https://djangosocial-network.herokuapp.com/"
-        />
-        <Project
-          name="NLW Copa"
-          skills="React Native Next JS Node JS API"
-          projectdesc="FIFA World Cup Polls - NLW Copa Rocketseat"
-          image="https://user-images.githubusercontent.com/40894497/200389011-5b4fd681-a09d-4828-925c-56fed8694937.png"
-          github="https://github.com/PedroL22/NLW-Copa"
-          live="https://github.com/PedroL22/NLW-Copa"
-        />
-        <Project
-          name="React Netflix Clone"
-          skills="ReactJS API JavaScript HTML CSS"
-          projectdesc="A Netflix clone made with React JS and the TMDB API."
-          image="https://user-images.githubusercontent.com/40894497/186737672-fde01140-8eb1-4f22-80b3-d76db2576d9a.PNG"
-          github="https://github.com/PedroL22/React-Netflix-Clone"
-          live="https://react-js-netflix-clone.vercel.app/"
         />
         <Project
           name="React Cats Facts"
