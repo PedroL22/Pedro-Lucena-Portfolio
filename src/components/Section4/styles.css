@@ -1,137 +1,139 @@
 .section4 {
-	color: white;
-	background: linear-gradient(45deg, rgba(13, 59, 88, 1) 22%, rgba(9, 35, 52, 1) 100%);
-	padding: 10vh 0;
+  color: white;
+  background: linear-gradient(45deg, rgba(13, 59, 88, 1) 22%, rgba(9, 35, 52, 1) 100%);
+  padding: 10vh 0;
 }
 
 .form-wrapper {
-	display: flex;
-	justify-content: space-between;
-	margin: 0 auto;
-	width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 70vw;
 }
 
 .left {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .left img {
-	width: 60%;
-	height: 100%;
+  width: 60%;
+  height: 100%;
 }
 
 .title3 {
-	padding-bottom: 30px;
-	font-size: 32px;
-	font-weight: 500;
+  padding-bottom: 30px;
+  font-size: 32px;
+  font-weight: 500;
 }
 
 .input-form {
-	border-radius: 10px;
-	padding: 20px 30px;
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	background-color: rgba(255, 255, 255, 0.2);
-	color: white;
+  border-radius: 10px;
+  padding: 20px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
 .input-form:focus {
-	background-color: rgba(255, 255, 255, 0.15);
-	outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  outline: none;
 }
 
 .input-form::placeholder {
-	color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .label1 {
-	display: flex;
+  display: flex;
 }
 
 #name {
-	margin-right: 3px;
+  margin-right: 3px;
 }
 
 #email {
-	margin-left: 3px;
+  margin-left: 3px;
 }
 
-#subject, #message {
-	display: block;
-	width: 100%;
-	margin: 6px 0;
+#subject,
+#message {
+  display: block;
+  width: 100%;
+  margin: 6px 0;
 }
 
 #message {
-	padding-bottom: 30%;
+  padding-bottom: 30%;
 }
 
 .form-button {
-	padding: 10px 25px;
-	border-radius: 5px;
-	background-color: #28b6d5;
-	color: #092334;
-	text-transform: capitalize;
-	text-decoration: none;
-	font-weight: 500;
+  padding: 10px 25px;
+  border-radius: 5px;
+  background-color: #28b6d5;
+  color: #092334;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .form-button:hover {
-	cursor: pointer;
-	background-color: #249cb6;
-	color: #061823;
+  cursor: pointer;
+  background-color: #249cb6;
+  color: #061823;
 }
 
 .success-message {
-	position: fixed;
-	display: flex;
-	width: 90vw;
-	top: 140px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	height: 60px;
-	border-radius: 10px;
-	background-color: #51cd80;
+  position: fixed;
+  display: flex;
+  width: 90vw;
+  top: 140px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  border-radius: 10px;
+  background-color: #51cd80;
 }
 
 .success-message h3 {
-	margin: auto 0;
-	padding: 0 30px;
-	color: white;
-	font-weight: 600;
-	text-transform: none;
+  margin: auto 0;
+  padding: 0 30px;
+  color: white;
+  font-weight: 600;
+  text-transform: none;
 }
 
 @media (max-width: 1100px) {
-	.form-wrapper {
-		display: block;
-		width: 80vw;
-	}
+  .form-wrapper {
+    display: block;
+    width: 80vw;
+  }
 
-	.left img {
-		display: flex;
-		margin: 0 auto;
-		width: 95%;
-	}
+  .left img {
+    display: flex;
+    margin: 0 auto;
+    width: 95%;
+  }
 
-	#name, #email {
-		width: 100%;
-	}
+  #name,
+  #email {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1367px) {
-	.form-wrapper {
-		width: 65vw;
-	}
+  .form-wrapper {
+    width: 65vw;
+  }
 }
 
 @media (min-width: 2560px) {
-	.form-wrapper {
-		width: 50vw;
-	}
+  .form-wrapper {
+    width: 50vw;
+  }
 }
 
 @media (min-width: 3840px) {
-	.form-wrapper {
-		width: 35vw;
-	}
+  .form-wrapper {
+    width: 35vw;
+  }
 }

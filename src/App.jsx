@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import Footer from "./components/Footer/Footer";
-import NavBar from "./components/NavBar/NavBar";
-import Section1 from "./components/Section1/Section1";
-import Section2 from "./components/Section2/Section2";
-import Section3 from "./components/Section3/Section3";
-import Section4 from "./components/Section4/Section4";
+import React, { useState, useEffect } from 'react';
+import Footer from './components/Footer/Footer';
+import NavBar from './components/NavBar/NavBar';
+import Section1 from './components/Section1/Section1';
+import Section2 from './components/Section2/Section2';
+import Section3 from './components/Section3/Section3';
+import Section4 from './components/Section4/Section4';
 
 function App() {
   const [darkHeader, setDarkHeader] = useState(false);
@@ -18,10 +18,10 @@ function App() {
       }
     };
 
-    window.addEventListener("scroll", scrollListener);
+    window.addEventListener('scroll', scrollListener);
 
     return () => {
-      window.removeEventListener("scroll", scrollListener);
+      window.removeEventListener('scroll', scrollListener);
     };
   }, []);
 

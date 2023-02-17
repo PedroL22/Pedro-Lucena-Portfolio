@@ -1,120 +1,123 @@
 nav {
-	height: 100px;
-	z-index: 2;
-	position: fixed;
-	background-color: transparent;
-	width: 100vw;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 5vw;
+  height: 100px;
+  z-index: 2;
+  position: fixed;
+  background-color: transparent;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
 }
 
 nav.dark {
-	background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.logo a h1, .logo a {
-	color: white;
-	text-decoration: none;
-	text-transform: capitalize;
-	font-weight: 400;
-	white-space: nowrap;
-
+.logo a h1,
+.logo a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 400;
+  white-space: nowrap;
 }
 
-ul, li, li a {
-	color: #d3d3d3;
-	display: flex;
-	text-transform: capitalize;
-	text-decoration: none;
-	padding: 15px 10px;
-	justify-content: space-between;
-	font-weight: 400;
+ul,
+li,
+li a {
+  color: #d3d3d3;
+  display: flex;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 15px 10px;
+  justify-content: space-between;
+  font-weight: 400;
 }
 
 .icons {
-	padding: 0px 0px;
+  padding: 0px 0px;
 }
 
 li a img {
-	height: 22px;
+  height: 22px;
 }
 
 li a img:hover {
-	opacity: 0.8;
+  opacity: 0.8;
 }
 
-li a:active, li a:hover {
-	color: white;
-	cursor: pointer;
+li a:active,
+li a:hover {
+  color: white;
+  cursor: pointer;
 }
 
 .hamburger {
-	display: none;
-	cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 .bar {
-	display: block;
-	width: 25px;
-	height: 3px;
-	margin: 5px auto;
-	-webkit-transition: all ease 0.3s;
-	transition: all ease 0.3s;
-	background-color: white;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  background-color: white;
 }
 
 .div2 {
-	padding-top: 16px;
+  padding-top: 16px;
 }
 
 @media (max-width: 840px) {
-	nav.dark {
-		background-color: #0d3b58;
-	}
+  nav.dark {
+    background-color: #0d3b58;
+  }
 
-	nav {
-		padding: 0 30px;
-	}
+  nav {
+    padding: 0 30px;
+  }
 
-	.hamburger {
-		display: block;
-	}
+  .hamburger {
+    display: block;
+  }
 
-	.hamburgerx .bar:nth-child(2) {
-		opacity: 0;
-	}
+  .hamburgerx .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-	.hamburgerx .bar:nth-child(1) {
-		transform: translateY(8px) rotate(45deg);
-	}
+  .hamburgerx .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
-	.hamburgerx .bar:nth-child(3) {
-		transform: translateY(-8px) rotate(-45deg);
-	}
+  .hamburgerx .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
-	.header-right {
-		position: fixed;
-		right: -100%;
-		top: 0px;
-		padding-top: 70px;
-		width: 100%;
-		height: auto;
-		flex-direction: column;
-		background-color: #0d3b58;
-		align-items: center;
-		transition: all ease 0.3s;
-		padding-bottom: 100vh;
-	}
+  .header-right {
+    position: fixed;
+    right: -100%;
+    top: 0px;
+    padding-top: 70px;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    background-color: #0d3b58;
+    align-items: center;
+    transition: all ease 0.3s;
+    padding-bottom: 100vh;
+  }
 
-	.header-right-active {
-		right: 0;
-	}
+  .header-right-active {
+    right: 0;
+  }
 }
 
 @media (min-width: 2560px) {
-	nav {
-		padding: 0 28vw;
-	}
+  nav {
+    padding: 0 28vw;
+  }
 }

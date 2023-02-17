@@ -1,84 +1,87 @@
 .section2 {
-	overflow: hidden;
-	margin-bottom: 10vh;
+  overflow: hidden;
+  margin-bottom: 10vh;
 }
 
 .square h1 {
-	display: block;
-	text-align: center;
-	padding-top: 50px;
-	color: white;
-	font-weight: 500;
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+  font-weight: 500;
 }
 
 .description {
-	text-transform: none;
-	text-align: center;
-	padding: 15px 0;
-	font-weight: 400;
+  text-transform: none;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: 400;
 }
 
 .square {
-	background: rgb(9, 35, 52);
-	background: linear-gradient(225deg, rgba(9, 35, 52, 1) 0%, rgba(13, 59, 88, 1) 100%);
-	margin: 0 auto;
-	width: 90vw;
-	height: min-content;
-	border-radius: 50px;
+  background: rgb(9, 35, 52);
+  background: linear-gradient(225deg, rgba(9, 35, 52, 1) 0%, rgba(13, 59, 88, 1) 100%);
+  margin: 0 auto;
+  width: 90vw;
+  height: min-content;
+  border-radius: 50px;
 }
 
 .wrapper {
-	justify-content: space-between;
-	margin: 0 auto;
-	display: flex;
-	width: 90vw;
-	min-height: fit-content;
-	padding-top: 40px;
-	padding-bottom: 120px;
+  justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+  width: 90vw;
+  min-height: fit-content;
+  padding-top: 40px;
+  padding-bottom: 120px;
 }
 
-.frontend, .backend {
-	background-color: transparent;
-	width: 400px;
-	height: 350px;
-	border-radius: 25px;
-	margin: auto;
-	color: white;
-	text-align: center;
-	border: 2px solid #0d3b58;
-
+.frontend,
+.backend {
+  background-color: transparent;
+  width: 400px;
+  height: 350px;
+  border-radius: 25px;
+  margin: auto;
+  color: white;
+  text-align: center;
+  border: 2px solid #0d3b58;
 }
 
-.frontend:hover, .backend:hover {
-	background-color: #0d3b58;
+.frontend:hover,
+.backend:hover {
+  background-color: #0d3b58;
 }
 
 @media (max-width: 970px) {
-	.wrapper {
-		display: block;
-		overflow: hidden;
-		padding-bottom: 80px;
-		padding-top: 40px;
-	}
+  .wrapper {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 80px;
+    padding-top: 40px;
+  }
 
-	.section2 {
-		height: fit-content;
-	}
+  .section2 {
+    height: fit-content;
+  }
 
-	.square h1 {
-		padding-top: 50px;
-	}
+  .square h1 {
+    padding-top: 50px;
+  }
 
-	.frontend, .backend {
-		width: 300px;
-		height: fit-content;
-		padding-bottom: 30px;
-		margin-bottom: 30px;
-	}
+  .frontend,
+  .backend {
+    width: 300px;
+    height: fit-content;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 2560px) {
-	.square, .wrapper {
-		width: 45vw;
-	}
+  .square,
+  .wrapper {
+    width: 45vw;
+  }
 }

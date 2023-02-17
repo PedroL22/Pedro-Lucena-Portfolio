@@ -1,6 +1,6 @@
-import React from "react";
-import Project from "./Project/Project";
-import "./styles.css";
+import React from 'react';
+import Project from './Project/Project';
+import './styles.css';
 
 function Section3() {
   return (
