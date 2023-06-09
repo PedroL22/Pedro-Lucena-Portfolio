@@ -34,7 +34,7 @@ export const NavBar = ({ dark }: NavBarProps) => {
   }
 
   const handleClick2 = () => {
-    animateScroll.scrollTo(5000, { smooth: true, duration: 500 })
+    animateScroll.scrollTo(10000, { smooth: true, duration: 500 })
     setActive('header-right')
     setToggleIcon('hamburger')
   }
