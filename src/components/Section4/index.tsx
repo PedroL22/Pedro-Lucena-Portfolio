@@ -13,7 +13,12 @@ export const Section4 = () => {
     e.preventDefault()
     const formElement = form.current
     if (formElement) {
-      emailjs.sendForm('service_p8f68rz', 'template_ixeh0fe', formElement, '-xo0bQBMsXWq4CwN9')
+      emailjs.sendForm(
+        'service_p8f68rz',
+        'template_ixeh0fe',
+        formElement,
+        '-xo0bQBMsXWq4CwN9'
+      )
     }
     formElement?.reset()
     setMessage(true)

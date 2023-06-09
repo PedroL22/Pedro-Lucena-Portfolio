@@ -28,8 +28,10 @@ export const Section1 = () => {
           <br className='breakline' /> Developer
         </h1>
         <p>
-          Hi, my name is Pedro, I'm a 20 years old Front-End Developer with a focus on TypeScript/JavaScript. Having
-          more than 20 projects and 5 years of practice, I have experience with Front-End and Mobile development.
+          Hi, my name is Pedro, I'm a 20 years old Front-End Developer with a
+          focus on TypeScript/JavaScript. Having more than 20 projects and 5
+          years of practice, I have experience with Front-End and Mobile
+          development.
         </p>
         <div
           className='connect'

@@ -9,7 +9,14 @@ type ProjectProps = {
   live: string
 }
 
-export const Project = ({ name, skills, projectdesc, image, github, live }: ProjectProps) => {
+export const Project = ({
+  name,
+  skills,
+  projectdesc,
+  image,
+  github,
+  live,
+}: ProjectProps) => {
   return (
     <div className='project'>
       <div className='image-wrapper'>

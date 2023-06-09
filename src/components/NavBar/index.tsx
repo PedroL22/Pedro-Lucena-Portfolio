@@ -17,8 +17,12 @@ export const NavBar = ({ dark }: NavBarProps) => {
   const [active, setActive] = useState('header-right')
   const [toggleIcon, setToggleIcon] = useState('hamburger')
   const hamburger = () => {
-    active === 'header-right' ? setActive('header-right header-right-active') : setActive('header-right')
-    toggleIcon === 'hamburger' ? setToggleIcon('hamburger hamburgerx') : setToggleIcon('hamburger')
+    active === 'header-right'
+      ? setActive('header-right header-right-active')
+      : setActive('header-right')
+    toggleIcon === 'hamburger'
+      ? setToggleIcon('hamburger hamburgerx')
+      : setToggleIcon('hamburger')
   }
   const handleClick = () => {
     setActive('header-right')
