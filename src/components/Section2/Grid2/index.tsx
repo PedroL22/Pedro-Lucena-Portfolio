@@ -5,38 +5,14 @@ export const Grid2 = () => {
     <>
       <h2>Back-End Development</h2>
       <div className='grid'>
-        <Skill
-          skillName='node'
-          levelOfSkill='intermediate'
-        />
-        <Skill
-          skillName='python'
-          levelOfSkill='experienced'
-        />
-        <Skill
-          skillName='django'
-          levelOfSkill='experienced'
-        />
-        <Skill
-          skillName='flask'
-          levelOfSkill='basic'
-        />
-        <Skill
-          skillName='postgreSQL'
-          levelOfSkill='basic'
-        />
-        <Skill
-          skillName='mongoDB'
-          levelOfSkill='basic'
-        />
-        <Skill
-          skillName='mySQL'
-          levelOfSkill='basic'
-        />
-        <Skill
-          skillName='sqLite'
-          levelOfSkill='intermediate'
-        />
+        <Skill skillName='node' />
+        <Skill skillName='prisma' />
+        <Skill skillName='postgreSQL' />
+        <Skill skillName='mongoDB' />
+        <Skill skillName='sQLite' />
+        <Skill skillName='redis' />
+        <Skill skillName='heroku' />
+        <Skill skillName='postman' />
       </div>
     </>
   )

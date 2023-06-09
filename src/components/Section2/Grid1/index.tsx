@@ -6,30 +6,19 @@ export const Grid1 = () => {
     <>
       <h2>Front-End Development</h2>
       <div className='grid'>
-        <Skill
-          skillName='HTML'
-          levelOfSkill='experienced'
-        />
-        <Skill
-          skillName='CSS'
-          levelOfSkill='experienced'
-        />
-        <Skill
-          skillName='javaScript'
-          levelOfSkill='intermediate'
-        />
-        <Skill
-          skillName='react'
-          levelOfSkill='intermediate'
-        />
-        <Skill
-          skillName='tailwind'
-          levelOfSkill='experienced'
-        />
-        <Skill
-          skillName='bootstrap'
-          levelOfSkill='experienced'
-        />
+        <Skill skillName='HTML' />
+        <Skill skillName='CSS' />
+        <Skill skillName='javaScript' />
+        <Skill skillName='typeScript' />
+        <Skill skillName='react' />
+        <Skill skillName='react native' />
+        <Skill skillName='next JS' />
+        <Skill skillName='Redux' />
+        <Skill skillName='Zustand' />
+        <Skill skillName='tailwind' />
+        <Skill skillName='Material UI' />
+        <Skill skillName='Styled C.' />
+        <Skill skillName='bootstrap' />
       </div>
     </>
   )

@@ -5,7 +5,7 @@ export const Section3 = () => {
   return (
     <div className='section3'>
       <h1 className='projects'>Projects</h1>
-      <p className='description2'>My recent Work</p>
+      <p className='description2'>My recent work</p>
       <div className='grid2'>
         <Project
           name='Next JS Social Network'

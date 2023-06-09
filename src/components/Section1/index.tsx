@@ -7,8 +7,6 @@ import rightArrow from '../../assets/images/right-arrow.png'
 export const Section1 = () => {
   const handleClick2 = () => {
     animateScroll.scrollTo(5000, { smooth: true, duration: 500 })
-    //setActive('header-right')
-    //setToggleIcon('hamburger')
   }
 
   return (
@@ -19,9 +17,9 @@ export const Section1 = () => {
       <div className='text'>
         <h2 className='welcome'>Welcome to my Portfolio</h2>
         <h1>
-          Hi! I'm Pedro Lucena <br />{' '}
+          Hi! I'm Pedro Lucena <br />
           <Typed
-            strings={['Full Stack', 'Front-End', 'Back-End', 'React', 'Node']}
+            strings={['Front-End', 'React', 'React Native']}
             typeSpeed={50}
             backSpeed={60}
             loop
@@ -30,9 +28,8 @@ export const Section1 = () => {
           <br className='breakline' /> Developer
         </h1>
         <p>
-          Hi, my name is Pedro, I'm a 20 years old Full Stack Developer with a focus on JavaScript/TypeScript. Having
-          more than 20 projects and 5 years of practice, I have experience with Front-End, Back-End and also Mobile
-          development.
+          Hi, my name is Pedro, I'm a 20 years old Front-End Developer with a focus on TypeScript/JavaScript. Having
+          more than 20 projects and 5 years of practice, I have experience with Front-End and Mobile development.
         </p>
         <div
           className='connect'

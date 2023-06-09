@@ -3,10 +3,9 @@ import Verified from '../../../assets/images/verified.png'
 
 type SkillProps = {
   skillName: string
-  levelOfSkill: string
 }
 
-export const Skill = ({ skillName, levelOfSkill }: SkillProps) => {
+export const Skill = ({ skillName }: SkillProps) => {
   return (
     <div>
       <div className='skill-title'>
@@ -16,7 +15,6 @@ export const Skill = ({ skillName, levelOfSkill }: SkillProps) => {
         />
         <h3>{skillName}</h3>
       </div>
-      <p>{levelOfSkill}</p>
     </div>
   )
 }

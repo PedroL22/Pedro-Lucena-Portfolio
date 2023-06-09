@@ -46,7 +46,7 @@ export const NavBar = ({ dark }: NavBarProps) => {
         <ul className={active}>
           <li>
             <a
-              href='section1'
+              href='/'
               onClick={topAndClose}
             >
               home

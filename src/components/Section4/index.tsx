@@ -82,7 +82,7 @@ export const Section4 = () => {
               className='form-button'
               type='submit'
             >
-              Submit
+              Send
             </button>
           </form>
         </div>
