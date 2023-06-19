@@ -17,7 +17,7 @@ export const Section1 = () => {
       <div className='text'>
         <h2 className='welcome'>Welcome to my Portfolio</h2>
         <h1>
-          Hi! I'm Pedro Lucena <br />
+          Hi! I&#39;m Pedro Lucena <br />
           <Typed
             strings={['Front-End', 'React', 'React Native']}
             typeSpeed={50}
@@ -28,8 +28,8 @@ export const Section1 = () => {
           <br className='breakline' /> Developer
         </h1>
         <p>
-          Hi, my name is Pedro, I'm a 20 years old Front-End Developer with a
-          focus on TypeScript/JavaScript. Having more than 20 projects and 5
+          Hi, my name is Pedro, I&#39;m a 20 years old Front-End Developer with
+          a focus on TypeScript/JavaScript. Having more than 20 projects and 5
           years of practice, I have experience with Front-End and Mobile
           development.
         </p>
@@ -37,7 +37,7 @@ export const Section1 = () => {
           className='connect'
           onClick={handleClick2}
         >
-          <h2 className='connect-text'>Let's connect!</h2>
+          <h2 className='connect-text'>Let&#39;s connect!</h2>
           <img
             src={rightArrow}
             alt='arrow'
