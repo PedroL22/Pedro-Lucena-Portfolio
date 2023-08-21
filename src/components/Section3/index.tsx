@@ -8,6 +8,14 @@ export const Section3 = () => {
       <p className='description2'>My recent work</p>
       <div className='grid2'>
         <Project
+          name='Black Studios'
+          skills='NextJS Tailwind Framer Motion'
+          projectdesc='A portfolio website created with Next JS, Tailwind CSS and Framer Motion.'
+          image='https://user-images.githubusercontent.com/40894497/262020753-890958c0-2ea1-4cd1-9154-dc2c4ba94224.png'
+          github='https://github.com/PedroL22/black-studios'
+          live='https://black-studios.vercel.app/'
+        />
+        <Project
           name='Next JS Social Network'
           skills='NextJS Prisma Tailwind Daisy UI'
           projectdesc='A Next JS social network prototype built with Tailwind CSS, Daisy UI and Prisma.'
