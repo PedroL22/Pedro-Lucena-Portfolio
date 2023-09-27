@@ -16,6 +16,14 @@ export const Section3 = () => {
           live='https://black-studios.vercel.app/'
         />
         <Project
+          name='Custom Marco Guillermo'
+          skills='NextJS Tailwind'
+          projectdesc='Custom Marco Guillermo website made with Next JS and Tailwind CSS.'
+          image='https://user-images.githubusercontent.com/40894497/271020998-6ecd6a35-1eef-4a76-acb6-0b3bcb07da66.png'
+          github='https://github.com/PedroL22/Custom-Marco-Guillermo'
+          live='https://custom-marco-guillermo.vercel.app/'
+        />
+        <Project
           name='Next JS Social Network'
           skills='NextJS Prisma Tailwind Daisy UI'
           projectdesc='A Next JS social network prototype built with Tailwind CSS, Daisy UI and Prisma.'
