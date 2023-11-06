@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 import { FC, useState } from 'react'
 
 import { GithubLogo, LinkedinLogo, List, TwitterLogo, X } from '@phosphor-icons/react'
-import { ConnectButton } from './ConnectButton'
+import { ConnectButton } from '.'
 
 export const MobileHeader: FC = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,7 +17,7 @@ export const MobileHeader: FC = () => {
       <motion.div
         whileTap={{ scale: 0.5 }}
         transition={{ duration: 0.25, delay: 0, ease: 'easeOut' }}
-        className='z-20 text-zinc-50 md:hidden'
+        className='z-20 text-gray-50 lg:hidden'
       >
         {isOpen ? (
           <X
@@ -48,7 +48,7 @@ export const MobileHeader: FC = () => {
             <Link
               href='/'
               onClick={() => setIsOpen(false)}
-              className={`${pathname == '/' && 'text-zinc-400'} text-lg`}
+              className={`${pathname == '/' && 'text-gray-400'} text-lg`}
             >
               Home
             </Link>
@@ -56,7 +56,7 @@ export const MobileHeader: FC = () => {
             <Link
               href='/skills'
               onClick={() => setIsOpen(false)}
-              className={`${pathname == '/skills' && 'text-zinc-400'} text-lg`}
+              className={`${pathname == '/skills' && 'text-gray-400'} text-lg`}
             >
               Skills
             </Link>
@@ -64,17 +64,35 @@ export const MobileHeader: FC = () => {
             <Link
               href='/projects'
               onClick={() => setIsOpen(false)}
-              className={`${pathname == '/projects' && 'text-zinc-400'} text-lg`}
+              className={`${pathname == '/projects' && 'text-gray-400'} text-lg`}
             >
               Projects
             </Link>
 
             <div className='flex items-center space-x-7'>
-              <LinkedinLogo size={28} />
+              <a
+                href='https://www.linkedin.com/in/pedrolucena22/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <LinkedinLogo size={28} />
+              </a>
 
-              <GithubLogo size={28} />
+              <a
+                href='https://github.com/PedroL22/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <GithubLogo size={28} />
+              </a>
 
-              <TwitterLogo size={28} />
+              <a
+                href='https://twitter.com/lucena_l22/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <TwitterLogo size={28} />
+              </a>
             </div>
 
             <ConnectButton />
