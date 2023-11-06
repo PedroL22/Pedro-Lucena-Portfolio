@@ -19,7 +19,7 @@ export const MobileHeader: FC = () => {
         transition={{ duration: 0.25, delay: 0, ease: 'easeOut' }}
         role='button'
         aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
-        className='z-20 text-gray-50 lg:hidden'
+        className='z-20 lg:hidden'
       >
         {isOpen ? (
           <X
