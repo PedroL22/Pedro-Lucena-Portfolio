@@ -17,21 +17,25 @@ export const MobileHeader: FC = () => {
       <motion.div
         whileTap={{ scale: 0.5 }}
         transition={{ duration: 0.25, delay: 0, ease: 'easeOut' }}
+        role='button'
+        aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
         className='z-20 text-gray-50 lg:hidden'
       >
         {isOpen ? (
           <X
             size={28}
             weight='bold'
-            onClick={() => setIsOpen(false)}
+            aria-hidden
             className='cursor-pointer'
+            onClick={() => setIsOpen(false)}
           />
         ) : (
           <List
             size={28}
             weight='fill'
-            onClick={() => setIsOpen(true)}
+            aria-hidden
             className='cursor-pointer'
+            onClick={() => setIsOpen(true)}
           />
         )}
       </motion.div>
@@ -74,6 +78,7 @@ export const MobileHeader: FC = () => {
                 href='https://www.linkedin.com/in/pedrolucena22/'
                 target='_blank'
                 rel='noreferrer'
+                aria-label='LinkedIn'
               >
                 <LinkedinLogo size={28} />
               </a>
@@ -82,6 +87,7 @@ export const MobileHeader: FC = () => {
                 href='https://github.com/PedroL22/'
                 target='_blank'
                 rel='noreferrer'
+                aria-label='GitHub'
               >
                 <GithubLogo size={28} />
               </a>
@@ -90,6 +96,7 @@ export const MobileHeader: FC = () => {
                 href='https://twitter.com/lucena_l22/'
                 target='_blank'
                 rel='noreferrer'
+                aria-label='Twitter'
               >
                 <TwitterLogo size={28} />
               </a>

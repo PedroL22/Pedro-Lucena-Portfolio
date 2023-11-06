@@ -50,6 +50,7 @@ export const DesktopHeader: FC = () => {
           href='https://www.linkedin.com/in/pedrolucena22/'
           target='_blank'
           rel='noreferrer'
+          aria-label='LinkedIn'
           className='group cursor-pointer'
         >
           <LinkedinLogo
@@ -69,6 +70,7 @@ export const DesktopHeader: FC = () => {
           href='https://github.com/PedroL22/'
           target='_blank'
           rel='noreferrer'
+          aria-label='GitHub'
           className='group cursor-pointer'
         >
           <GithubLogo
@@ -88,6 +90,7 @@ export const DesktopHeader: FC = () => {
           href='https://twitter.com/lucena_l22/'
           target='_blank'
           rel='noreferrer'
+          aria-label='Twitter'
           className='group cursor-pointer'
         >
           <TwitterLogo
