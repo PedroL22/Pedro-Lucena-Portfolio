@@ -27,13 +27,9 @@ export const Header: FC = () => {
   return (
     <header
       data-transparent={transparentHeader}
-      aria-label='Header'
-      className='bg-primaryDark fixed flex h-24 w-full select-none items-center justify-center text-gray-50 md:bg-transparent md:data-[transparent=true]:backdrop-blur-md'
+      className='fixed flex h-24 w-full select-none items-center justify-center bg-primaryDark text-gray-50 md:bg-transparent md:data-[transparent=true]:backdrop-blur-md'
     >
-      <nav
-        aria-label='Navigation menu'
-        className='flex h-24 w-full max-w-screen-2xl items-center justify-between p-12'
-      >
+      <nav className='flex h-24 w-full max-w-screen-2xl items-center justify-between p-12'>
         <Link
           href='/'
           className='text-2xl'

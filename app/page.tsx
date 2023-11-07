@@ -2,21 +2,18 @@ import { TypedComponent, WelcomeConnect } from './components'
 
 export default function Home() {
   return (
-    <main
-      aria-label="Pedro Lucena's Portfolio - Ready to Work!"
-      className='flex h-screen w-full items-center justify-center pt-24 text-gray-50'
-    >
+    <main className='flex w-full flex-col items-center pt-24 text-gray-50'>
       <section
-        aria-label='Welcome to my portfolio'
-        className='h-56 w-full max-w-screen-2xl px-12'
+        aria-label='Home - Welcome to my portfolio'
+        className='flex h-[75vh] max-h-[900px] w-full max-w-screen-2xl flex-col justify-center bg-red-500 px-12'
       >
         <div className='flex w-full flex-col items-center space-y-5 md:w-3/4 md:items-start'>
-          <h2 className='border-secondaryDark from-secondaryDark w-fit border-2 bg-gradient-to-r to-primary p-2 text-xl font-medium md:p-3 md:text-2xl'>
+          <h2 className='w-fit border-2 border-secondaryDark bg-gradient-to-r from-secondaryDark to-primary p-2 text-xl font-medium md:p-3 md:text-2xl'>
             Welcome to my portfolio
           </h2>
 
           <h1 className='flex flex-col text-center text-4xl font-bold md:text-left md:text-6xl'>
-            Hi! I&#39;m Pedro Lucena <br />
+            Hi! I&#39;m Pedro Lucena <br aria-hidden />
             <span className='gap-3 md:flex'>
               <TypedComponent />
               <br className='md:hidden' />

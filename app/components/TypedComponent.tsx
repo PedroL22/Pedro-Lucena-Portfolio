@@ -11,7 +11,7 @@ export const TypedComponent: FC = () => {
       typeSpeed={50}
       backSpeed={60}
       loop
-      className='font-medium'
+      className='whitespace-nowrap font-medium'
     />
   )
 }
