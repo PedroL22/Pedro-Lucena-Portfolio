@@ -9,13 +9,21 @@ export default function manifest(): MetadataRoute.Manifest {
     start_url: '/',
     display: 'standalone',
     background_color: '#0b3149',
-    theme_color: '#28b6d5',
+    theme_color: '#092334',
     lang: 'en',
     icons: [
       {
-        src: '/favicon.ico',
-        sizes: 'any',
-        type: 'image/x-icon',
+        src: '/blue-heart.png',
+        purpose: 'any',
+        sizes: '144x144',
+        type: 'image/png',
+      },
+    ],
+    screenshots: [
+      {
+        src: 'https://user-images.githubusercontent.com/40894497/187774626-91b2361b-9174-45af-b9c1-a410bdf85076.jpg',
+        sizes: '1280x720',
+        type: 'image/jpeg',
       },
     ],
   }

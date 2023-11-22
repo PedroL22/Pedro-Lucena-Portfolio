@@ -30,6 +30,13 @@ export default function Home() {
           <WelcomeConnect />
         </div>
       </section>
+
+      <section
+        aria-label='Skills'
+        className='flex h-[75vh] max-h-[900px] w-full max-w-screen-2xl flex-col justify-center px-12'
+      >
+        a
+      </section>
     </main>
   )
 }
