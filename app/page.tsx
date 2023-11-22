@@ -1,6 +1,10 @@
-import { TypedComponent, WelcomeConnect } from './components'
+import { Skill, TypedComponent, WelcomeConnect } from '@/components'
 
-export default function Home() {
+import { requestSkills } from '@/clients/ContentClient'
+
+export default async function Home() {
+  const skillsData = await requestSkills()
+
   return (
     <main className='flex w-full flex-col items-center pt-24 text-gray-50'>
       <section
@@ -35,7 +39,12 @@ export default function Home() {
         aria-label='Skills'
         className='flex h-[75vh] max-h-[900px] w-full max-w-screen-2xl flex-col justify-center px-12'
       >
-        a
+        {skillsData?.map((skill) => (
+          <Skill
+            key={skill.id}
+            {...skill}
+          />
+        ))}
       </section>
     </main>
   )
