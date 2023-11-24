@@ -1,15 +1,19 @@
-import { Skill, TypedComponent, WelcomeConnect } from '@/components'
+import { SkillsContainer } from '@/components/Skills'
+import { TypedComponent, WelcomeConnect } from '@/components/Welcome'
 
 import { requestSkills } from '@/clients/ContentClient'
 
 export default async function Home() {
   const skillsData = await requestSkills()
 
+  const backendSkills = skillsData.filter((skill) => skill.attributes.type === 'backend')
+  const frontendSkills = skillsData.filter((skill) => skill.attributes.type === 'frontend')
+
   return (
     <main className='flex w-full flex-col items-center pt-24 text-gray-50'>
       <section
         aria-label='Home - Welcome to my portfolio'
-        className='flex h-[75vh] max-h-[900px] w-full max-w-screen-2xl flex-col justify-center px-12'
+        className='flex min-h-[600px] w-full max-w-screen-2xl flex-col justify-center px-5'
       >
         <div className='flex w-full flex-col items-center space-y-5 md:w-3/4 md:items-start'>
           <h2 className='w-fit border-2 border-secondaryDark bg-gradient-to-r from-secondaryDark to-primary p-2 text-xl font-medium md:p-3 md:text-2xl'>
@@ -37,14 +41,27 @@ export default async function Home() {
 
       <section
         aria-label='Skills'
-        className='flex h-[75vh] max-h-[900px] w-full max-w-screen-2xl flex-col justify-center px-12'
+        className='mb-20 flex min-h-[600px] w-full max-w-screen-2xl flex-col items-center justify-center px-5'
       >
-        {skillsData?.map((skill) => (
-          <Skill
-            key={skill.id}
-            {...skill}
-          />
-        ))}
+        <div className='flex w-full flex-col items-center justify-center space-y-12 rounded-[3rem] bg-gradient-to-tr from-primaryLight to-primaryDark px-5 py-16 xl:w-3/4'>
+          <div className='space-y-3 text-center'>
+            <h3 className='text-2xl'>Skills</h3>
+
+            <p className='text-md text-gray-300'>What skills do I have?</p>
+          </div>
+
+          <div className='flex w-full flex-col justify-around gap-6 md:flex-row md:gap-8 md:px-10'>
+            <SkillsContainer
+              title='Back-End Development'
+              skills={backendSkills}
+            />
+
+            <SkillsContainer
+              title='Front-End Development'
+              skills={frontendSkills}
+            />
+          </div>
+        </div>
       </section>
     </main>
   )

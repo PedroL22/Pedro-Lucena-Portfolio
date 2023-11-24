@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: 11, 49, 73;
   --font-color: 249, 250, 251;
+  --primary-color: 11, 49, 73;
 }
 
 body {

@@ -27,7 +27,7 @@ export const Header: FC = () => {
   return (
     <header
       data-transparent={transparentHeader}
-      className='fixed flex h-24 w-full select-none items-center justify-center bg-primaryDark text-gray-50 lg:bg-transparent lg:data-[transparent=true]:backdrop-blur-md'
+      className='bg-primaryLight fixed flex h-24 w-full select-none items-center justify-center text-gray-50 lg:bg-transparent lg:data-[transparent=true]:backdrop-blur-md'
     >
       <nav className='flex h-24 w-full max-w-screen-2xl items-center justify-between p-12'>
         <Link

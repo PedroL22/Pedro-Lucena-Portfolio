@@ -12,7 +12,7 @@ export const WelcomeConnect: FC = () => {
     >
       <p
         aria-hidden
-        className='connect-text text-2xl'
+        className='text-2xl'
       >
         Let&#39;s connect!
       </p>
