@@ -14,7 +14,7 @@ export const SkillsContainer: FC<SkillsContainerProps> = ({ title, skills }) => 
     <div className='flex w-full max-w-sm cursor-pointer flex-col items-center gap-6 rounded-3xl border-2 border-primaryLight py-9 transition-all ease-in hover:bg-primaryLight'>
       <h4 className='text-xl'>{title}</h4>
 
-      <div className='grid w-fit grid-cols-2 gap-1'>
+      <div className='grid w-full max-w-[80%] grid-cols-[auto_auto] justify-around gap-1'>
         {skills.map((skill) => (
           <Skill
             key={skill.id}

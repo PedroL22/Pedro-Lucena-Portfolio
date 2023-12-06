@@ -50,7 +50,7 @@ export default async function Home() {
             <p className='text-md text-gray-300'>What skills do I have?</p>
           </div>
 
-          <div className='flex w-full flex-col justify-around gap-6 md:flex-row md:gap-8 md:px-10'>
+          <div className='flex w-full flex-col items-center justify-around gap-6 md:flex-row md:items-start md:gap-8 md:px-10'>
             <SkillsContainer
               title='Back-End Development'
               skills={backendSkills}

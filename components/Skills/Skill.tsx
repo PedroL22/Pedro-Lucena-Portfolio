@@ -14,7 +14,7 @@ export const Skill: FC<SkillEntity> = ({ attributes }) => {
         aria-hidden
       />
 
-      <p className='text-lg'>{attributes.name}</p>
+      <p className='line-clamp-1 text-lg'>{attributes.name}</p>
     </div>
   )
 }
