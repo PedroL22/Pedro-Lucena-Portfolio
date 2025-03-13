@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react'
 
 import './index.css'
 
-import { NavBar } from './components/NavBar/index'
-import { Footer } from './components/Footer/'
-import { Section1 } from './components/Section1/index'
-import { Section2 } from './components/Section2/index'
-import { Section3 } from './components/Section3/index'
-import { Section4 } from './components/Section4/index'
+import { Footer } from '~/components/Footer'
+import { NavBar } from '~/components/NavBar'
+import { Section1 } from '~/components/Section1'
+import { Section2 } from '~/components/Section2'
+import { Section3 } from '~/components/Section3'
+import { Section4 } from '~/components/Section4'
 
-export const App = () => {
+export const Home = () => {
   const [darkHeader, setDarkHeader] = useState(false)
 
   useEffect(() => {
@@ -29,12 +29,14 @@ export const App = () => {
   }, [])
 
   return (
-    <div className='App'>
+    <div className='Home'>
       <NavBar dark={darkHeader} />
+
       <Section1 />
       <Section2 />
       <Section3 />
       <Section4 />
+
       <Footer />
     </div>
   )

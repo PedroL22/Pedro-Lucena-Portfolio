@@ -5,6 +5,7 @@ export const Grid1 = () => {
   return (
     <>
       <h2>Front-End Development</h2>
+
       <div className='grid'>
         <Skill skillName='HTML' />
         <Skill skillName='CSS' />
