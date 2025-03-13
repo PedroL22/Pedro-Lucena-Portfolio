@@ -17,7 +17,7 @@ export const Section1 = () => {
         <h1>
           Hi! I&#39;m Pedro Lucena <br />
           <ReactTyped
-            strings={['Front-End', 'React', 'React Native']}
+            strings={['Full Stack', 'React', 'React Native', 'Front-End', 'Back-End']}
             typeSpeed={50}
             backSpeed={60}
             loop
@@ -27,8 +27,8 @@ export const Section1 = () => {
         </h1>
 
         <p>
-          Hi, my name is Pedro, I&#39;m a 20 years old Front-End Developer with a focus on TypeScript/JavaScript. Having
-          more than 20 projects and 5 years of practice, I have experience with Front-End and Mobile development.
+          Full Stack Developer expert in JavaScript and TypeScript with 5+ years of experience and a portfolio featuring
+          15+ projects.
         </p>
 
         <div className='connect' onClick={handleClick2} onKeyDown={handleClick2} tabIndex={0}>

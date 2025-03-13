@@ -31,7 +31,7 @@ export const Section4 = () => {
 
       <div className='form-wrapper'>
         <div className='left'>
-          <img src={PersonalText} alt='' />
+          <img src={PersonalText} alt='man having a conversation' />
         </div>
 
         <div className='form-class'>

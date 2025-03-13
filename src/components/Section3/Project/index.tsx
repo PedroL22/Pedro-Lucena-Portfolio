@@ -13,7 +13,7 @@ export const Project = ({ name, skills, projectDesc, image, github, live }: Proj
   return (
     <div className='project'>
       <div className='image-wrapper'>
-        <img src={image} alt='' className='image' />
+        <img src={image} alt={`${name} screenshot`} className='image' />
       </div>
 
       <h2 className='skills'>{skills}</h2>

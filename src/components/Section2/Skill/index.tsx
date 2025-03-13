@@ -9,7 +9,7 @@ export const Skill = ({ skillName }: SkillProps) => {
   return (
     <div>
       <div className='skill-title'>
-        <img src={Verified} alt='' />
+        <img src={Verified} alt='verified icon' />
 
         <h3>{skillName}</h3>
       </div>
