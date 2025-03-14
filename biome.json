@@ -2,7 +2,7 @@
   "$schema": "https://biomejs.dev/schemas/1.8.2/schema.json",
   "files": {
     "ignoreUnknown": true,
-    "ignore": ["node_modules/**", "**/dist", "**/out", "public/**/*.js", "tsconfig.json", "tsconfig.*.json"]
+    "ignore": ["node_modules/**", "**/dist", "**/out", "public/**/*.js", "tsconfig.json", "tsconfig.*.json", "*.css"]
   },
   "formatter": {
     "attributePosition": "auto",
