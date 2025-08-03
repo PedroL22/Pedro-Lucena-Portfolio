@@ -14,7 +14,7 @@ export const Section3 = () => {
           name='22AI'
           skills='OpenRouter NextJS Framer Motion'
           projectDesc='T3 Chat clone for cloneathon. I really like the number 22.'
-          image='https://private-user-images.githubusercontent.com/40894497/455860209-6caad8af-f385-422c-9fab-26c1e0024f86.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTAxNDUwMDMsIm5iZiI6MTc1MDE0NDcwMywicGF0aCI6Ii80MDg5NDQ5Ny80NTU4NjAyMDktNmNhYWQ4YWYtZjM4NS00MjJjLTlmYWItMjZjMWUwMDI0Zjg2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjE3VDA3MTgyM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJlNjQzNGMzYzYyYzBmMWYyMzg5OTExZThkMTA2MDUyMzgxODM1YjFmZGJjNDMzYzk0YTE1MTFhMDlmYTgyYzEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.LvkB-JwyFuxUDffr86xj2FC-4Tc_JkvYDnSSY6qv0sY'
+          image='https://imgur.com/a/rTj9pqy'
           github='https://github.com/PedroL22/22ai'
           live='https://22ai.vercel.app/'
         />
