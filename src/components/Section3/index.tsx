@@ -14,7 +14,7 @@ export const Section3 = () => {
           name='22AI'
           skills='OpenRouter NextJS Framer Motion'
           projectDesc='T3 Chat clone for cloneathon. I really like the number 22.'
-          image='https://imgur.com/a/rTj9pqy'
+          image='https://i.imgur.com/hrYjGo7.jpeg'
           github='https://github.com/PedroL22/22ai'
           live='https://22ai.vercel.app/'
         />
