@@ -10,7 +10,7 @@ export const Grid3 = () => {
         <Skill skillName='AWS S3' />
         <Skill skillName='CI/CD' />
         <Skill skillName='GitHub Actions' />
-        <Skill skillName='Monorepo (Turborepo)' />
+        <Skill skillName='Turborepo' />
         <Skill skillName='Serverless' />
       </div>
     </>

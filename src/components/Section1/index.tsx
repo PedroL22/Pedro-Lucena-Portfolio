@@ -25,8 +25,8 @@ export const Section1 = () => {
         </h1>
 
         <p>
-          Full Stack Developer with {yearsOfExperience} years of experience building production fintech systems in Switzerland using
-          TypeScript, React, Node.js, and modern web technologies.
+          Full Stack Developer with {yearsOfExperience} years of experience building production fintech systems in
+          Switzerland using TypeScript, React, Node.js, and modern web technologies.
         </p>
       </div>
     </section>
