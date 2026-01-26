@@ -6,7 +6,7 @@ type ProjectProps = {
   projectDesc: string
   image: string
   github: string
-  live: string
+  live?: string
 }
 
 export const Project = ({ name, skills, projectDesc, image, github, live }: ProjectProps) => {
@@ -26,9 +26,11 @@ export const Project = ({ name, skills, projectDesc, image, github, live }: Proj
         gitHub
       </a>
 
-      <a className='live' href={live} target='_blank' rel='noreferrer'>
-        Live demo
-      </a>
+      {live && (
+        <a className='live' href={live} target='_blank' rel='noreferrer'>
+          Live demo
+        </a>
+      )}
     </div>
   )
 }
