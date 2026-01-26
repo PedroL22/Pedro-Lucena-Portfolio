@@ -2,6 +2,7 @@ import './styles.css'
 
 import { Grid1 } from './Grid1'
 import { Grid2 } from './Grid2'
+import { Grid3 } from './Grid3'
 
 export const Section2 = () => {
   return (
@@ -18,6 +19,10 @@ export const Section2 = () => {
 
           <div className='backend'>
             <Grid2 />
+          </div>
+
+          <div className='devops'>
+            <Grid3 />
           </div>
         </div>
       </div>

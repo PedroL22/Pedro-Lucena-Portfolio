@@ -1,5 +1,5 @@
 footer {
-  background-color: #092334;
+  background: linear-gradient(225deg, rgba(9, 35, 52, 1) 0%, rgba(13, 59, 88, 1) 100%);
   height: 25vh;
   display: flex;
   align-items: center;

@@ -38,7 +38,8 @@
 }
 
 .frontend,
-.backend {
+.backend,
+.devops {
   background-color: transparent;
   width: 400px;
   height: 350px;
@@ -50,7 +51,8 @@
 }
 
 .frontend:hover,
-.backend:hover {
+.backend:hover,
+.devops:hover {
   background-color: #0d3b58;
 }
 
@@ -71,7 +73,8 @@
   }
 
   .frontend,
-  .backend {
+  .backend,
+  .devops {
     width: 300px;
     height: fit-content;
     padding-bottom: 30px;

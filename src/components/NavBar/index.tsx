@@ -3,7 +3,6 @@ import { Link, animateScroll } from 'react-scroll'
 
 import icon1 from '~/assets/images/nav-icon.png'
 import icon2 from '~/assets/images/nav-icon2.png'
-import icon3 from '~/assets/images/nav-icon3.png'
 import './styles.css'
 
 import { NavButton } from './NavButton'
@@ -77,12 +76,6 @@ export const NavBar = ({ dark }: NavBarProps) => {
             <li>
               <a href='https://github.com/PedroL22/' target='_blank' rel='noreferrer'>
                 <img src={icon2} alt='github icon' />
-              </a>
-            </li>
-
-            <li>
-              <a href='https://twitter.com/lucena_l22/' target='_blank' rel='noreferrer'>
-                <img src={icon3} alt='twitter icon' />
               </a>
             </li>
           </ul>

@@ -6,14 +6,11 @@ export const Grid2 = () => {
       <h2>Back-End Development</h2>
 
       <div className='grid'>
-        <Skill skillName='node' />
-        <Skill skillName='prisma' />
-        <Skill skillName='postgreSQL' />
-        <Skill skillName='mongoDB' />
-        <Skill skillName='sQLite' />
-        <Skill skillName='redis' />
-        <Skill skillName='heroku' />
-        <Skill skillName='postman' />
+        <Skill skillName='Node.js' />
+        <Skill skillName='Bun' />
+        <Skill skillName='Hono' />
+        <Skill skillName='tRPC' />
+        <Skill skillName='Prisma' />
       </div>
     </>
   )
