@@ -5,8 +5,6 @@ import icon1 from '~/assets/images/nav-icon.png'
 import icon2 from '~/assets/images/nav-icon2.png'
 import './styles.css'
 
-import { NavButton } from './NavButton'
-
 type NavBarProps = {
   dark: boolean
 }
@@ -32,12 +30,6 @@ export const NavBar = ({ dark }: NavBarProps) => {
   const topAndClose = () => {
     animateScroll.scrollToTop()
     handleClick()
-  }
-
-  const handleClick2 = () => {
-    animateScroll.scrollTo(10000, { smooth: true, duration: 500 })
-    setActive('header-right')
-    setToggleIcon('hamburger')
   }
 
   return (
@@ -79,15 +71,6 @@ export const NavBar = ({ dark }: NavBarProps) => {
               </a>
             </li>
           </ul>
-
-          <li
-            onClick={handleClick2}
-            onKeyDown={(e) => keyHandler(e, handleClick2)}
-            className='button-connect'
-            tabIndex={0}
-          >
-            <NavButton onClick={handleClick2} text="Let's Connect" />
-          </li>
         </ul>
       </div>
 

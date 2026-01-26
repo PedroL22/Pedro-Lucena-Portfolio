@@ -1,13 +1,11 @@
-import { animateScroll } from 'react-scroll'
 import { ReactTyped } from 'react-typed'
 
-import rightArrow from '~/assets/images/right-arrow.png'
 import './styles.css'
 
 export const Section1 = () => {
-  const handleClick2 = () => {
-    animateScroll.scrollTo(5000, { smooth: true, duration: 500 })
-  }
+  const startYear = 2022
+  const currentYear = new Date().getFullYear()
+  const yearsOfExperience = currentYear - startYear
 
   return (
     <section className='section1' id='section1'>
@@ -27,15 +25,9 @@ export const Section1 = () => {
         </h1>
 
         <p>
-          Full Stack Developer expert in JavaScript and TypeScript with 5+ years of experience and a portfolio featuring
-          15+ projects.
+          Full Stack Developer with {yearsOfExperience} years of experience building production fintech systems in Switzerland using
+          TypeScript, React, Node.js, and modern web technologies.
         </p>
-
-        <div className='connect' onClick={handleClick2} onKeyDown={handleClick2} tabIndex={0}>
-          <h2 className='connect-text'>Let&#39;s connect!</h2>
-
-          <img src={rightArrow} alt='arrow' />
-        </div>
       </div>
     </section>
   )
