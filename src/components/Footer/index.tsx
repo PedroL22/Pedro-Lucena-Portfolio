@@ -1,5 +1,6 @@
 import icon1 from '~/assets/images/nav-icon.png'
 import icon2 from '~/assets/images/nav-icon2.png'
+import icon3 from '~/assets/images/nav-icon3.svg'
 import './styles.css'
 
 export const Footer = () => {
@@ -20,6 +21,11 @@ export const Footer = () => {
           <li>
             <a href='https://github.com/PedroL22/' target='_blank' rel='noreferrer'>
               <img src={icon2} alt='github icon' />
+            </a>
+          </li>
+          <li>
+            <a href='https://x.com/lucena_l22/' target='_blank' rel='noreferrer'>
+              <img src={icon3} alt='x icon' />
             </a>
           </li>
         </ul>
