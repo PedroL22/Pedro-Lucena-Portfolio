@@ -8,10 +8,18 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
-dist-ssr
+.next
+out
 *.local
 *.tsbuildinfo
+
+# Next.js
+.env*.local
+.env
+
+# Vite (legacy)
+dist
+dist-ssr
 
 *.db
 # Editor directories and files

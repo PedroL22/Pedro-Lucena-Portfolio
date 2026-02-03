@@ -1,37 +1,49 @@
-import icon1 from '~/assets/images/nav-icon.png'
-import icon2 from '~/assets/images/nav-icon2.png'
-import icon3 from '~/assets/images/nav-icon3.svg'
-import './styles.css'
+import Image from 'next/image'
 
 export const Footer = () => {
   return (
-    <footer>
-      <div className='footer-logo'>
-        <a href='/'>
-          <h1>pedro lucena</h1>
+    <footer className='flex h-[25vh] items-center justify-between bg-gradient-to-br from-tertiary to-secondary px-[5vw] max-[450px]:block max-[450px]:h-fit 2xl:px-[28vw]'>
+      <div className='max-[450px]:pt-[5vh] max-[450px]:text-center'>
+        <a href='/' className='text-white no-underline'>
+          <h1 className='whitespace-nowrap font-normal text-[24px] text-white capitalize'>pedro lucena</h1>
         </a>
       </div>
       <div>
-        <ul>
-          <li>
-            <a href='https://www.linkedin.com/in/pedrolucena22/' target='_blank' rel='noreferrer'>
-              <img src={icon1} alt='linkedin icon' />
+        <ul className='flex p-0 max-[450px]:mx-auto max-[450px]:w-[50vw]'>
+          <li className='px-2.5 py-[15px]'>
+            <a
+              href='https://www.linkedin.com/in/pedrolucena22/'
+              target='_blank'
+              rel='noreferrer'
+              className='transition-opacity hover:opacity-80'
+            >
+              <Image src='/images/nav-icon.png' alt='linkedin icon' width={22} height={22} />
             </a>
           </li>
-          <li>
-            <a href='https://github.com/PedroL22/' target='_blank' rel='noreferrer'>
-              <img src={icon2} alt='github icon' />
+          <li className='px-2.5 py-[15px]'>
+            <a
+              href='https://github.com/PedroL22/'
+              target='_blank'
+              rel='noreferrer'
+              className='transition-opacity hover:opacity-80'
+            >
+              <Image src='/images/nav-icon2.png' alt='github icon' width={22} height={22} />
             </a>
           </li>
-          <li>
-            <a href='https://x.com/lucena_l22/' target='_blank' rel='noreferrer'>
-              <img src={icon3} alt='x icon' />
+          <li className='px-2.5 py-[15px]'>
+            <a
+              href='https://x.com/lucena_l22/'
+              target='_blank'
+              rel='noreferrer'
+              className='transition-opacity hover:opacity-80'
+            >
+              <Image src='/images/nav-icon3.svg' alt='x icon' width={22} height={22} />
             </a>
           </li>
         </ul>
-        <p>
-          Made with <span className='heart'>♥</span> by{' '}
-          <a href='https://github.com/PedroL22/' target='_blank' rel='noreferrer'>
+        <p className='pb-[5vh] text-text-muted normal-case max-[450px]:text-center'>
+          Made with <span className='text-[#dc143c]'>♥</span> by{' '}
+          <a href='https://github.com/PedroL22/' target='_blank' rel='noreferrer' className='text-white no-underline'>
             Pedro Lucena
           </a>
         </p>

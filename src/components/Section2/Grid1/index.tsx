@@ -1,12 +1,11 @@
 import { Skill } from '../Skill'
-import './styles.css'
 
 export const Grid1 = () => {
   return (
     <>
-      <h2>Front-End Development</h2>
+      <h2 className='py-[30px] font-normal'>Front-End Development</h2>
 
-      <div className='grid'>
+      <div className='grid grid-cols-2 justify-around text-left text-[15px]'>
         <Skill skillName='React 19' />
         <Skill skillName='Next.js 15' />
         <Skill skillName='TypeScript' />

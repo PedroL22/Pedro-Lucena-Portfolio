@@ -1,14 +1,14 @@
+'use client'
+
 import { useEffect, useState } from 'react'
 
-import './index.css'
+import { Footer } from '@/components/Footer'
+import { NavBar } from '@/components/NavBar'
+import { Section1 } from '@/components/Section1'
+import { Section2 } from '@/components/Section2'
+import { Section3 } from '@/components/Section3'
 
-import { Footer } from '~/components/Footer'
-import { NavBar } from '~/components/NavBar'
-import { Section1 } from '~/components/Section1'
-import { Section2 } from '~/components/Section2'
-import { Section3 } from '~/components/Section3'
-
-export const Home = () => {
+export default function Home() {
   const [darkHeader, setDarkHeader] = useState(false)
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export const Home = () => {
   }, [])
 
   return (
-    <div className='Home'>
+    <div>
       <NavBar dark={darkHeader} />
 
       <Section1 />
