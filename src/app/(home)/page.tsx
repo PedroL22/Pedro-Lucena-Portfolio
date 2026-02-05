@@ -1,5 +1,5 @@
 import { ProjectCard } from './components/project-card'
-import { Skill } from './components/skill'
+import { SkillCategory } from './components/skill-category'
 import { TypedStrings } from './components/typed-strings'
 
 export default function HomePage() {
@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <main>
       <section id='section1' className='flex h-screen w-full items-center overflow-x-hidden pt-[100px]'>
-        <div className='mx-auto w-full max-w-[1536px] px-10 text-white max-[600px]:px-0'>
+        <div className='mx-auto w-full max-w-[1536px] px-4 text-white md:px-10'>
           <h2 className='w-fit whitespace-nowrap border-2 border-teal bg-linear-to-r from-teal to-primary p-2.5 font-medium text-xl max-[600px]:mx-auto max-[600px]:mb-[30px]'>
             Welcome to my Portfolio
           </h2>
@@ -28,51 +28,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id='section2' className='mb-[10vh] overflow-hidden'>
-        <div className='mx-auto h-min w-[90vw] rounded-[50px] bg-linear-to-br from-tertiary to-secondary 2xl:w-[45vw]'>
-          <h1 className='block pt-[50px] text-center font-medium text-white'>Skills</h1>
+      <section id='section2' className='mb-[10vh] flex items-center justify-center overflow-hidden px-4 md:px-10'>
+        <div className='h-min w-full max-w-[1536px] rounded-[50px] bg-linear-to-tr from-secondary to-tertiary px-4 py-14 md:px-14'>
+          <h1 className='text-center font-medium text-3xl text-white'>Skills</h1>
 
-          <p className='py-[15px] text-center text-text-muted'>What skills do I have?</p>
+          <p className='py-4 text-center text-text-muted'>What skills do I have?</p>
 
           {/* Skills grid */}
-          <div className='mx-auto flex min-h-fit w-[90vw] justify-between gap-5 p-10 pt-[40px] pb-[120px] max-[970px]:block max-[970px]:overflow-hidden max-[970px]:pt-[40px] max-[970px]:pb-[80px] 2xl:w-[45vw]'>
-            <div className='mx-auto h-[275px] w-[400px] rounded-[25px] border-2 border-secondary bg-transparent px-6 text-center text-white transition-colors hover:bg-secondary max-[970px]:mb-[30px] max-[970px]:h-fit max-[970px]:w-[300px] max-[970px]:pb-[30px]'>
-              <h2 className='py-[30px]'>Front-End Development</h2>
+          <div className='grid grid-cols-1 gap-6 pt-4 md:grid-cols-2 md:p-10 xl:grid-cols-3'>
+            <SkillCategory
+              title='Front-End Development'
+              skills={['React 19', 'Next.js 15', 'TypeScript', 'Tailwind CSS', 'TanStack Query', 'Zustand']}
+            />
 
-              <div className='grid grid-cols-2 justify-around text-left text-[15px]'>
-                <Skill skillName='React 19' />
-                <Skill skillName='Next.js 15' />
-                <Skill skillName='TypeScript' />
-                <Skill skillName='Tailwind CSS' />
-                <Skill skillName='TanStack Query' />
-                <Skill skillName='Zustand' />
-              </div>
-            </div>
+            <SkillCategory title='Back-End Development' skills={['Node.js', 'Bun', 'Hono', 'tRPC', 'Prisma']} />
 
-            <div className='mx-auto h-[275px] w-[400px] rounded-[25px] border-2 border-secondary bg-transparent px-6 text-center text-white transition-colors hover:bg-secondary max-[970px]:mb-[30px] max-[970px]:h-fit max-[970px]:w-[300px] max-[970px]:pb-[30px]'>
-              <h2 className='py-[30px]'>Back-End Development</h2>
-
-              <div className='grid grid-cols-2 justify-around text-left text-[15px]'>
-                <Skill skillName='Node.js' />
-                <Skill skillName='Bun' />
-                <Skill skillName='Hono' />
-                <Skill skillName='tRPC' />
-                <Skill skillName='Prisma' />
-              </div>
-            </div>
-
-            <div className='mx-auto h-[275px] w-[400px] rounded-[25px] border-2 border-secondary bg-transparent px-6 text-center text-white transition-colors hover:bg-secondary max-[970px]:mb-[30px] max-[970px]:h-fit max-[970px]:w-[300px] max-[970px]:pb-[30px]'>
-              <h2 className='py-[30px]'>DevOps &amp; Architecture</h2>
-
-              <div className='grid grid-cols-2 justify-around text-left text-[15px]'>
-                <Skill skillName='Docker' />
-                <Skill skillName='AWS S3' />
-                <Skill skillName='CI/CD' />
-                <Skill skillName='GitHub Actions' />
-                <Skill skillName='Turborepo' />
-                <Skill skillName='Serverless' />
-              </div>
-            </div>
+            <SkillCategory
+              title='DevOps & Architecture'
+              skills={['Docker', 'AWS S3', 'CI/CD', 'GitHub Actions', 'Turborepo', 'Serverless']}
+            />
           </div>
         </div>
       </section>

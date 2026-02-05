@@ -1,16 +1,15 @@
 import Image from 'next/image'
+import type { ComponentProps } from 'react'
 
-type SkillProps = {
+interface SkillProps extends ComponentProps<'div'> {
   skillName: string
 }
 
-export const Skill = ({ skillName }: SkillProps) => {
+export const Skill = ({ skillName, ...props }: SkillProps) => {
   return (
-    <div>
-      <div className='inline-flex items-center py-[5px]'>
-        <Image src='/images/verified.png' alt='verified icon' width={15} height={15} className='mr-2.5' />
-        <h3 className='text-white capitalize'>{skillName}</h3>
-      </div>
+    <div {...props} className='inline-flex items-center py-[5px]'>
+      <Image src='/images/verified.png' alt='verified icon' width={15} height={15} className='mr-2.5' />
+      <h3 className='text-white capitalize'>{skillName}</h3>
     </div>
   )
 }

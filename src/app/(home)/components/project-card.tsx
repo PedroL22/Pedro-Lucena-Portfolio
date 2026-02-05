@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import type { ComponentProps } from 'react'
 
-type ProjectCardProps = {
+interface ProjectCardProps extends ComponentProps<'div'> {
   name: string
   skills: string
   projectDesc: string
@@ -9,9 +10,9 @@ type ProjectCardProps = {
   live?: string
 }
 
-export const ProjectCard = ({ name, skills, projectDesc, image, github, live }: ProjectCardProps) => {
+export const ProjectCard = ({ name, skills, projectDesc, image, github, live, ...props }: ProjectCardProps) => {
   return (
-    <div className='flex h-[400px] w-[275px] flex-col overflow-hidden rounded-[25px] bg-primary p-4'>
+    <div {...props} className='flex h-[400px] w-[275px] flex-col overflow-hidden rounded-[25px] bg-primary p-4'>
       <div className='h-[150px] w-[250px] shrink-0 self-center overflow-hidden rounded-[25px]'>
         <Image
           src={image}
