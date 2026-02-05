@@ -9,9 +9,9 @@ export default function HomePage() {
 
   return (
     <main>
-      <section id='section1' className='mt-[100px] h-screen w-full overflow-x-hidden'>
-        <div className='absolute top-[55%] -translate-y-1/2 px-[5vw] text-white max-[600px]:pt-[100px] max-[670px]:pt-[150px] 2xl:px-[28vw]'>
-          <h2 className='w-fit whitespace-nowrap border-2 border-teal bg-linear-to-r from-primary to-teal p-2.5 font-medium max-[600px]:mx-auto max-[600px]:mb-[30px] max-[600px]:max-w-fit'>
+      <section id='section1' className='flex h-screen w-full items-center overflow-x-hidden pt-[100px]'>
+        <div className='mx-auto w-full max-w-[1536px] px-10 text-white max-[600px]:px-0'>
+          <h2 className='w-fit whitespace-nowrap border-2 border-teal bg-linear-to-r from-teal to-primary p-2.5 font-medium text-xl max-[600px]:mx-auto max-[600px]:mb-[30px]'>
             Welcome to my Portfolio
           </h2>
 
@@ -21,7 +21,7 @@ export default function HomePage() {
             <br className='hidden max-[600px]:block' /> Developer
           </h1>
 
-          <p className='max-w-[650px] py-[15px] text-text-muted normal-case max-[600px]:mx-auto max-[600px]:max-w-max max-[600px]:text-center'>
+          <p className='max-w-[650px] py-[15px] text-text-muted max-[600px]:mx-auto max-[600px]:max-w-max max-[600px]:text-center'>
             Full Stack Developer with {yearsOfExperience} years of experience building production fintech systems in
             Switzerland using TypeScript, React, Node.js, and modern web technologies.
           </p>
@@ -32,7 +32,7 @@ export default function HomePage() {
         <div className='mx-auto h-min w-[90vw] rounded-[50px] bg-linear-to-br from-tertiary to-secondary 2xl:w-[45vw]'>
           <h1 className='block pt-[50px] text-center font-medium text-white'>Skills</h1>
 
-          <p className='py-[15px] text-center text-text-muted normal-case'>What skills do I have?</p>
+          <p className='py-[15px] text-center text-text-muted'>What skills do I have?</p>
 
           {/* Skills grid */}
           <div className='mx-auto flex min-h-fit w-[90vw] justify-between gap-5 p-10 pt-[40px] pb-[120px] max-[970px]:block max-[970px]:overflow-hidden max-[970px]:pt-[40px] max-[970px]:pb-[80px] 2xl:w-[45vw]'>
@@ -80,7 +80,7 @@ export default function HomePage() {
       <section id='section3' className='h-auto overflow-hidden bg-tertiary pb-[50px]'>
         <h1 className='block pt-[50px] text-center font-medium text-white'>Projects</h1>
 
-        <p className='py-[15px] text-center text-text-muted normal-case'>My recent work</p>
+        <p className='py-[15px] text-center text-text-muted'>My recent work</p>
 
         {/* Projects grid */}
         <div className='mx-auto grid max-w-7xl grid-cols-3 content-center justify-center gap-6 max-[640px]:grid-cols-1 max-[990px]:grid-cols-2 min-[1920px]:grid-cols-4'>

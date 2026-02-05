@@ -6,11 +6,10 @@ import { useEffect, useState } from 'react'
 import { twMerge } from 'tailwind-merge'
 import { tv } from 'tailwind-variants'
 
-const headerNavVariants = tv({
+const headerVariants = tv({
   base: [
-    'fixed top-0 left-0 z-10 flex h-[100px] w-screen items-center justify-between',
-    'px-[5vw] transition-all duration-200',
-    'max-[840px]:px-[30px] 2xl:px-[18vw]',
+    'fixed top-0 inset-x-0 z-10 h-[100px]',
+    'transition-all duration-200',
     // On mobile always solid
     'max-[840px]:bg-secondary',
   ],
@@ -29,6 +28,9 @@ const headerNavVariants = tv({
     mobile: 'closed',
   },
 })
+
+const headerWrapperClasses =
+  'flex h-full max-w-[1536px] mx-auto items-center justify-between px-10 max-[840px]:px-[30px]'
 
 const headerMenuVariants = tv({
   base: [
@@ -104,114 +106,116 @@ export const Header = () => {
   const themeState = darkHeader ? 'scrolled' : 'transparent'
 
   return (
-    <header data-slot='header' className={twMerge(headerNavVariants({ theme: themeState, mobile: mobileState }))}>
-      <a
-        href='/'
-        onClick={(e) => {
-          e.preventDefault()
-          topAndClose()
-        }}
-        onKeyDown={(e) => keyHandler(e, topAndClose)}
-        className='text-white no-underline'
-        data-slot='header-brand'
-      >
-        <h1 className='whitespace-nowrap text-2xl text-white'>Pedro Lucena</h1>
-      </a>
+    <header data-slot='header' className={twMerge(headerVariants({ theme: themeState, mobile: mobileState }))}>
+      <div data-slot='header-wrapper' className={twMerge(headerWrapperClasses)}>
+        <a
+          href='/'
+          onClick={(e) => {
+            e.preventDefault()
+            topAndClose()
+          }}
+          onKeyDown={(e) => keyHandler(e, topAndClose)}
+          className='text-white no-underline'
+          data-slot='header-brand'
+        >
+          <h1 className='whitespace-nowrap text-2xl text-white'>Pedro Lucena</h1>
+        </a>
 
-      <nav data-slot='header-nav'>
-        <ul data-slot='header-menu' className={twMerge(headerMenuVariants({ mobile: mobileState }))}>
-          <li
-            onClick={topAndClose}
-            onKeyDown={(e) => keyHandler(e, topAndClose)}
-            tabIndex={0}
-            className={twMerge(headerMenuItemClasses)}
-          >
-            <a href='/' onClick={(e) => e.preventDefault()} className='text-inherit no-underline'>
-              home
-            </a>
-          </li>
-
-          <li
-            onClick={() => scrollToSection('section2')}
-            onKeyDown={(e) => keyHandler(e, () => scrollToSection('section2'))}
-            tabIndex={0}
-            className={twMerge(headerMenuItemClasses)}
-          >
-            skills
-          </li>
-
-          <li
-            onClick={() => scrollToSection('section3')}
-            onKeyDown={(e) => keyHandler(e, () => scrollToSection('section3'))}
-            tabIndex={0}
-            className={twMerge(headerMenuItemClasses)}
-          >
-            projects
-          </li>
-
-          <ul className='flex gap-8' data-slot='header-social'>
-            <li>
-              <a
-                href='https://www.linkedin.com/in/pedrolucena22/'
-                target='_blank'
-                rel='noreferrer'
-                className='transition-opacity hover:opacity-80'
-              >
-                <Image src='/images/nav-icon.png' alt='linkedin icon' width={22} height={22} />
+        <nav data-slot='header-nav'>
+          <ul data-slot='header-menu' className={twMerge(headerMenuVariants({ mobile: mobileState }))}>
+            <li
+              onClick={topAndClose}
+              onKeyDown={(e) => keyHandler(e, topAndClose)}
+              tabIndex={0}
+              className={twMerge(headerMenuItemClasses)}
+            >
+              <a href='/' onClick={(e) => e.preventDefault()} className='text-inherit no-underline'>
+                home
               </a>
             </li>
 
-            <li>
-              <a
-                href='https://github.com/PedroL22/'
-                target='_blank'
-                rel='noreferrer'
-                className='transition-opacity hover:opacity-80'
-              >
-                <Image src='/images/nav-icon2.png' alt='github icon' width={22} height={22} />
-              </a>
+            <li
+              onClick={() => scrollToSection('section2')}
+              onKeyDown={(e) => keyHandler(e, () => scrollToSection('section2'))}
+              tabIndex={0}
+              className={twMerge(headerMenuItemClasses)}
+            >
+              skills
             </li>
 
-            <li>
-              <a
-                href='https://x.com/lucena_l22/'
-                target='_blank'
-                rel='noreferrer'
-                className='transition-opacity hover:opacity-80'
-              >
-                <Image src='/images/nav-icon3.svg' alt='x icon' width={22} height={22} />
-              </a>
+            <li
+              onClick={() => scrollToSection('section3')}
+              onKeyDown={(e) => keyHandler(e, () => scrollToSection('section3'))}
+              tabIndex={0}
+              className={twMerge(headerMenuItemClasses)}
+            >
+              projects
             </li>
+
+            <ul className='flex gap-8' data-slot='header-social'>
+              <li>
+                <a
+                  href='https://www.linkedin.com/in/pedrolucena22/'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='transition-opacity hover:opacity-80'
+                >
+                  <Image src='/images/nav-icon.png' alt='linkedin icon' width={22} height={22} />
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href='https://github.com/PedroL22/'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='transition-opacity hover:opacity-80'
+                >
+                  <Image src='/images/nav-icon2.png' alt='github icon' width={22} height={22} />
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href='https://x.com/lucena_l22/'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='transition-opacity hover:opacity-80'
+                >
+                  <Image src='/images/nav-icon3.svg' alt='x icon' width={22} height={22} />
+                </a>
+              </li>
+            </ul>
           </ul>
-        </ul>
-      </nav>
+        </nav>
 
-      <button
-        type='button'
-        aria-label={active ? 'Close navigation menu' : 'Open navigation menu'}
-        className='hidden cursor-pointer max-[840px]:block'
-        onClick={hamburger}
-        data-slot='header-menu-toggle'
-      >
-        <span
-          className={twMerge(
-            'mb-[5px] block h-[3px] w-[25px] bg-white transition-all duration-300',
-            active ? 'translate-y-[8px] rotate-45' : ''
-          )}
-        />
-        <span
-          className={twMerge(
-            'mb-[5px] block h-[3px] w-[25px] bg-white transition-all duration-300',
-            active ? 'opacity-0' : ''
-          )}
-        />
-        <span
-          className={twMerge(
-            'block h-[3px] w-[25px] bg-white transition-all duration-300',
-            active ? 'translate-y-[-8px] -rotate-45' : ''
-          )}
-        />
-      </button>
+        <button
+          type='button'
+          aria-label={active ? 'Close navigation menu' : 'Open navigation menu'}
+          className='hidden cursor-pointer max-[840px]:block'
+          onClick={hamburger}
+          data-slot='header-menu-toggle'
+        >
+          <span
+            className={twMerge(
+              'mb-[5px] block h-[3px] w-[25px] bg-white transition-all duration-300',
+              active ? 'translate-y-[8px] rotate-45' : ''
+            )}
+          />
+          <span
+            className={twMerge(
+              'mb-[5px] block h-[3px] w-[25px] bg-white transition-all duration-300',
+              active ? 'opacity-0' : ''
+            )}
+          />
+          <span
+            className={twMerge(
+              'block h-[3px] w-[25px] bg-white transition-all duration-300',
+              active ? 'translate-y-[-8px] -rotate-45' : ''
+            )}
+          />
+        </button>
+      </div>
     </header>
   )
 }
