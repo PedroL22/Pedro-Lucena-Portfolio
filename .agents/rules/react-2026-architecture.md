@@ -1,10 +1,16 @@
+---
+alwaysApply: false
+description: Definitive guide for React 19+, TanStack Query v5, and Zod architecture. Enforces optimistic UI, view transitions, and strict type safety.
+globs: "**/*.{ts,tsx,json,lock,yaml}"
+---
+
 # React 2026 Architecture Guidelines
 
 ## 0. Environment Awareness (Package Manager)
 Before generating any terminal commands (install, run, build), you **must** detect the active package manager by scanning the project root for lockfiles.
 
 **Priority Detection Order:**
-1.  `bun.lockb` → Use **bun** (e.g., `bun add`, `bun run dev`)
+1.  `bun.lock` → Use **bun** (e.g., `bun add`, `bun run dev`)
 2.  `pnpm-lock.yaml` → Use **pnpm** (e.g., `pnpm add`, `pnpm dev`)
 3.  `yarn.lock` → Use **yarn** (e.g., `yarn add`, `yarn dev`)
 4.  `package-lock.json` → Use **npm** (e.g., `npm install`, `npm run dev`)
