@@ -21,7 +21,7 @@ export default function HomePage() {
             <br className='hidden max-[600px]:block' /> Developer
           </h1>
 
-          <p className='max-w-[650px] py-[15px] font-normal text-text-muted normal-case max-[600px]:mx-auto max-[600px]:max-w-max max-[600px]:text-center'>
+          <p className='max-w-[650px] py-[15px] text-text-muted normal-case max-[600px]:mx-auto max-[600px]:max-w-max max-[600px]:text-center'>
             Full Stack Developer with {yearsOfExperience} years of experience building production fintech systems in
             Switzerland using TypeScript, React, Node.js, and modern web technologies.
           </p>
@@ -32,12 +32,12 @@ export default function HomePage() {
         <div className='mx-auto h-min w-[90vw] rounded-[50px] bg-linear-to-br from-tertiary to-secondary 2xl:w-[45vw]'>
           <h1 className='block pt-[50px] text-center font-medium text-white'>Skills</h1>
 
-          <p className='py-[15px] text-center font-normal text-text-muted normal-case'>What skills do I have?</p>
+          <p className='py-[15px] text-center text-text-muted normal-case'>What skills do I have?</p>
 
           {/* Skills grid */}
           <div className='mx-auto flex min-h-fit w-[90vw] justify-between gap-5 p-10 pt-[40px] pb-[120px] max-[970px]:block max-[970px]:overflow-hidden max-[970px]:pt-[40px] max-[970px]:pb-[80px] 2xl:w-[45vw]'>
             <div className='mx-auto h-[275px] w-[400px] rounded-[25px] border-2 border-secondary bg-transparent px-6 text-center text-white transition-colors hover:bg-secondary max-[970px]:mb-[30px] max-[970px]:h-fit max-[970px]:w-[300px] max-[970px]:pb-[30px]'>
-              <h2 className='py-[30px] font-normal'>Front-End Development</h2>
+              <h2 className='py-[30px]'>Front-End Development</h2>
 
               <div className='grid grid-cols-2 justify-around text-left text-[15px]'>
                 <Skill skillName='React 19' />
@@ -50,7 +50,7 @@ export default function HomePage() {
             </div>
 
             <div className='mx-auto h-[275px] w-[400px] rounded-[25px] border-2 border-secondary bg-transparent px-6 text-center text-white transition-colors hover:bg-secondary max-[970px]:mb-[30px] max-[970px]:h-fit max-[970px]:w-[300px] max-[970px]:pb-[30px]'>
-              <h2 className='py-[30px] font-normal'>Back-End Development</h2>
+              <h2 className='py-[30px]'>Back-End Development</h2>
 
               <div className='grid grid-cols-2 justify-around text-left text-[15px]'>
                 <Skill skillName='Node.js' />
@@ -62,7 +62,7 @@ export default function HomePage() {
             </div>
 
             <div className='mx-auto h-[275px] w-[400px] rounded-[25px] border-2 border-secondary bg-transparent px-6 text-center text-white transition-colors hover:bg-secondary max-[970px]:mb-[30px] max-[970px]:h-fit max-[970px]:w-[300px] max-[970px]:pb-[30px]'>
-              <h2 className='py-[30px] font-normal'>DevOps &amp; Architecture</h2>
+              <h2 className='py-[30px]'>DevOps &amp; Architecture</h2>
 
               <div className='grid grid-cols-2 justify-around text-left text-[15px]'>
                 <Skill skillName='Docker' />
@@ -80,7 +80,7 @@ export default function HomePage() {
       <section id='section3' className='h-auto overflow-hidden bg-tertiary pb-[50px]'>
         <h1 className='block pt-[50px] text-center font-medium text-white'>Projects</h1>
 
-        <p className='py-[15px] text-center font-normal text-text-muted normal-case'>My recent work</p>
+        <p className='py-[15px] text-center text-text-muted normal-case'>My recent work</p>
 
         {/* Projects grid */}
         <div className='mx-auto grid max-w-7xl grid-cols-3 content-center justify-center gap-6 max-[640px]:grid-cols-1 max-[990px]:grid-cols-2 min-[1920px]:grid-cols-4'>

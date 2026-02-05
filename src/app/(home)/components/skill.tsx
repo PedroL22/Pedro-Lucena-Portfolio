@@ -9,7 +9,7 @@ export const Skill = ({ skillName }: SkillProps) => {
     <div>
       <div className='inline-flex items-center py-[5px]'>
         <Image src='/images/verified.png' alt='verified icon' width={15} height={15} className='mr-2.5' />
-        <h3 className='font-normal text-white capitalize'>{skillName}</h3>
+        <h3 className='text-white capitalize'>{skillName}</h3>
       </div>
     </div>
   )

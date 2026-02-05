@@ -2,16 +2,15 @@ import Image from 'next/image'
 
 export const Footer = () => {
   return (
-    <footer className='flex h-[25vh] items-center justify-between bg-linear-to-br from-tertiary to-secondary px-[5vw] max-[450px]:block max-[450px]:h-fit 2xl:px-[18vw]'>
-      <div className='max-[450px]:pt-[5vh] max-[450px]:text-center'>
-        <a href='/' className='text-white no-underline'>
-          <h1 className='whitespace-nowrap font-normal text-[24px] text-white capitalize'>pedro lucena</h1>
-        </a>
-      </div>
+    <footer className='flex h-[25vh] items-center justify-between space-y-6 bg-linear-to-r from-secondary to-tertiary px-[5vw] max-[450px]:h-[30vh] max-[450px]:flex-col max-[450px]:justify-center max-[450px]:space-y-7'>
+      <a href='/' className='whitespace-nowrap text-2xl text-white no-underline max-[450px]:text-center'>
+        Pedro Lucena
+      </a>
 
-      <div>
-        <ul className='flex justify-between p-0 max-[450px]:mx-auto max-[450px]:w-[50vw]'>
-          <li className='px-2.5 py-[15px]'>
+      <div className='flex flex-col space-y-6 max-[450px]:items-center max-[450px]:space-y-7'>
+        {/* Socials */}
+        <ul className='flex justify-around max-[450px]:w-[50vw]'>
+          <li>
             <a
               href='https://www.linkedin.com/in/pedrolucena22/'
               target='_blank'
@@ -22,7 +21,7 @@ export const Footer = () => {
             </a>
           </li>
 
-          <li className='px-2.5 py-[15px]'>
+          <li>
             <a
               href='https://github.com/PedroL22/'
               target='_blank'
@@ -33,7 +32,7 @@ export const Footer = () => {
             </a>
           </li>
 
-          <li className='px-2.5 py-[15px]'>
+          <li>
             <a
               href='https://x.com/lucena_l22/'
               target='_blank'
@@ -45,7 +44,7 @@ export const Footer = () => {
           </li>
         </ul>
 
-        <p className='pb-[5vh] text-text-muted normal-case max-[450px]:text-center'>
+        <p className='font-light text-text-muted max-[450px]:text-center'>
           Made with <span className='text-[#dc143c]'>♥</span> by{' '}
           <a href='https://github.com/PedroL22/' target='_blank' rel='noreferrer' className='text-white no-underline'>
             Pedro Lucena

@@ -26,6 +26,8 @@
     "@types/react": "^19.2.10",
     "@types/react-dom": "^19.2.3",
     "husky": "^9.1.7",
+    "tailwind-merge": "^3.4.0",
+    "tailwind-variants": "^3.2.2",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
   }

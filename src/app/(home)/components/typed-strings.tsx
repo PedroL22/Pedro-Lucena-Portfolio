@@ -9,7 +9,6 @@ export const TypedStrings = () => {
       typeSpeed={50}
       backSpeed={60}
       loop
-      className='font-normal'
     />
   )
 }

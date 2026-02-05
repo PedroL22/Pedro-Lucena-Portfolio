@@ -26,9 +26,7 @@ export const ProjectCard = ({ name, skills, projectDesc, image, github, live }: 
 
       <h3 className='mb-[5px] text-left font-medium text-white'>{name}</h3>
 
-      <p className='h-[85px] max-w-[90%] select-text font-normal text-[14px] text-gray-100 normal-case'>
-        {projectDesc}
-      </p>
+      <p className='h-[85px] max-w-[90%] select-text text-[14px] text-gray-100 normal-case'>{projectDesc}</p>
 
       <div className='mt-4 flex items-center gap-2'>
         <a
