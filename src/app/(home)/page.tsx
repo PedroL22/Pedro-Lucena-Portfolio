@@ -42,7 +42,7 @@ export default function HomePage() {
             title='Full Stack Developer'
             company='datalution GmbH, Switzerland'
             period='Jan 2024 - Present'
-            description={`Architecting and developing fintech applications in a Turborepo monorepo with multiple interconnected projects.
+            description={`Architecting and developing **fintech applications** in a **Turborepo monorepo** with multiple interconnected projects.
 - **Type-Safe APIs**: tRPC architecture with batch streaming links and end-to-end type-safety across 50+ routers.
 - **React 19**: Implementation of useTransition, useOptimistic and useActionState for optimistic UI across 47+ forms.
 - **Internationalization**: next-intl with dynamic localized routes in 4 languages (DE/EN/FR/IT) and 200+ pathnames.
@@ -57,9 +57,9 @@ export default function HomePage() {
             title='Front-End Developer'
             company='Support Informática, Brazil'
             period='Jan 2023 - Dec 2023'
-            description={`Developed custom e-commerce templates for stores and maintained a React Native app used by hundreds of establishments across the city, performing major Expo version upgrades, implementing new features and fixing a critical bug that displayed incorrect monetary values.
-- Led optimization initiatives on the e-commerce website, reducing latency by 70% (from 5 to 1.5 seconds), supporting high-traffic operations.
-- Architected and deployed the stores CRM from scratch, building the system structure and core functionalities.`}
+            description={`Developed custom **e-commerce templates** for stores and maintained a **React Native** app used by hundreds of establishments across the city, performing **major Expo version upgrades**, implementing new features and fixing a **critical bug** that displayed incorrect monetary values.
+- Led **optimization initiatives** on the e-commerce website, **reducing latency by 70%** (from 5 to 1.5 seconds), supporting high-traffic operations.
+- Architected and deployed the **stores CRM** from scratch, building the system structure and core functionalities.`}
             technologies={['React', 'React Native', 'TypeScript', 'TanStack Query', 'Zustand', 'Material UI']}
           />
 
