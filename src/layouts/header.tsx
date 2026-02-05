@@ -1,14 +1,28 @@
 'use client'
 
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-type NavBarProps = {
-  dark: boolean
-}
-
-export const NavBar = ({ dark }: NavBarProps) => {
+export const Header = () => {
+  const [darkHeader, setDarkHeader] = useState(false)
   const [active, setActive] = useState(false)
+
+  useEffect(() => {
+    const scrollListener = () => {
+      if (window.scrollY > 10) {
+        setDarkHeader(true)
+      } else {
+        setDarkHeader(false)
+      }
+    }
+
+    window.addEventListener('scroll', scrollListener)
+
+    return () => {
+      window.removeEventListener('scroll', scrollListener)
+    }
+  }, [])
+
 
   const keyHandler = (e: React.KeyboardEvent, callback: () => void) => {
     if (e.key === 'Enter' || e.key === ' ') {
@@ -41,8 +55,8 @@ export const NavBar = ({ dark }: NavBarProps) => {
 
   return (
     <nav
-      className={`fixed z-10 flex h-[100px] w-screen items-center justify-between px-[5vw] transition-all duration-200 max-[840px]:px-[30px] 2xl:px-[28vw] ${
-        dark ? 'bg-black/50 backdrop-blur-[10px]' : 'bg-transparent'
+      className={`fixed top-0 left-0 z-10 flex h-[100px] w-screen items-center justify-between px-[5vw] transition-all duration-200 max-[840px]:px-[30px] 2xl:px-[28vw] ${
+        darkHeader ? 'bg-black/50 backdrop-blur-[10px]' : 'bg-transparent'
       } ${active ? 'max-[840px]:bg-secondary' : ''}`}
     >
       <div>
@@ -61,7 +75,7 @@ export const NavBar = ({ dark }: NavBarProps) => {
 
       <div className='pt-4'>
         <ul
-          className={`flex text-text-muted transition-all duration-300 max-[840px]:fixed max-[840px]:top-0 max-[840px]:right-[-100%] max-[840px]:h-auto max-[840px]:w-full max-[840px]:flex-col max-[840px]:items-center max-[840px]:bg-secondary max-[840px]:pt-[70px] max-[840px]:pb-[100vh] ${
+          className={`flex text-text-muted transition-all duration-300 max-[840px]:fixed max-[840px]:top-0 max-[840px]:-right-full max-[840px]:h-auto max-[840px]:w-full max-[840px]:flex-col max-[840px]:items-center max-[840px]:bg-secondary max-[840px]:pt-[70px] max-[840px]:pb-[100vh] ${
             active ? 'max-[840px]:right-0' : ''
           }`}
         >
@@ -131,11 +145,11 @@ export const NavBar = ({ dark }: NavBarProps) => {
         </ul>
       </div>
 
-      <div
-        className={`hidden cursor-pointer max-[840px]:block`}
+      <button
+        type='button'
+        aria-label={active ? 'Close navigation menu' : 'Open navigation menu'}
+        className='hidden cursor-pointer max-[840px]:block'
         onClick={hamburger}
-        onKeyDown={(e) => keyHandler(e, hamburger)}
-        tabIndex={0}
       >
         <span
           className={`mb-[5px] block h-[3px] w-[25px] bg-white transition-all duration-300 ${
@@ -149,10 +163,10 @@ export const NavBar = ({ dark }: NavBarProps) => {
         />
         <span
           className={`block h-[3px] w-[25px] bg-white transition-all duration-300 ${
-            active ? 'translate-y-[-8px] rotate-[-45deg]' : ''
+            active ? 'translate-y-[-8px] -rotate-45' : ''
           }`}
         />
-      </div>
+      </button>
     </nav>
   )
 }
