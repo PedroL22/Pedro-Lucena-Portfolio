@@ -36,7 +36,7 @@ export default function HomePage() {
 
           {/* Skills grid */}
           <div className='mx-auto flex min-h-fit w-[90vw] justify-between gap-5 p-10 pt-[40px] pb-[120px] max-[970px]:block max-[970px]:overflow-hidden max-[970px]:pt-[40px] max-[970px]:pb-[80px] 2xl:w-[45vw]'>
-            <div className='mx-auto h-[350px] w-[400px] rounded-[25px] border-2 border-secondary bg-transparent px-6 text-center text-white transition-colors hover:bg-secondary max-[970px]:mb-[30px] max-[970px]:h-fit max-[970px]:w-[300px] max-[970px]:pb-[30px]'>
+            <div className='mx-auto h-[275px] w-[400px] rounded-[25px] border-2 border-secondary bg-transparent px-6 text-center text-white transition-colors hover:bg-secondary max-[970px]:mb-[30px] max-[970px]:h-fit max-[970px]:w-[300px] max-[970px]:pb-[30px]'>
               <h2 className='py-[30px] font-normal'>Front-End Development</h2>
 
               <div className='grid grid-cols-2 justify-around text-left text-[15px]'>
@@ -49,7 +49,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className='mx-auto h-[350px] w-[400px] rounded-[25px] border-2 border-secondary bg-transparent px-6 text-center text-white transition-colors hover:bg-secondary max-[970px]:mb-[30px] max-[970px]:h-fit max-[970px]:w-[300px] max-[970px]:pb-[30px]'>
+            <div className='mx-auto h-[275px] w-[400px] rounded-[25px] border-2 border-secondary bg-transparent px-6 text-center text-white transition-colors hover:bg-secondary max-[970px]:mb-[30px] max-[970px]:h-fit max-[970px]:w-[300px] max-[970px]:pb-[30px]'>
               <h2 className='py-[30px] font-normal'>Back-End Development</h2>
 
               <div className='grid grid-cols-2 justify-around text-left text-[15px]'>
@@ -61,7 +61,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className='mx-auto h-[350px] w-[400px] rounded-[25px] border-2 border-secondary bg-transparent px-6 text-center text-white transition-colors hover:bg-secondary max-[970px]:mb-[30px] max-[970px]:h-fit max-[970px]:w-[300px] max-[970px]:pb-[30px]'>
+            <div className='mx-auto h-[275px] w-[400px] rounded-[25px] border-2 border-secondary bg-transparent px-6 text-center text-white transition-colors hover:bg-secondary max-[970px]:mb-[30px] max-[970px]:h-fit max-[970px]:w-[300px] max-[970px]:pb-[30px]'>
               <h2 className='py-[30px] font-normal'>DevOps &amp; Architecture</h2>
 
               <div className='grid grid-cols-2 justify-around text-left text-[15px]'>

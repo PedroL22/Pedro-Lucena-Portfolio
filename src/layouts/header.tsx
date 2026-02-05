@@ -23,7 +23,6 @@ export const Header = () => {
     }
   }, [])
 
-
   const keyHandler = (e: React.KeyboardEvent, callback: () => void) => {
     if (e.key === 'Enter' || e.key === ' ') {
       callback()
@@ -55,7 +54,7 @@ export const Header = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 z-10 flex h-[100px] w-screen items-center justify-between px-[5vw] transition-all duration-200 max-[840px]:px-[30px] 2xl:px-[28vw] ${
+      className={`fixed top-0 left-0 z-10 flex h-[100px] w-screen items-center justify-between px-[5vw] transition-all duration-200 max-[840px]:px-[30px] 2xl:px-[18vw] ${
         darkHeader ? 'bg-black/50 backdrop-blur-[10px]' : 'bg-transparent'
       } ${active ? 'max-[840px]:bg-secondary' : ''}`}
     >

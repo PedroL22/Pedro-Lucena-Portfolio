@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const Footer = () => {
   return (
-    <footer className='flex h-[25vh] items-center justify-between bg-linear-to-br from-tertiary to-secondary px-[5vw] max-[450px]:block max-[450px]:h-fit 2xl:px-[28vw]'>
+    <footer className='flex h-[25vh] items-center justify-between bg-linear-to-br from-tertiary to-secondary px-[5vw] max-[450px]:block max-[450px]:h-fit 2xl:px-[18vw]'>
       <div className='max-[450px]:pt-[5vh] max-[450px]:text-center'>
         <a href='/' className='text-white no-underline'>
           <h1 className='whitespace-nowrap font-normal text-[24px] text-white capitalize'>pedro lucena</h1>
