@@ -1,6 +1,6 @@
 ---
 alwaysApply: false
-description: Definitive guide for React 19+, TanStack Query v5, and Zod architecture. Enforces optimistic UI, view transitions, and strict type safety.
+description: Modern React 19+ architecture guidelines focusing on Optimistic UI, View Transitions, Zod validation, and advanced Hook patterns for 2026.
 globs: "**/*.{ts,tsx,json,lock,yaml}"
 ---
 
