@@ -11,16 +11,16 @@ const headerVariants = tv({
     'fixed top-0 inset-x-0 z-10 h-[100px]',
     'transition-all duration-200',
     // On mobile always solid
-    'max-[840px]:bg-secondary',
+    'bg-secondary md:bg-transparent',
   ],
   variants: {
     theme: {
-      transparent: 'bg-transparent',
-      scrolled: 'bg-black/50 backdrop-blur-[10px]',
+      transparent: 'md:bg-transparent',
+      scrolled: 'md:bg-black/50 md:backdrop-blur-[10px]',
     },
     mobile: {
       closed: '',
-      open: 'max-[840px]:bg-secondary',
+      open: 'bg-secondary',
     },
   },
   defaultVariants: {
@@ -29,21 +29,20 @@ const headerVariants = tv({
   },
 })
 
-const headerWrapperClasses =
-  'flex h-full max-w-[1536px] mx-auto items-center justify-between px-10 max-[840px]:px-[30px]'
+const headerWrapperClasses = 'flex h-full max-w-[1536px] mx-auto items-center justify-between px-8 md:px-10'
 
 const headerMenuVariants = tv({
   base: [
     'flex gap-8 text-text-muted transition-all duration-300',
-    'max-[840px]:fixed max-[840px]:top-0 max-[840px]:-right-full',
-    'max-[840px]:h-auto max-[840px]:w-full max-[840px]:flex-col',
-    'max-[840px]:items-center max-[840px]:bg-secondary',
-    'max-[840px]:pt-[70px] max-[840px]:pb-[100vh]',
+    'fixed top-0 -right-full md:static md:right-auto',
+    'h-auto w-full flex-col md:h-auto md:w-auto md:flex-row',
+    'items-center bg-secondary md:bg-transparent',
+    'pt-[70px] pb-[100vh] md:p-0',
   ],
   variants: {
     mobile: {
       closed: '',
-      open: 'max-[840px]:right-0',
+      open: 'right-0 md:right-auto',
     },
   },
   defaultVariants: {
@@ -192,7 +191,7 @@ export const Header = () => {
         <button
           type='button'
           aria-label={active ? 'Close navigation menu' : 'Open navigation menu'}
-          className='hidden cursor-pointer max-[840px]:block'
+          className='block cursor-pointer md:hidden'
           onClick={hamburger}
           data-slot='header-menu-toggle'
         >

@@ -11,17 +11,17 @@ export default function HomePage() {
     <main>
       <section id='section1' className='flex h-screen w-full items-center overflow-x-hidden pt-[100px]'>
         <div className='mx-auto w-full max-w-[1536px] px-4 text-white md:px-10'>
-          <h2 className='w-fit whitespace-nowrap border-2 border-teal bg-linear-to-r from-teal to-primary p-2.5 font-medium text-xl max-[600px]:mx-auto max-[600px]:mb-[30px]'>
+          <h2 className='mx-auto mb-8 w-fit whitespace-nowrap border-2 border-teal bg-linear-to-r from-teal to-primary p-2.5 font-medium text-xl sm:mx-0 sm:mb-0'>
             Welcome to my Portfolio
           </h2>
 
-          <h1 className='font-semibold text-[60px] max-[600px]:mx-auto max-[600px]:text-center max-[600px]:text-[50px] max-[670px]:text-[50px]'>
+          <h1 className='mx-auto text-center font-semibold text-5xl sm:mx-0 sm:text-left sm:text-6xl'>
             Hi! I&#39;m Pedro Lucena <br />
             <TypedStrings />
-            <br className='hidden max-[600px]:block' /> Developer
+            <br className='sm:hidden' /> Developer
           </h1>
 
-          <p className='max-w-[650px] py-[15px] text-text-muted max-[600px]:mx-auto max-[600px]:max-w-max max-[600px]:text-center'>
+          <p className='mx-auto max-w-max py-4 text-center text-text-muted sm:mx-0 sm:max-w-[650px] sm:text-left'>
             Full Stack Developer with {yearsOfExperience} years of experience building production fintech systems in
             Switzerland using TypeScript, React, Node.js, and modern web technologies.
           </p>
@@ -51,13 +51,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id='section3' className='h-auto overflow-hidden bg-tertiary pb-[50px]'>
-        <h1 className='block pt-[50px] text-center font-medium text-white'>Projects</h1>
+      <section id='section3' className='overflow-hidden bg-tertiary py-12'>
+        <h1 className='text-center font-medium text-3xl text-white'>Projects</h1>
 
-        <p className='py-[15px] text-center text-text-muted'>My recent work</p>
+        <p className='py-4 text-center text-text-muted'>My recent work</p>
 
         {/* Projects grid */}
-        <div className='mx-auto grid max-w-7xl grid-cols-3 content-center justify-center gap-6 max-[640px]:grid-cols-1 max-[990px]:grid-cols-2 min-[1920px]:grid-cols-4'>
+        <div className='mx-auto mt-6 grid max-w-[1536px] grid-cols-1 justify-items-center gap-6 px-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5'>
           <ProjectCard
             name='22AI'
             skills='OpenRouter NextJS Framer Motion'

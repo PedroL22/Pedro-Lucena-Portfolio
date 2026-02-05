@@ -7,7 +7,7 @@ const footerVariants = tv({
 })
 
 const footerWrapperClasses =
-  'flex h-full max-w-[1536px] mx-auto items-center justify-between px-10 max-[450px]:flex-col max-[450px]:justify-center max-[450px]:space-y-7'
+  'flex h-full max-w-[1536px] mx-auto flex-col items-center justify-center space-y-7 px-10 sm:flex-row sm:justify-between sm:space-y-0'
 
 const footerSocialLinkClasses = 'transition-opacity hover:opacity-80'
 
@@ -18,13 +18,13 @@ export const Footer = () => {
         <a
           href='/'
           data-slot='footer-brand'
-          className='whitespace-nowrap text-2xl text-white no-underline max-[450px]:text-center'
+          className='whitespace-nowrap text-center text-2xl text-white no-underline sm:text-left'
         >
           Pedro Lucena
         </a>
 
-        <div className='flex flex-col space-y-6 max-[450px]:items-center max-[450px]:space-y-7'>
-          <ul className='flex justify-around max-[450px]:w-[50vw]' data-slot='footer-social'>
+        <div className='flex flex-col items-center space-y-7 sm:items-end sm:space-y-6'>
+          <ul className='flex w-[50vw] justify-around sm:w-auto sm:gap-8' data-slot='footer-social'>
             <li>
               <a
                 href='https://www.linkedin.com/in/pedrolucena22/'
@@ -59,7 +59,7 @@ export const Footer = () => {
             </li>
           </ul>
 
-          <p className='font-light text-text-muted max-[450px]:text-center'>
+          <p className='text-center font-light text-text-muted sm:text-right'>
             Made with <span className='text-[#dc143c]'>♥</span> by{' '}
             <a href='https://github.com/PedroL22/' target='_blank' rel='noreferrer' className='text-white no-underline'>
               Pedro Lucena
