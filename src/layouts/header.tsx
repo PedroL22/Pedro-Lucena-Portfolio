@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import type { KeyboardEvent } from 'react'
+import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { twMerge } from 'tailwind-merge'
 import { tv } from 'tailwind-variants'
@@ -72,12 +72,6 @@ export const Header = () => {
     }
   }, [])
 
-  const keyHandler = (e: KeyboardEvent, callback: () => void) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      callback()
-    }
-  }
-
   const hamburger = () => {
     setActive(!active)
   }
@@ -91,64 +85,55 @@ export const Header = () => {
     handleClick()
   }
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      const offset = 100
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY
-      window.scrollTo({ top: elementPosition - offset, behavior: 'smooth' })
-    }
-    handleClick()
-  }
-
   const mobileState = active ? 'open' : 'closed'
   const themeState = darkHeader ? 'scrolled' : 'transparent'
 
   return (
     <header data-slot='header' className={twMerge(headerVariants({ theme: themeState, mobile: mobileState }))}>
       <div data-slot='header-wrapper' className={twMerge(headerWrapperClasses)}>
-        <a
+        <Link
           href='/'
           onClick={(e) => {
-            e.preventDefault()
-            topAndClose()
+            if (window.location.pathname === '/') {
+              e.preventDefault()
+              topAndClose()
+            }
           }}
-          onKeyDown={(e) => keyHandler(e, topAndClose)}
           className='text-white no-underline'
           data-slot='header-brand'
         >
           <p className='whitespace-nowrap text-2xl text-white'>Pedro Lucena</p>
-        </a>
+        </Link>
 
         <nav data-slot='header-nav'>
           <ul data-slot='header-menu' className={twMerge(headerMenuVariants({ mobile: mobileState }))}>
-            <li
-              onClick={topAndClose}
-              onKeyDown={(e) => keyHandler(e, topAndClose)}
-              tabIndex={0}
-              className={twMerge(headerMenuItemClasses)}
-            >
-              <a href='/' onClick={(e) => e.preventDefault()} className='text-inherit no-underline'>
+            <li className={twMerge(headerMenuItemClasses)}>
+              <Link
+                href='/'
+                onClick={(e) => {
+                  if (window.location.pathname === '/') {
+                    e.preventDefault()
+                    topAndClose()
+                  } else {
+                    handleClick()
+                  }
+                }}
+                className='text-inherit no-underline'
+              >
                 home
-              </a>
+              </Link>
             </li>
 
-            <li
-              onClick={() => scrollToSection('skills-section')}
-              onKeyDown={(e) => keyHandler(e, () => scrollToSection('skills-section'))}
-              tabIndex={0}
-              className={twMerge(headerMenuItemClasses)}
-            >
-              skills
+            <li className={twMerge(headerMenuItemClasses)}>
+              <Link href='#skills' onClick={handleClick} className='text-inherit no-underline'>
+                skills
+              </Link>
             </li>
 
-            <li
-              onClick={() => scrollToSection('projects-section')}
-              onKeyDown={(e) => keyHandler(e, () => scrollToSection('projects-section'))}
-              tabIndex={0}
-              className={twMerge(headerMenuItemClasses)}
-            >
-              projects
+            <li className={twMerge(headerMenuItemClasses)}>
+              <Link href='#projects' onClick={handleClick} className='text-inherit no-underline'>
+                projects
+              </Link>
             </li>
 
             <li className={twMerge(headerMenuItemClasses)}>

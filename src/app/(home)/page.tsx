@@ -10,7 +10,7 @@ export default function HomePage() {
 
   return (
     <main>
-      <section id='hero-section' className='flex h-screen w-full items-center pt-24'>
+      <section id='hero' className='flex h-screen w-full items-center pt-24'>
         <div className='mx-auto w-full max-w-[1536px] px-4 text-white md:px-10'>
           <p className='mx-auto mb-8 w-fit whitespace-nowrap border-2 border-teal bg-linear-to-r from-teal to-primary p-2.5 font-medium text-xl sm:mx-0 sm:mb-0'>
             Welcome to my Portfolio
@@ -23,15 +23,15 @@ export default function HomePage() {
           </h1>
 
           <p className='mx-auto max-w-max py-4 text-center text-text-muted sm:mx-0 sm:max-w-2xl sm:text-left'>
-            Full Stack Developer with {yearsOfExperience} years of experience building production fintech systems in
+            Full-Stack Developer with {yearsOfExperience} years of experience building production fintech systems in
             Switzerland using TypeScript, React, Node.js, and modern web technologies.
           </p>
         </div>
       </section>
 
       <section
-        id='experience-section'
-        className='0 mx-auto mb-[10vh] flex w-full max-w-[1360px] flex-col items-center justify-center px-4'
+        id='experience'
+        className='0 mx-auto mb-[10vh] flex w-full max-w-[1360px] scroll-mt-24 flex-col items-center justify-center px-4'
       >
         <h2 className='text-center font-medium text-3xl text-white'>Experience</h2>
 
@@ -39,7 +39,7 @@ export default function HomePage() {
 
         <div className='mt-6 grid w-full grid-cols-1 gap-6 md:grid-cols-2'>
           <ExperienceCard
-            title='Full Stack Developer'
+            title='Full-Stack Developer'
             company='datalution GmbH, Switzerland'
             period='Jan 2024 - Present'
             description={`Architecting and developing **fintech applications** in a **Turborepo monorepo** with multiple interconnected projects.
@@ -92,7 +92,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id='skills-section' className='mb-[10vh] flex items-center justify-center px-4 md:px-10'>
+      <section id='skills' className='mb-[10vh] flex scroll-mt-24 items-center justify-center px-4 md:px-10'>
         <div className='h-min w-full max-w-[1360px] rounded-[50px] bg-linear-to-tr from-secondary to-tertiary px-4 py-14 md:px-14'>
           <h3 className='text-center font-medium text-3xl text-white'>Skills</h3>
 
@@ -115,7 +115,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id='projects-section' className='bg-tertiary py-12'>
+      <section id='projects' className='scroll-mt-24 bg-tertiary py-12'>
         <h4 className='text-center font-medium text-3xl text-white'>Projects</h4>
 
         <p className='py-4 text-center text-text-muted'>My recent work</p>
