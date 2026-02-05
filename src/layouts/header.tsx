@@ -8,7 +8,7 @@ import { tv } from 'tailwind-variants'
 
 const headerVariants = tv({
   base: [
-    'fixed top-0 inset-x-0 z-10 h-[100px]',
+    'fixed top-0 inset-x-0 z-10 h-24',
     'transition-all duration-200',
     // On mobile always solid
     'bg-secondary md:bg-transparent',
@@ -16,7 +16,7 @@ const headerVariants = tv({
   variants: {
     theme: {
       transparent: 'md:bg-transparent',
-      scrolled: 'md:bg-black/50 md:backdrop-blur-[10px]',
+      scrolled: 'md:bg-black/50 md:backdrop-blur-md',
     },
     mobile: {
       closed: '',
@@ -37,7 +37,7 @@ const headerMenuVariants = tv({
     'fixed top-0 -right-full md:static md:right-auto',
     'h-auto w-full flex-col md:h-auto md:w-auto md:flex-row',
     'items-center bg-secondary md:bg-transparent',
-    'pt-[70px] pb-[100vh] md:p-0',
+    'pt-16 pb-[100vh] md:p-0',
   ],
   variants: {
     mobile: {
@@ -197,20 +197,20 @@ export const Header = () => {
         >
           <span
             className={twMerge(
-              'mb-[5px] block h-[3px] w-[25px] bg-white transition-all duration-300',
-              active ? 'translate-y-[8px] rotate-45' : ''
+              'mb-1.5 block h-0.5 w-6 bg-white transition-all duration-300',
+              active ? 'translate-y-2 rotate-45' : ''
             )}
           />
           <span
             className={twMerge(
-              'mb-[5px] block h-[3px] w-[25px] bg-white transition-all duration-300',
+              'mb-1.5 block h-0.5 w-6 bg-white transition-all duration-300',
               active ? 'opacity-0' : ''
             )}
           />
           <span
             className={twMerge(
-              'block h-[3px] w-[25px] bg-white transition-all duration-300',
-              active ? 'translate-y-[-8px] -rotate-45' : ''
+              'block h-0.5 w-6 bg-white transition-all duration-300',
+              active ? '-translate-y-2 -rotate-45' : ''
             )}
           />
         </button>

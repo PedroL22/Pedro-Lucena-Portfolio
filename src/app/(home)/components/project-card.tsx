@@ -14,29 +14,29 @@ export const ProjectCard = ({ name, skills, projectDesc, image, github, live, ..
   return (
     <div
       {...props}
-      className='flex h-[400px] w-[275px] flex-col justify-between overflow-hidden rounded-[25px] bg-primary p-4'
+      className='flex h-[380px] w-[275px] flex-col justify-between overflow-hidden rounded-3xl bg-primary p-4'
     >
       <div>
-        <div className='h-[150px] w-[250px] shrink-0 self-center overflow-hidden rounded-[25px]'>
+        <div className='h-[150px] w-[250px] shrink-0 self-center overflow-hidden rounded-3xl'>
           <Image
             src={image}
             alt={`${name} screenshot`}
             width={250}
             height={150}
-            className='h-[150px] w-[250px] shrink-0 rounded-[25px] object-cover transition-transform duration-200 hover:scale-110'
+            className='h-[150px] w-[250px] shrink-0 rounded-3xl object-cover transition-transform duration-200 hover:scale-110'
           />
         </div>
 
-        <h2 className='mt-4 max-w-[90%] pb-[5px] font-medium text-[14px] text-gray-300'>{skills}</h2>
+        <p className='mt-4 pb-1.5 font-medium text-gray-300 text-sm'>{skills}</p>
 
-        <h3 className='mb-[5px] text-left font-medium text-white'>{name}</h3>
+        <p className='mb-1.5 text-left font-medium text-white'>{name}</p>
 
-        <p className='h-[85px] max-w-[90%] select-text text-[14px] text-gray-100'>{projectDesc}</p>
+        <p className='h-20 select-text text-gray-100 text-sm'>{projectDesc}</p>
       </div>
 
       <div className='flex items-center gap-2'>
         <a
-          className='rounded-lg border border-accent px-[5px] py-[5px] font-medium text-[14px] text-accent capitalize no-underline transition-colors hover:bg-accent hover:text-tertiary'
+          className='rounded-lg border border-accent p-1.5 font-medium text-accent text-sm capitalize no-underline transition-colors hover:bg-accent hover:text-tertiary'
           href={github}
           target='_blank'
           rel='noreferrer'
@@ -46,7 +46,7 @@ export const ProjectCard = ({ name, skills, projectDesc, image, github, live, ..
 
         {live && (
           <a
-            className='rounded-lg border border-accent bg-accent px-[5px] py-[5px] font-medium text-[14px] text-tertiary capitalize no-underline transition-colors hover:bg-[#249cb6] hover:text-[#061823]'
+            className='rounded-lg border border-accent bg-accent p-1.5 font-medium text-sm text-tertiary capitalize no-underline transition-colors hover:bg-[#249cb6] hover:text-[#061823]'
             href={live}
             target='_blank'
             rel='noreferrer'

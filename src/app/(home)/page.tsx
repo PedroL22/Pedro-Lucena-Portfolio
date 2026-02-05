@@ -9,7 +9,7 @@ export default function HomePage() {
 
   return (
     <main>
-      <section id='section1' className='flex h-screen w-full items-center overflow-x-hidden pt-[100px]'>
+      <section id='section1' className='flex h-screen w-full items-center overflow-x-hidden pt-24'>
         <div className='mx-auto w-full max-w-[1536px] px-4 text-white md:px-10'>
           <h2 className='mx-auto mb-8 w-fit whitespace-nowrap border-2 border-teal bg-linear-to-r from-teal to-primary p-2.5 font-medium text-xl sm:mx-0 sm:mb-0'>
             Welcome to my Portfolio
@@ -21,7 +21,7 @@ export default function HomePage() {
             <br className='sm:hidden' /> Developer
           </h1>
 
-          <p className='mx-auto max-w-max py-4 text-center text-text-muted sm:mx-0 sm:max-w-[650px] sm:text-left'>
+          <p className='mx-auto max-w-max py-4 text-center text-text-muted sm:mx-0 sm:max-w-2xl sm:text-left'>
             Full Stack Developer with {yearsOfExperience} years of experience building production fintech systems in
             Switzerland using TypeScript, React, Node.js, and modern web technologies.
           </p>
@@ -29,7 +29,7 @@ export default function HomePage() {
       </section>
 
       <section id='section2' className='mb-[10vh] flex items-center justify-center overflow-hidden px-4 md:px-10'>
-        <div className='h-min w-full max-w-[1536px] rounded-[50px] bg-linear-to-tr from-secondary to-tertiary px-4 py-14 md:px-14'>
+        <div className='h-min w-full max-w-[1360px] rounded-[50px] bg-linear-to-tr from-secondary to-tertiary px-4 py-14 md:px-14'>
           <h1 className='text-center font-medium text-3xl text-white'>Skills</h1>
 
           <p className='py-4 text-center text-text-muted'>What skills do I have?</p>
@@ -57,7 +57,7 @@ export default function HomePage() {
         <p className='py-4 text-center text-text-muted'>My recent work</p>
 
         {/* Projects grid */}
-        <div className='mx-auto mt-6 grid max-w-[1536px] grid-cols-1 justify-items-center gap-6 px-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5'>
+        <div className='mx-auto mt-6 grid max-w-[1536px] grid-cols-1 justify-items-center gap-6 px-4 sm:grid-cols-2 md:px-10 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5'>
           <ProjectCard
             name='22AI'
             skills='OpenRouter NextJS Framer Motion'

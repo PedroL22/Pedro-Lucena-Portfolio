@@ -5,7 +5,7 @@ import { Skill } from './skill'
 
 const skillCategoryVariants = tv({
   base: [
-    'mx-auto h-fit w-full max-w-[400px] rounded-[25px] border-2 border-secondary',
+    'mx-auto min-h-[250px] w-full max-w-[350px] flex flex-col items-center rounded-3xl border-2 border-secondary',
     'bg-transparent px-6 pb-8 text-center text-white transition-colors hover:bg-secondary',
   ],
 })
