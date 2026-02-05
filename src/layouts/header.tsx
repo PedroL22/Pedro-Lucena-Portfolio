@@ -117,7 +117,7 @@ export const Header = () => {
           className='text-white no-underline'
           data-slot='header-brand'
         >
-          <h1 className='whitespace-nowrap text-2xl text-white'>Pedro Lucena</h1>
+          <p className='whitespace-nowrap text-2xl text-white'>Pedro Lucena</p>
         </a>
 
         <nav data-slot='header-nav'>

@@ -12,9 +12,9 @@ export default function HomePage() {
     <main>
       <section id='hero-section' className='flex h-screen w-full items-center pt-24'>
         <div className='mx-auto w-full max-w-[1536px] px-4 text-white md:px-10'>
-          <h2 className='mx-auto mb-8 w-fit whitespace-nowrap border-2 border-teal bg-linear-to-r from-teal to-primary p-2.5 font-medium text-xl sm:mx-0 sm:mb-0'>
+          <p className='mx-auto mb-8 w-fit whitespace-nowrap border-2 border-teal bg-linear-to-r from-teal to-primary p-2.5 font-medium text-xl sm:mx-0 sm:mb-0'>
             Welcome to my Portfolio
-          </h2>
+          </p>
 
           <h1 className='mx-auto text-center font-semibold text-5xl sm:mx-0 sm:text-left sm:text-6xl'>
             Hi! I&#39;m Pedro Lucena <br />
@@ -33,7 +33,8 @@ export default function HomePage() {
         id='experience-section'
         className='0 mx-auto mb-[10vh] flex w-full max-w-[1360px] flex-col items-center justify-center px-4'
       >
-        <h1 className='text-center font-medium text-3xl text-white'>Experience</h1>
+        <h2 className='text-center font-medium text-3xl text-white'>Experience</h2>
+
         <p className='py-4 text-center text-text-muted'>My professional journey</p>
 
         <div className='mt-6 grid w-full grid-cols-1 gap-6 md:grid-cols-2'>
@@ -41,7 +42,14 @@ export default function HomePage() {
             title='Full Stack Developer'
             company='datalution GmbH, Switzerland'
             period='Jan 2024 - Present'
-            description='Architecting and developing fintech applications in a Turborepo monorepo with multiple interconnected projects. Implementing tRPC architecture, React 19 features, and internationalization across 50+ routers.'
+            description={`Architecting and developing fintech applications in a Turborepo monorepo with multiple interconnected projects.
+- **Type-Safe APIs**: tRPC architecture with batch streaming links and end-to-end type-safety across 50+ routers.
+- **React 19**: Implementation of useTransition, useOptimistic and useActionState for optimistic UI across 47+ forms.
+- **Internationalization**: next-intl with dynamic localized routes in 4 languages (DE/EN/FR/IT) and 200+ pathnames.
+- **PWA**: Complete Web Push Notifications system with service workers.
+- **Auth**: Supabase Auth with OAuth (Google/Apple) + SMS verification via Twilio.
+- **Payments**: Stripe integration with webhooks, customer portal and subscription management.
+- **CI/CD**: GitHub Actions with automated deployment to VPS and Turborepo caching.`}
             technologies={['Next.js 15', 'React 19', 'tRPC', 'TypeScript', 'Prisma', 'Supabase', 'Stripe']}
           />
 
@@ -49,7 +57,9 @@ export default function HomePage() {
             title='Front-End Developer'
             company='Support Informática, Brazil'
             period='Jan 2023 - Dec 2023'
-            description='Developed custom e-commerce templates and maintained a React Native app. Reduced e-commerce latency by 70% and architected a CRM system from scratch.'
+            description={`Developed custom e-commerce templates for stores and maintained a React Native app used by hundreds of establishments across the city, performing major Expo version upgrades, implementing new features and fixing a critical bug that displayed incorrect monetary values.
+- Led optimization initiatives on the e-commerce website, reducing latency by 70% (from 5 to 1.5 seconds), supporting high-traffic operations.
+- Architected and deployed the stores CRM from scratch, building the system structure and core functionalities.`}
             technologies={['React', 'React Native', 'TypeScript', 'TanStack Query', 'Zustand', 'Material UI']}
           />
 
@@ -57,7 +67,13 @@ export default function HomePage() {
             title='E-commerce Developer'
             company='Contract · Freelance, Portugal'
             period='Dec 2022 - Jan 2023'
-            description='Full-stack development of a complete e-commerce platform including authentication, product catalog, shopping cart, and admin dashboard.'
+            description={`Full-stack development of a complete e-commerce platform, from scratch to production.
+- **Auth & Users**: Secure authentication system with registration, login and profile editing.
+- **Product Catalog**: Complete product CRUD with details page, category listing, advanced filters and search.
+- **Shopping Cart**: Functional cart with item addition, removal and review before purchase.
+- **Admin Dashboard**: Central panel for product management, orders and operations monitoring.
+- **Dynamic UI**: Adaptive header based on user interactions and page context.
+- **Marketing**: Newsletter system for email collection and social media sharing functionality.`}
             technologies={['Python', 'Django', 'PostgreSQL', 'HTML', 'CSS']}
           />
 
@@ -65,7 +81,12 @@ export default function HomePage() {
             title='Full-Stack Developer'
             company='Contract · Caixa Angola, Angola'
             period='Apr 2022 - Jul 2022'
-            description='Developed a complete event management system with user grades and AWS S3 media storage integration.'
+            description={`Developed a complete event management system with user grades and AWS S3 media storage integration.
+- **Registration and Login System**: Secure implementation for account creation and user authentication.
+- **Event Management**: System for creating and managing events with title, description and images.
+- **Individual Grades**: System for assigning and viewing grades specific to each user.
+- **AWS S3 Storage**: Use of an S3 bucket for static file storage.
+- **Media Upload and Management**: Direct media file upload to S3 bucket, including file viewing and management.`}
             technologies={['Python', 'Django', 'PostgreSQL', 'AWS S3', 'HTML']}
           />
         </div>
@@ -73,7 +94,7 @@ export default function HomePage() {
 
       <section id='skills-section' className='mb-[10vh] flex items-center justify-center px-4 md:px-10'>
         <div className='h-min w-full max-w-[1360px] rounded-[50px] bg-linear-to-tr from-secondary to-tertiary px-4 py-14 md:px-14'>
-          <h1 className='text-center font-medium text-3xl text-white'>Skills</h1>
+          <h3 className='text-center font-medium text-3xl text-white'>Skills</h3>
 
           <p className='py-4 text-center text-text-muted'>What skills do I have?</p>
 
@@ -95,7 +116,7 @@ export default function HomePage() {
       </section>
 
       <section id='projects-section' className='bg-tertiary py-12'>
-        <h1 className='text-center font-medium text-3xl text-white'>Projects</h1>
+        <h4 className='text-center font-medium text-3xl text-white'>Projects</h4>
 
         <p className='py-4 text-center text-text-muted'>My recent work</p>
 

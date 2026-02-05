@@ -1,10 +1,11 @@
 import type { ComponentProps } from 'react'
+import ReactMarkdown from 'react-markdown'
 import { twMerge } from 'tailwind-merge'
 import { tv } from 'tailwind-variants'
 
 const experienceCardVariants = tv({
   base: [
-    'flex w-full flex-col rounded-3xl border-2 border-secondary',
+    'flex w-full flex-col justify-between rounded-3xl border-2 border-secondary',
     'bg-primary p-6 text-white transition-all hover:bg-secondary md:p-8',
   ],
 })
@@ -28,16 +29,28 @@ export const ExperienceCard = ({
 }: ExperienceCardProps) => {
   return (
     <div className={twMerge(experienceCardVariants(), className)} {...props}>
-      <div className='flex flex-col justify-between gap-2 sm:flex-row sm:items-center'>
-        <div>
-          <h3 className='font-bold text-accent text-xl'>{title}</h3>
-          <h4 className='font-medium text-lg'>{company}</h4>
+      <div className='space-y-4'>
+        <div className='flex flex-col justify-between gap-2 sm:flex-row sm:items-center'>
+          <div>
+            <p className='font-bold text-accent text-xl'>{title}</p>
+            <p className='font-medium text-sm'>{company}</p>
+          </div>
+
+          <span className='text-sm text-text-muted'>{period}</span>
         </div>
 
-        <span className='text-text-muted'>{period}</span>
+        <div className='text-sm text-text-muted md:text-base'>
+          <ReactMarkdown
+            components={{
+              ul: ({ node, ...props }) => <ul className='list-disc space-y-2 pl-5' {...props} />,
+              li: ({ node, ...props }) => <li {...props} />,
+              p: ({ node, ...props }) => <p className='mb-2' {...props} />,
+            }}
+          >
+            {description}
+          </ReactMarkdown>
+        </div>
       </div>
-
-      <p className='mt-4 text-text-muted'>{description}</p>
 
       {technologies && (
         <div className='mt-4 flex flex-wrap gap-2'>
