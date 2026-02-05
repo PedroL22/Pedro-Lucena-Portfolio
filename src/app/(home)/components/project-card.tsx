@@ -20,7 +20,7 @@ export const ProjectCard = ({ name, skills, projectDesc, image, github, live, ..
             alt={`${name} screenshot`}
             width={250}
             height={150}
-            className='h-[150px] w-[250px] shrink-0 rounded-3xl object-cover transition-all duration-200 hover:scale-110'
+            className='h-[150px] w-[250px] shrink-0 rounded-3xl object-cover'
           />
         </div>
 
