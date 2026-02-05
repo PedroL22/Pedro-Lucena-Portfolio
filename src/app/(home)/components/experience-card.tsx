@@ -30,7 +30,7 @@ export const ExperienceCard = ({
     <div className={twMerge(experienceCardVariants(), className)} {...props}>
       <div className='flex flex-col justify-between gap-2 sm:flex-row sm:items-center'>
         <div>
-          <h3 className='font-bold text-teal-400 text-xl'>{title}</h3>
+          <h3 className='font-bold text-accent text-xl'>{title}</h3>
           <h4 className='font-medium text-lg'>{company}</h4>
         </div>
 

@@ -12,12 +12,9 @@ interface ProjectCardProps extends ComponentProps<'div'> {
 
 export const ProjectCard = ({ name, skills, projectDesc, image, github, live, ...props }: ProjectCardProps) => {
   return (
-    <div
-      {...props}
-      className='flex h-[380px] w-[275px] flex-col justify-between overflow-hidden rounded-3xl bg-primary p-4'
-    >
+    <div {...props} className='flex h-[380px] w-[275px] flex-col justify-between rounded-3xl bg-primary p-4'>
       <div>
-        <div className='h-[150px] w-[250px] shrink-0 self-center overflow-hidden rounded-3xl'>
+        <div className='h-[150px] w-[250px] shrink-0 self-center rounded-3xl'>
           <Image
             src={image}
             alt={`${name} screenshot`}
