@@ -39,7 +39,7 @@ import { twMerge } from 'tailwind-merge'
 
 export const buttonVariants = tv({
 	base: [
-		'inline-flex cursor-pointer items-center justify-center font-medium rounded-lg border transition-colors',
+		'inline-flex cursor-pointer items-center justify-center font-medium rounded-lg border transition-all',
 		'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
 		'data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
 	],

@@ -50,7 +50,7 @@ const headerMenuVariants = tv({
   },
 })
 
-const headerMenuItemClasses = 'cursor-pointer capitalize transition-colors hover:text-white'
+const headerMenuItemClasses = 'cursor-pointer capitalize transition-all hover:text-white'
 
 export const Header = () => {
   const [darkHeader, setDarkHeader] = useState(false)
@@ -134,8 +134,8 @@ export const Header = () => {
             </li>
 
             <li
-              onClick={() => scrollToSection('section2')}
-              onKeyDown={(e) => keyHandler(e, () => scrollToSection('section2'))}
+              onClick={() => scrollToSection('skills-section')}
+              onKeyDown={(e) => keyHandler(e, () => scrollToSection('skills-section'))}
               tabIndex={0}
               className={twMerge(headerMenuItemClasses)}
             >
@@ -143,12 +143,18 @@ export const Header = () => {
             </li>
 
             <li
-              onClick={() => scrollToSection('section3')}
-              onKeyDown={(e) => keyHandler(e, () => scrollToSection('section3'))}
+              onClick={() => scrollToSection('projects-section')}
+              onKeyDown={(e) => keyHandler(e, () => scrollToSection('projects-section'))}
               tabIndex={0}
               className={twMerge(headerMenuItemClasses)}
             >
               projects
+            </li>
+
+            <li className={twMerge(headerMenuItemClasses)}>
+              <a href='/resume.pdf' target='_blank' rel='noopener noreferrer' className='text-inherit no-underline'>
+                resume
+              </a>
             </li>
 
             <ul className='flex gap-8' data-slot='header-social'>
@@ -157,7 +163,7 @@ export const Header = () => {
                   href='https://www.linkedin.com/in/pedrolucena22/'
                   target='_blank'
                   rel='noreferrer'
-                  className='transition-opacity hover:opacity-80'
+                  className='transition-all hover:opacity-80'
                 >
                   <Image src='/images/nav-icon.png' alt='linkedin icon' width={22} height={22} />
                 </a>
@@ -168,7 +174,7 @@ export const Header = () => {
                   href='https://github.com/PedroL22/'
                   target='_blank'
                   rel='noreferrer'
-                  className='transition-opacity hover:opacity-80'
+                  className='transition-all hover:opacity-80'
                 >
                   <Image src='/images/nav-icon2.png' alt='github icon' width={22} height={22} />
                 </a>
@@ -179,7 +185,7 @@ export const Header = () => {
                   href='https://x.com/lucena_l22/'
                   target='_blank'
                   rel='noreferrer'
-                  className='transition-opacity hover:opacity-80'
+                  className='transition-all hover:opacity-80'
                 >
                   <Image src='/images/nav-icon3.svg' alt='x icon' width={22} height={22} />
                 </a>

@@ -1,3 +1,4 @@
+import { ExperienceCard } from './components/experience-card'
 import { ProjectCard } from './components/project-card'
 import { SkillCategory } from './components/skill-category'
 import { TypedStrings } from './components/typed-strings'
@@ -9,7 +10,7 @@ export default function HomePage() {
 
   return (
     <main>
-      <section id='section1' className='flex h-screen w-full items-center overflow-x-hidden pt-24'>
+      <section id='hero-section' className='flex h-screen w-full items-center overflow-x-hidden pt-24'>
         <div className='mx-auto w-full max-w-[1536px] px-4 text-white md:px-10'>
           <h2 className='mx-auto mb-8 w-fit whitespace-nowrap border-2 border-teal bg-linear-to-r from-teal to-primary p-2.5 font-medium text-xl sm:mx-0 sm:mb-0'>
             Welcome to my Portfolio
@@ -28,7 +29,51 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id='section2' className='mb-[10vh] flex items-center justify-center overflow-hidden px-4 md:px-10'>
+      <section
+        id='experience-section'
+        className='mb-[10vh] flex flex-col items-center justify-center overflow-hidden px-4 md:px-10'
+      >
+        <div className='w-full max-w-[1360px]'>
+          <h1 className='text-center font-medium text-3xl text-white'>Experience</h1>
+          <p className='py-4 text-center text-text-muted'>My professional journey</p>
+
+          <div className='mt-6 grid w-full grid-cols-1 gap-6 md:grid-cols-2'>
+            <ExperienceCard
+              title='Full Stack Developer'
+              company='datalution GmbH, Switzerland'
+              period='Jan 2024 - Present'
+              description='Architecting and developing fintech applications in a Turborepo monorepo with multiple interconnected projects. Implementing tRPC architecture, React 19 features, and internationalization across 50+ routers.'
+              technologies={['Next.js 15', 'React 19', 'tRPC', 'TypeScript', 'Prisma', 'Supabase', 'Stripe']}
+            />
+
+            <ExperienceCard
+              title='Front-End Developer'
+              company='Support Informática, Brazil'
+              period='Jan 2023 - Dec 2023'
+              description='Developed custom e-commerce templates and maintained a React Native app. Reduced e-commerce latency by 70% and architected a CRM system from scratch.'
+              technologies={['React', 'React Native', 'TypeScript', 'TanStack Query', 'Zustand', 'Material UI']}
+            />
+
+            <ExperienceCard
+              title='E-commerce Developer'
+              company='Contract · Freelance, Portugal'
+              period='Dec 2022 - Jan 2023'
+              description='Full-stack development of a complete e-commerce platform including authentication, product catalog, shopping cart, and admin dashboard.'
+              technologies={['Python', 'Django', 'PostgreSQL', 'HTML', 'CSS']}
+            />
+
+            <ExperienceCard
+              title='Full-Stack Developer'
+              company='Contract · Caixa Angola, Angola'
+              period='Apr 2022 - Jul 2022'
+              description='Developed a complete event management system with user grades and AWS S3 media storage integration.'
+              technologies={['Python', 'Django', 'PostgreSQL', 'AWS S3', 'HTML']}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id='skills-section' className='mb-[10vh] flex items-center justify-center overflow-hidden px-4 md:px-10'>
         <div className='h-min w-full max-w-[1360px] rounded-[50px] bg-linear-to-tr from-secondary to-tertiary px-4 py-14 md:px-14'>
           <h1 className='text-center font-medium text-3xl text-white'>Skills</h1>
 
@@ -51,7 +96,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id='section3' className='overflow-hidden bg-tertiary py-12'>
+      <section id='projects-section' className='overflow-hidden bg-tertiary py-12'>
         <h1 className='text-center font-medium text-3xl text-white'>Projects</h1>
 
         <p className='py-4 text-center text-text-muted'>My recent work</p>

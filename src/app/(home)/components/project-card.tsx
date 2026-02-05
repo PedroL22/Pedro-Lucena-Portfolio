@@ -23,7 +23,7 @@ export const ProjectCard = ({ name, skills, projectDesc, image, github, live, ..
             alt={`${name} screenshot`}
             width={250}
             height={150}
-            className='h-[150px] w-[250px] shrink-0 rounded-3xl object-cover transition-transform duration-200 hover:scale-110'
+            className='h-[150px] w-[250px] shrink-0 rounded-3xl object-cover transition-all duration-200 hover:scale-110'
           />
         </div>
 
@@ -36,7 +36,7 @@ export const ProjectCard = ({ name, skills, projectDesc, image, github, live, ..
 
       <div className='flex items-center gap-2'>
         <a
-          className='rounded-lg border border-accent p-1.5 font-medium text-accent text-sm capitalize no-underline transition-colors hover:bg-accent hover:text-tertiary'
+          className='rounded-lg border border-accent p-1.5 font-medium text-accent text-sm capitalize no-underline transition-all hover:bg-accent hover:text-tertiary'
           href={github}
           target='_blank'
           rel='noreferrer'
@@ -46,7 +46,7 @@ export const ProjectCard = ({ name, skills, projectDesc, image, github, live, ..
 
         {live && (
           <a
-            className='rounded-lg border border-accent bg-accent p-1.5 font-medium text-sm text-tertiary capitalize no-underline transition-colors hover:bg-[#249cb6] hover:text-[#061823]'
+            className='rounded-lg border border-accent bg-accent p-1.5 font-medium text-sm text-tertiary capitalize no-underline transition-all hover:bg-[#249cb6] hover:text-[#061823]'
             href={live}
             target='_blank'
             rel='noreferrer'

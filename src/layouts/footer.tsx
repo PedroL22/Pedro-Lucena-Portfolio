@@ -9,7 +9,7 @@ const footerVariants = tv({
 const footerWrapperClasses =
   'flex h-full max-w-[1536px] mx-auto flex-col items-center justify-center space-y-7 px-10 sm:flex-row sm:justify-between sm:space-y-0'
 
-const footerSocialLinkClasses = 'transition-opacity hover:opacity-80'
+const footerSocialLinkClasses = 'transition-all hover:opacity-80'
 
 export const Footer = () => {
   return (
