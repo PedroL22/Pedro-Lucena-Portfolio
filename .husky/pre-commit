@@ -1,2 +1,2 @@
-bun lint
-bun format
+bun typecheck
+bun check:unsafe
