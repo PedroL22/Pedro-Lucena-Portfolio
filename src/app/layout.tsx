@@ -1,10 +1,13 @@
 import type { Metadata } from 'next'
+import { DM_Sans } from 'next/font/google'
 import type { ReactNode } from 'react'
 
 import './globals.css'
 
 import { Footer } from '~/layouts/footer'
 import { Header } from '~/layouts/header'
+
+const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' })
 
 const baseUrl = 'https://pedrolucena.com'
 
@@ -94,7 +97,7 @@ export default function RootLayout({
   children: ReactNode
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en' className={dmSans.variable}>
       <body>
         <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <Header />

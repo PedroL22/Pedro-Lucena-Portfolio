@@ -7,6 +7,10 @@
   --color-accent: #28b6d5;
   --color-teal: #2a696c;
   --color-text-muted: #d3d3d3;
+
+  --font-sans:
+    var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
 }
 
 /* Background pattern */
