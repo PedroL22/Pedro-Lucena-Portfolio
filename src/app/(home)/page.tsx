@@ -12,7 +12,7 @@ export default function HomePage() {
     <main>
       <section id='hero' className='flex h-screen w-full items-center pt-24'>
         <div className='mx-auto w-full max-w-[1536px] px-4 text-white md:px-10'>
-          <p className='mx-auto mb-8 w-fit whitespace-nowrap border-2 border-teal bg-linear-to-r from-teal to-primary p-2.5 font-medium text-xl sm:mx-0 sm:mb-0'>
+          <p className='mx-auto mb-8 w-fit whitespace-nowrap border-2 border-teal bg-linear-to-r from-teal to-primary p-2.5 font-medium text-xl sm:mx-0'>
             Welcome to my Portfolio
           </p>
 
