@@ -32,14 +32,16 @@ export const ProjectCard = ({ name, skills, projectDesc, image, github, live, ..
       </div>
 
       <div className='flex items-center gap-2'>
-        <a
-          className='rounded-lg border border-accent p-1.5 font-medium text-accent text-sm capitalize no-underline transition-all hover:bg-accent hover:text-tertiary'
-          href={github}
-          target='_blank'
-          rel='noreferrer'
-        >
-          gitHub
-        </a>
+        {github && (
+          <a
+            className='rounded-lg border border-accent p-1.5 font-medium text-accent text-sm capitalize no-underline transition-all hover:bg-accent hover:text-tertiary'
+            href={github}
+            target='_blank'
+            rel='noreferrer'
+          >
+            gitHub
+          </a>
+        )}
 
         {live && (
           <a
