@@ -6,7 +6,7 @@ interface ProjectCardProps extends ComponentProps<'div'> {
   skills: string
   projectDesc: string
   image: string
-  github: string
+  github?: string
   live?: string
 }
 

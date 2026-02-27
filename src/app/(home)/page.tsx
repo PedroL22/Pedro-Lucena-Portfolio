@@ -127,8 +127,8 @@ export default function HomePage() {
             skills='OpenRouter NextJS Framer Motion'
             projectDesc='T3 Chat clone for cloneathon. I really like the number 22.'
             image='https://i.imgur.com/hrYjGo7.jpeg'
-            github='https://github.com/PedroL22/22ai'
-            live='https://22ai.vercel.app/'
+            // github='https://github.com/PedroL22/22ai'
+            live='https://22ai.app'
           />
 
           <ProjectCard
