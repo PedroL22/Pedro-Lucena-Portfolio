@@ -91,6 +91,8 @@ const jsonLd = {
   description: 'Senior Full-Stack Developer specializing in React, Next.js, and TypeScript.',
 }
 
+const jsonLdString = JSON.stringify(jsonLd).replaceAll('<', '\\u003c')
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -99,7 +101,7 @@ export default function RootLayout({
   return (
     <html className={dmSans.variable} lang='en'>
       <body>
-        <script dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} type='application/ld+json' />
+        <script type='application/ld+json'>{jsonLdString}</script>
         <Header />
 
         {children}

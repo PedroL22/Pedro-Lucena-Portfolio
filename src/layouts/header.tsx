@@ -65,7 +65,7 @@ export const Header = () => {
       }
     }
 
-    window.addEventListener('scroll', scrollListener)
+    window.addEventListener('scroll', scrollListener, { passive: true })
 
     return () => {
       window.removeEventListener('scroll', scrollListener)
@@ -137,9 +137,9 @@ export const Header = () => {
             </li>
 
             <li className={twMerge(headerMenuItemClasses)}>
-              <a className='text-inherit no-underline' href='/resume.pdf' rel='noopener noreferrer' target='_blank'>
+              <Link className='text-inherit no-underline' href='/resume.pdf' rel='noopener noreferrer' target='_blank'>
                 resume
-              </a>
+              </Link>
             </li>
 
             <ul className='flex gap-8' data-slot='header-social'>

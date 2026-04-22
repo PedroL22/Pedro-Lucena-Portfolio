@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { twMerge } from 'tailwind-merge'
 import { tv } from 'tailwind-variants'
 
@@ -15,13 +16,13 @@ export const Footer = () => {
   return (
     <footer className={twMerge(footerVariants())} data-slot='footer'>
       <div className={twMerge(footerWrapperClasses)} data-slot='footer-wrapper'>
-        <a
+        <Link
           className='whitespace-nowrap text-center text-2xl text-white no-underline sm:text-left'
           data-slot='footer-brand'
           href='/'
         >
           Pedro Lucena
-        </a>
+        </Link>
 
         <div className='flex flex-col items-center space-y-7 sm:items-end sm:space-y-6'>
           <ul className='flex w-[50vw] justify-around sm:w-auto sm:gap-8' data-slot='footer-social'>
