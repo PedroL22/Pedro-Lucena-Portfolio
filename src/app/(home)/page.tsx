@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <main>
       <section className='flex h-screen w-full items-center pt-24' id='hero'>
-        <div className='mx-auto w-full max-w-[1536px] px-4 text-white md:px-10'>
+        <div className='mx-auto w-full max-w-384 px-4 text-white md:px-10'>
           <p className='mx-auto mb-8 w-fit whitespace-nowrap border-2 border-teal bg-linear-to-r from-teal to-primary p-2.5 font-medium text-xl sm:mx-0'>
             Welcome to my Portfolio
           </p>
@@ -30,7 +30,7 @@ export default function HomePage() {
       </section>
 
       <section
-        className='0 mx-auto mb-[10vh] flex w-full max-w-[1360px] scroll-mt-24 flex-col items-center justify-center px-4'
+        className='0 mx-auto mb-[10vh] flex w-full max-w-340 scroll-mt-24 flex-col items-center justify-center px-4'
         id='experience'
       >
         <h2 className='text-center font-medium text-3xl text-white'>Experience</h2>
@@ -93,7 +93,7 @@ export default function HomePage() {
       </section>
 
       <section className='mb-[10vh] flex scroll-mt-24 items-center justify-center px-4 md:px-10' id='skills'>
-        <div className='h-min w-full max-w-[1360px] rounded-[50px] bg-linear-to-tr from-secondary to-tertiary px-4 py-14 md:px-14'>
+        <div className='h-min w-full max-w-340 rounded-[50px] bg-linear-to-tr from-secondary to-tertiary px-4 py-14 md:px-14'>
           <h3 className='text-center font-medium text-3xl text-white'>Skills</h3>
 
           <p className='py-4 text-center text-text-muted'>What skills do I have?</p>
@@ -121,7 +121,7 @@ export default function HomePage() {
         <p className='py-4 text-center text-text-muted'>My recent work</p>
 
         {/* Projects grid */}
-        <div className='mx-auto mt-6 grid max-w-[1536px] grid-cols-1 justify-items-center gap-6 px-4 sm:grid-cols-2 md:px-10 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5'>
+        <div className='mx-auto mt-6 grid max-w-384 grid-cols-1 justify-items-center gap-6 px-4 sm:grid-cols-2 md:px-10 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5'>
           <ProjectCard
             image='https://i.imgur.com/hrYjGo7.jpeg'
             live='https://22ai.app'
@@ -129,6 +129,15 @@ export default function HomePage() {
             projectDesc='22AI is a fast, multilingual AI chat platform with flexible model choices, shared conversations, and productivity-first workflows.'
             // github='https://github.com/PedroL22/22ai'
             skills='OpenRouter NextJS Framer Motion'
+          />
+
+          <ProjectCard
+            github='https://github.com/PedroL22/OnSpot-RSVP'
+            image='https://i.imgur.com/KhYEDRc.png'
+            live='https://on-spot-rsvp.vercel.app/'
+            name='OnSpot RSVP'
+            projectDesc='A lightweight event RSVP and check-in app. The smallest useful version of "the simplest possible Partiful".'
+            skills='NextJS Prisma Better Auth Tailwind'
           />
 
           <ProjectCard
