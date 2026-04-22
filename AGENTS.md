@@ -209,7 +209,6 @@ export default function Page() {
 }
 
 // ✅ OK - Next.js layout requires default export
-export default function Layout({ children }: { children: React.ReactNode }) {
   return <html>...</html>;
 }
 ```

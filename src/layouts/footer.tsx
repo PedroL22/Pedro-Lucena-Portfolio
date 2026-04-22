@@ -13,12 +13,12 @@ const footerSocialLinkClasses = 'transition-all hover:opacity-80'
 
 export const Footer = () => {
   return (
-    <footer data-slot='footer' className={twMerge(footerVariants())}>
-      <div data-slot='footer-wrapper' className={twMerge(footerWrapperClasses)}>
+    <footer className={twMerge(footerVariants())} data-slot='footer'>
+      <div className={twMerge(footerWrapperClasses)} data-slot='footer-wrapper'>
         <a
-          href='/'
-          data-slot='footer-brand'
           className='whitespace-nowrap text-center text-2xl text-white no-underline sm:text-left'
+          data-slot='footer-brand'
+          href='/'
         >
           Pedro Lucena
         </a>
@@ -27,41 +27,41 @@ export const Footer = () => {
           <ul className='flex w-[50vw] justify-around sm:w-auto sm:gap-8' data-slot='footer-social'>
             <li>
               <a
+                className={twMerge(footerSocialLinkClasses)}
                 href='https://www.linkedin.com/in/pedrolucena22/'
-                target='_blank'
                 rel='noreferrer'
-                className={twMerge(footerSocialLinkClasses)}
+                target='_blank'
               >
-                <Image src='/images/nav-icon.png' alt='linkedin icon' width={22} height={22} />
+                <Image alt='linkedin icon' height={22} src='/images/nav-icon.png' width={22} />
               </a>
             </li>
 
             <li>
               <a
+                className={twMerge(footerSocialLinkClasses)}
                 href='https://github.com/PedroL22/'
-                target='_blank'
                 rel='noreferrer'
-                className={twMerge(footerSocialLinkClasses)}
+                target='_blank'
               >
-                <Image src='/images/nav-icon2.png' alt='github icon' width={22} height={22} />
+                <Image alt='github icon' height={22} src='/images/nav-icon2.png' width={22} />
               </a>
             </li>
 
             <li>
               <a
-                href='https://x.com/lucena_l22/'
-                target='_blank'
-                rel='noreferrer'
                 className={twMerge(footerSocialLinkClasses)}
+                href='https://x.com/lucena_l22/'
+                rel='noreferrer'
+                target='_blank'
               >
-                <Image src='/images/nav-icon3.svg' alt='x icon' width={22} height={22} />
+                <Image alt='x icon' height={22} src='/images/nav-icon3.svg' width={22} />
               </a>
             </li>
           </ul>
 
           <p className='text-center font-light text-text-muted sm:text-right'>
             Made with <span className='text-[#dc143c]'>♥</span> by{' '}
-            <a href='https://github.com/PedroL22/' target='_blank' rel='noreferrer' className='text-white no-underline'>
+            <a className='text-white no-underline' href='https://github.com/PedroL22/' rel='noreferrer' target='_blank'>
               Pedro Lucena
             </a>
           </p>

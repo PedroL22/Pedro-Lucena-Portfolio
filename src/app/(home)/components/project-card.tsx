@@ -16,11 +16,11 @@ export const ProjectCard = ({ name, skills, projectDesc, image, github, live, ..
       <div>
         <div className='h-[150px] w-[250px] shrink-0 self-center rounded-3xl'>
           <Image
-            src={image}
             alt={`${name} screenshot`}
-            width={250}
-            height={150}
             className='h-[150px] w-[250px] shrink-0 rounded-3xl object-cover'
+            height={150}
+            src={image}
+            width={250}
           />
         </div>
 
@@ -36,8 +36,8 @@ export const ProjectCard = ({ name, skills, projectDesc, image, github, live, ..
           <a
             className='rounded-lg border border-accent p-1.5 font-medium text-accent text-sm capitalize no-underline transition-all hover:bg-accent hover:text-tertiary'
             href={github}
-            target='_blank'
             rel='noreferrer'
+            target='_blank'
           >
             gitHub
           </a>
@@ -47,8 +47,8 @@ export const ProjectCard = ({ name, skills, projectDesc, image, github, live, ..
           <a
             className='rounded-lg border border-accent bg-accent p-1.5 font-medium text-sm text-tertiary capitalize no-underline transition-all hover:bg-[#249cb6] hover:text-[#061823]'
             href={live}
-            target='_blank'
             rel='noreferrer'
+            target='_blank'
           >
             Live demo
           </a>

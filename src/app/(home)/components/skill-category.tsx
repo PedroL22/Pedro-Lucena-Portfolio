@@ -17,7 +17,7 @@ interface SkillCategoryProps extends ComponentProps<'div'> {
 
 export const SkillCategory = ({ title, skills, className, ...props }: SkillCategoryProps) => {
   return (
-    <div data-slot='skill-category' className={twMerge(skillCategoryVariants(), className)} {...props}>
+    <div className={twMerge(skillCategoryVariants(), className)} data-slot='skill-category' {...props}>
       <p className='py-7 text-xl'>{title}</p>
 
       <div className='mx-auto grid w-fit grid-cols-2 gap-x-8 text-left text-sm md:text-base'>

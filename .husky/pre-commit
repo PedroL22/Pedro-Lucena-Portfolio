@@ -1,2 +1,2 @@
-bun typecheck
-bun check:unsafe
+#!/usr/bin/env sh
+bun run verify

@@ -11,6 +11,8 @@
     "check:unsafe": "biome check --write --unsafe .",
     "check:write": "biome check --write .",
     "typecheck": "tsc --noEmit",
+    "verify": "bun run typecheck && bun run check",
+    "react-doctor": "bunx -y react-doctor@latest .",
     "prepare": "husky"
   },
   "dependencies": {

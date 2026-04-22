@@ -97,9 +97,9 @@ export default function RootLayout({
   children: ReactNode
 }>) {
   return (
-    <html lang='en' className={dmSans.variable}>
+    <html className={dmSans.variable} lang='en'>
       <body>
-        <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <script dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} type='application/ld+json' />
         <Header />
 
         {children}

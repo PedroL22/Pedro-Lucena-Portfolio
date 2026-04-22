@@ -89,9 +89,11 @@ export const Header = () => {
   const themeState = darkHeader ? 'scrolled' : 'transparent'
 
   return (
-    <header data-slot='header' className={twMerge(headerVariants({ theme: themeState, mobile: mobileState }))}>
-      <div data-slot='header-wrapper' className={twMerge(headerWrapperClasses)}>
+    <header className={twMerge(headerVariants({ theme: themeState, mobile: mobileState }))} data-slot='header'>
+      <div className={twMerge(headerWrapperClasses)} data-slot='header-wrapper'>
         <Link
+          className='text-white no-underline'
+          data-slot='header-brand'
           href='/'
           onClick={(e) => {
             if (window.location.pathname === '/') {
@@ -99,16 +101,15 @@ export const Header = () => {
               topAndClose()
             }
           }}
-          className='text-white no-underline'
-          data-slot='header-brand'
         >
           <p className='whitespace-nowrap text-2xl text-white'>Pedro Lucena</p>
         </Link>
 
         <nav data-slot='header-nav'>
-          <ul data-slot='header-menu' className={twMerge(headerMenuVariants({ mobile: mobileState }))}>
+          <ul className={twMerge(headerMenuVariants({ mobile: mobileState }))} data-slot='header-menu'>
             <li className={twMerge(headerMenuItemClasses)}>
               <Link
+                className='text-inherit no-underline'
                 href='/'
                 onClick={(e) => {
                   if (window.location.pathname === '/') {
@@ -118,26 +119,25 @@ export const Header = () => {
                     handleClick()
                   }
                 }}
-                className='text-inherit no-underline'
               >
                 home
               </Link>
             </li>
 
             <li className={twMerge(headerMenuItemClasses)}>
-              <Link href='#skills' onClick={handleClick} className='text-inherit no-underline'>
+              <Link className='text-inherit no-underline' href='#skills' onClick={handleClick}>
                 skills
               </Link>
             </li>
 
             <li className={twMerge(headerMenuItemClasses)}>
-              <Link href='#projects' onClick={handleClick} className='text-inherit no-underline'>
+              <Link className='text-inherit no-underline' href='#projects' onClick={handleClick}>
                 projects
               </Link>
             </li>
 
             <li className={twMerge(headerMenuItemClasses)}>
-              <a href='/resume.pdf' target='_blank' rel='noopener noreferrer' className='text-inherit no-underline'>
+              <a className='text-inherit no-underline' href='/resume.pdf' rel='noopener noreferrer' target='_blank'>
                 resume
               </a>
             </li>
@@ -145,34 +145,34 @@ export const Header = () => {
             <ul className='flex gap-8' data-slot='header-social'>
               <li>
                 <a
+                  className='transition-all hover:opacity-80'
                   href='https://www.linkedin.com/in/pedrolucena22/'
-                  target='_blank'
                   rel='noreferrer'
-                  className='transition-all hover:opacity-80'
+                  target='_blank'
                 >
-                  <Image src='/images/nav-icon.png' alt='linkedin icon' width={22} height={22} />
+                  <Image alt='linkedin icon' height={22} src='/images/nav-icon.png' width={22} />
                 </a>
               </li>
 
               <li>
                 <a
+                  className='transition-all hover:opacity-80'
                   href='https://github.com/PedroL22/'
-                  target='_blank'
                   rel='noreferrer'
-                  className='transition-all hover:opacity-80'
+                  target='_blank'
                 >
-                  <Image src='/images/nav-icon2.png' alt='github icon' width={22} height={22} />
+                  <Image alt='github icon' height={22} src='/images/nav-icon2.png' width={22} />
                 </a>
               </li>
 
               <li>
                 <a
-                  href='https://x.com/lucena_l22/'
-                  target='_blank'
-                  rel='noreferrer'
                   className='transition-all hover:opacity-80'
+                  href='https://x.com/lucena_l22/'
+                  rel='noreferrer'
+                  target='_blank'
                 >
-                  <Image src='/images/nav-icon3.svg' alt='x icon' width={22} height={22} />
+                  <Image alt='x icon' height={22} src='/images/nav-icon3.svg' width={22} />
                 </a>
               </li>
             </ul>
@@ -180,11 +180,11 @@ export const Header = () => {
         </nav>
 
         <button
-          type='button'
           aria-label={active ? 'Close navigation menu' : 'Open navigation menu'}
           className='block cursor-pointer md:hidden'
-          onClick={hamburger}
           data-slot='header-menu-toggle'
+          onClick={hamburger}
+          type='button'
         >
           <span
             className={twMerge(

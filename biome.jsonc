@@ -1,9 +1,19 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.13/schema.json",
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "root": true,
+  "vcs": {
+    "enabled": true,
+    "useIgnoreFile": true,
+    "clientKind": "git"
+  },
   "assist": {
+    "enabled": true,
     "actions": {
+      "recommended": true,
       "source": {
-        "organizeImports": "off"
+        "recommended": true,
+        "organizeImports": "off",
+        "useSortedAttributes": "on"
       }
     }
   },
@@ -18,22 +28,38 @@
     "ignoreUnknown": true,
     "includes": [
       "**",
-      "!**/.next",
       "!**/node_modules",
       "!**/dist",
+      "!**/coverage",
       "!**/out",
+      "!**/.output",
       "!**/public/**/*.js",
+      "!**/.next",
+      "!**/_generated",
       "!**/generated",
+      "!**/*.gen.ts",
       "!**/.turbo",
-      "!**/.env"
+      "!**/.env",
+      "!**/dev-dist",
+      "!**/playwright-report",
+      "!**/test-results",
+      "!**/blob-report",
+      "!**/*.json",
+      "!**/*.md"
     ]
   },
   "formatter": {
+    "enabled": true,
     "attributePosition": "auto",
     "indentStyle": "space",
     "indentWidth": 2,
     "lineEnding": "lf",
     "lineWidth": 120
+  },
+  "html": {
+    "formatter": {
+      "enabled": true
+    }
   },
   "javascript": {
     "formatter": {
@@ -55,14 +81,15 @@
   "linter": {
     "enabled": true,
     "rules": {
+      "recommended": true,
       "a11y": {
+        "recommended": true,
         "noNoninteractiveTabindex": {
           "level": "off"
         },
         "noStaticElementInteractions": {
           "level": "warn"
         },
-        "recommended": true,
         "useAriaPropsForRole": {
           "level": "warn"
         },
@@ -103,14 +130,14 @@
       "performance": {
         "recommended": true
       },
-      "recommended": true,
       "security": {
+        "recommended": true,
         "noDangerouslySetInnerHtml": {
           "level": "off"
-        },
-        "recommended": true
+        }
       },
       "style": {
+        "recommended": true,
         "noNonNullAssertion": {
           "level": "off"
         },
@@ -118,13 +145,13 @@
           "level": "error",
           "options": {
             "paths": {
-              "@phosphor-icons/react": "use “@phosphor-icons/react/dist/ssr” instead"
+              "@phosphor-icons/react": "use \"@phosphor-icons/react/dist/ssr\" instead"
             }
           }
-        },
-        "recommended": true
+        }
       },
       "suspicious": {
+        "recommended": true,
         "noExplicitAny": {
           "level": "off"
         },
@@ -133,8 +160,7 @@
         },
         "noUnknownAtRules": {
           "level": "off"
-        },
-        "recommended": true
+        }
       }
     }
   }

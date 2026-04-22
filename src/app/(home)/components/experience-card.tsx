@@ -56,7 +56,7 @@ export const ExperienceCard = ({
       {technologies && (
         <div className='mt-4 flex flex-wrap gap-2'>
           {technologies.map((tech) => (
-            <span key={tech} className='rounded-full bg-tertiary px-3 py-1 text-white text-xs'>
+            <span className='rounded-full bg-tertiary px-3 py-1 text-white text-xs' key={tech}>
               {tech}
             </span>
           ))}
