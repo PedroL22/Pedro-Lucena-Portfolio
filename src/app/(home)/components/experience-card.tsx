@@ -45,7 +45,7 @@ export const ExperienceCard = ({
               ul: ({ node, ...props }) => <ul className='list-disc space-y-2 pl-5' {...props} />,
               li: ({ node, ...props }) => <li {...props} />,
               p: ({ node, ...props }) => <p className='mb-2' {...props} />,
-              strong: ({ node, ...props }) => <strong className='font-bold text-gray-100' {...props} />,
+              strong: ({ node, ...props }) => <strong className='font-bold text-zinc-100' {...props} />,
             }}
           >
             {description}

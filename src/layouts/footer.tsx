@@ -8,7 +8,7 @@ const footerVariants = tv({
 })
 
 const footerWrapperClasses =
-  'flex h-full max-w-[1536px] mx-auto flex-col items-center justify-center space-y-7 px-10 sm:flex-row sm:justify-between sm:space-y-0'
+  'flex h-full max-w-[1536px] mx-auto flex-col items-center justify-center gap-y-7 px-10 sm:flex-row sm:justify-between sm:gap-y-0'
 
 const footerSocialLinkClasses = 'transition-all hover:opacity-80'
 
@@ -24,7 +24,7 @@ export const Footer = () => {
           Pedro Lucena
         </Link>
 
-        <div className='flex flex-col items-center space-y-7 sm:items-end sm:space-y-6'>
+        <div className='flex flex-col items-center gap-y-7 sm:items-end sm:gap-y-6'>
           <ul className='flex w-[50vw] justify-around sm:w-auto sm:gap-8' data-slot='footer-social'>
             <li>
               <a

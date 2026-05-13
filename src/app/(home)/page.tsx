@@ -1,7 +1,15 @@
+import type { Metadata } from 'next'
+
 import { ExperienceCard } from './components/experience-card'
 import { ProjectCard } from './components/project-card'
 import { SkillCategory } from './components/skill-category'
 import { TypedStrings } from './components/typed-strings'
+
+export const metadata: Metadata = {
+  title: 'Pedro Lucena | Full-Stack Developer',
+  description:
+    'Senior Full-Stack Developer specializing in type-safe TypeScript architectures. 4+ years building scalable fintech and e-commerce applications across international teams. Currently architecting monorepo systems in Switzerland with React 19, Next.js 15, and tRPC.',
+}
 
 export default function HomePage() {
   const startYear = 2022

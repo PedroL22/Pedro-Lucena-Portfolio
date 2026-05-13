@@ -72,17 +72,17 @@ export const Header = () => {
     }
   }, [])
 
-  const hamburger = () => {
+  const toggleMobileMenu = () => {
     setActive(!active)
   }
 
-  const handleClick = () => {
+  const closeMobileMenu = () => {
     setActive(false)
   }
 
-  const topAndClose = () => {
+  const scrollToTopAndCloseMenu = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
-    handleClick()
+    closeMobileMenu()
   }
 
   const mobileState = active ? 'open' : 'closed'
@@ -98,7 +98,7 @@ export const Header = () => {
           onClick={(e) => {
             if (window.location.pathname === '/') {
               e.preventDefault()
-              topAndClose()
+              scrollToTopAndCloseMenu()
             }
           }}
         >
@@ -114,9 +114,9 @@ export const Header = () => {
                 onClick={(e) => {
                   if (window.location.pathname === '/') {
                     e.preventDefault()
-                    topAndClose()
+                    scrollToTopAndCloseMenu()
                   } else {
-                    handleClick()
+                    closeMobileMenu()
                   }
                 }}
               >
@@ -125,13 +125,13 @@ export const Header = () => {
             </li>
 
             <li className={twMerge(headerMenuItemClasses)}>
-              <Link className='text-inherit no-underline' href='#skills' onClick={handleClick}>
+              <Link className='text-inherit no-underline' href='#skills' onClick={closeMobileMenu}>
                 skills
               </Link>
             </li>
 
             <li className={twMerge(headerMenuItemClasses)}>
-              <Link className='text-inherit no-underline' href='#projects' onClick={handleClick}>
+              <Link className='text-inherit no-underline' href='#projects' onClick={closeMobileMenu}>
                 projects
               </Link>
             </li>
@@ -183,7 +183,7 @@ export const Header = () => {
           aria-label={active ? 'Close navigation menu' : 'Open navigation menu'}
           className='block cursor-pointer md:hidden'
           data-slot='header-menu-toggle'
-          onClick={hamburger}
+          onClick={toggleMobileMenu}
           type='button'
         >
           <span

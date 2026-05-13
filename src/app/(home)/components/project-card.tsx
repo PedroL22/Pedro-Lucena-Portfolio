@@ -24,11 +24,11 @@ export const ProjectCard = ({ name, skills, projectDesc, image, github, live, ..
           />
         </div>
 
-        <p className='mt-4 pb-1.5 font-medium text-gray-300 text-sm'>{skills}</p>
+        <p className='mt-4 pb-1.5 font-medium text-sm text-zinc-300'>{skills}</p>
 
         <p className='mb-1.5 text-left font-medium text-white'>{name}</p>
 
-        <p className='h-20 select-text text-gray-100 text-sm'>{projectDesc}</p>
+        <p className='h-20 select-text text-sm text-zinc-100'>{projectDesc}</p>
       </div>
 
       <div className='flex items-center gap-2'>
