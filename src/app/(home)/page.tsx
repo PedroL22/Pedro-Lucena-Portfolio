@@ -58,7 +58,7 @@ export default function HomePage() {
 - **CI/CD**: GitHub Actions with automated deployment to VPS and Turborepo caching.`}
             period='Jan 2024 - Present'
             technologies={['Next.js 15', 'React 19', 'tRPC', 'TypeScript', 'Prisma', 'Supabase', 'Stripe']}
-            title='Full-Stack Developer'
+            title='Tech Lead'
           />
 
           <ExperienceCard

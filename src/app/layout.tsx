@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     'JavaScript',
     'Full-Stack',
     'Software Engineer',
+    'Tech Lead',
   ],
   authors: [{ name: 'Pedro Lucena', url: baseUrl }],
   creator: 'Pedro Lucena',
