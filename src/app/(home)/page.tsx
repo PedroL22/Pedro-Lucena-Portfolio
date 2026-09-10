@@ -68,7 +68,7 @@ export default function HomePage() {
 - Architected and deployed the **stores CRM** from scratch, building the system structure and core functionalities.`}
             period='Jan 2023 - Dec 2023'
             technologies={['React', 'React Native', 'TypeScript', 'TanStack Query', 'Zustand', 'Material UI']}
-            title='Front-End Developer'
+            title='Full-Stack Developer'
           />
 
           <ExperienceCard
