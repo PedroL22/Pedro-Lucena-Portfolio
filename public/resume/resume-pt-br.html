@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Currículo - Pedro Lucena</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['"Source Sans Pro"', 'Arial', 'sans-serif'],
+                    },
+                    colors: {
+                        'sidebar': '#3f6592',
+                        'dark': '#2b2b38',
+                        'gray-text': '#4c4c4c',
+                        'gray-border': '#d2d2d2',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+                * {
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+        }
+        /* Mobile-first: Stack layout for screens smaller than resume width */
+        @media (max-width: 800px) {
+            .wrapper {
+                max-width: 100% !important;
+                display: flex !important;
+                flex-direction: column !important;
+            }
+            .sidebar-bg {
+                display: none !important;
+            }
+            .sidebar {
+                position: relative !important;
+                width: 100% !important;
+                order: -1 !important;
+                background-color: #3f6592 !important;
+                padding: 1rem !important;
+            }
+            .left-section {
+                position: relative !important;
+                width: 100% !important;
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+        }
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            html, body {
+                width: 210mm;
+                height: 297mm;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            .wrapper {
+                max-width: 210mm !important;
+                width: 210mm !important;
+                min-height: 297mm !important;
+                position: relative !important;
+                margin: 0 !important;
+            }
+            .left-section {
+                width: 555px !important;
+                position: relative !important;
+                left: 0 !important;
+            }
+            .sidebar-bg {
+                position: absolute !important;
+                top: 0 !important;
+                right: 0 !important;
+                left: auto !important;
+                width: 215px !important;
+                height: 100% !important;
+                min-height: 297mm !important;
+                background-color: #3f6592 !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            .sidebar {
+                position: absolute !important;
+                top: 0 !important;
+                right: 0 !important;
+                left: auto !important;
+                width: 215px !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="h-full min-h-[29.7cm] m-0 p-0 text-[#333333] leading-[22px] text-xs font-sans">
+
+    <div class="wrapper max-w-[21cm] mx-auto relative">
+        <section class="left-section left-0 relative w-[555px] pl-5">
+
+            <div>
+                <h1 class="tracking-[0.08em] uppercase not-italic text-[30px] m-0 pt-4 pb-1.5 px-0 font-semibold">Pedro
+                    Lucena</h1>
+                <p class="text-sm font-semibold text-sidebar mb-5 tracking-[0.02em]">Senior Full-Stack Developer |
+                    TypeScript | React |
+                    Node.js</p>
+            </div>
+
+            <div class="relative w-full p-0">
+                <div class="relative w-full p-0 -top-2.5 mb-2.5">
+                    <div class="block p-0 m-0">
+                        <p class="block not-italic text-gray-text leading-[18px] font-normal m-0 p-0">
+                            <strong>Desenvolvedor Full-Stack
+                                Senior</strong> especializado em arquiteturas <strong>TypeScript</strong> type-safe.
+                            <strong>4+ anos</strong>
+                            construindo aplicações <strong>fintech</strong> e <strong>e-commerce</strong> escaláveis em
+                            equipes internacionais.
+                            Atualmente arquitetando sistemas monorepo na Suíça com <strong>React 19</strong>,
+                            <strong>Next.js 15</strong> e
+                            <strong>tRPC</strong>.
+                        </p>
+                        <br>
+                        <p class="block not-italic text-gray-text leading-[18px] font-normal m-0 p-0">
+                            <strong>Front-End:</strong> React, React
+                            Native, Next.js, TanStack Start, Tailwind CSS
+                        </p>
+                        <p class="block not-italic text-gray-text leading-[18px] font-normal m-0 p-0">
+                            <strong>Back-End:</strong> Node.js, Bun,
+                            Hono, tRPC, REST APIs
+                        </p>
+                        <p class="block not-italic text-gray-text leading-[18px] font-normal m-0 p-0"><strong>Banco de
+                                Dados:</strong>
+                            PostgreSQL, Prisma, Drizzle ORM</p>
+                        <p class="block not-italic text-gray-text leading-[18px] font-normal m-0 p-0">
+                            <strong>Cloud/DevOps:</strong> AWS S3,
+                            Cloudflare R2, Docker, Linux, CI/CD, GitHub Actions
+                        </p>
+                        <p class="block not-italic text-gray-text leading-[18px] font-normal m-0 p-0">
+                            <strong>IA:</strong> Orquestração de Agentes, Prompt Engineering,
+                            Desenvolvimento de Chatbots, OpenRouter
+                        </p>
+                        <p class="block not-italic text-gray-text leading-[18px] font-normal m-0 p-0">
+                            <strong>Linguagens:</strong> TypeScript,
+                            JavaScript
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative w-full p-0">
+                <div
+                    class="inline-block relative w-full z-[99] m-0 font-semibold bg-white py-[19px] pb-2.5 pl-2.5 pr-0 border-t border-gray-border [page-break-inside:avoid]">
+                    <h2 class="uppercase text-[17px] font-semibold m-0 p-0">
+                        <i
+                            class="relative top-0 inline-block h-8 w-8 -ml-[15px] mr-2.5 rounded-full border border-dark">
+                            <svg class="relative top-1 left-[5px] h-5 w-5 fill-dark" height="24" viewBox="0 0 24 24"
+                                width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 16v-1H3.01L3 19c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2v-4h-7v1h-4zm10-9h-4.01V5l-2-2h-4l-2 2v2H4c-1.1 0-2 .9-2 2v3c0 1.11.89 2 2 2h6v-2h4v2h6c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-6 0h-4V5h4v2z">
+                                </path>
+                            </svg>
+                        </i>
+                        Experiência profissional
+                    </h2>
+                </div>
+
+                <div class="absolute top-0 left-2.5 h-full w-px bg-dark"></div>
+
+                <ol class="block list-none py-0 pb-0 pl-2.5 pr-0 m-0">
+                    <li class="block relative list-none pl-[140px] pr-0 py-0 m-0">
+                        <div class="absolute top-0 left-0 h-full w-px bg-dark">
+                            <svg class="absolute -left-[3px] top-[18px] h-3 w-2.5 z-[999]">
+                                <circle cx="4" cy="4" r="3" stroke="black" stroke-width="1" fill="white"></circle>
+                            </svg>
+                        </div>
+                        <div class="hidden absolute -left-[5px] top-[25px] w-2.5 h-full bg-white z-[9]"></div>
+                        <div class="block m-0 pb-1.5 pt-0 px-0 [page-break-inside:avoid]">
+                            <div class="absolute left-5 top-3 w-[120px] text-[13px] p-0 m-0">jan 2024 - Presente</div>
+                            <div class="block pt-2.5 pb-0 px-0 m-0">
+                                <h3 class="text-sm font-semibold m-0 p-0">Tech Lead</h3>
+                            </div>
+                            <div class="block p-0 m-0 text-sidebar text-[13px]">datalution GmbH, Suíça</div>
+                        </div>
+                        <div class="block p-0 m-0">
+                            <p class="block text-gray-text leading-[18px] font-normal m-0 p-0">Arquiteto e desenvolvo
+                                <strong>aplicações
+                                    fintech</strong> em um <strong>monorepo Turborepo</strong> com múltiplos projetos
+                                interconectados.
+                            </p>
+                            <br>
+                            <ul
+                                class="[page-break-inside:auto] whitespace-normal font-normal list-outside text-gray-text m-0 pl-4 pr-0 py-0">
+                                <li class="leading-[18px] list-disc"><strong>APIs Type-Safe:</strong> Arquitetura tRPC
+                                    com batch streaming links e
+                                    type-safety end-to-end em +50 routers.</li>
+                                <li class="leading-[18px] list-disc"><strong>React 19:</strong> Implementação de
+                                    useTransition, useOptimistic e
+                                    useActionState para UI otimista em +47 formulários.</li>
+                                <li class="leading-[18px] list-disc"><strong>Internacionalização:</strong> next-intl com
+                                    rotas localizadas dinâmicas em
+                                    4 idiomas (DE/EN/FR/IT) e +200 pathnames.</li>
+                                <li class="leading-[18px] list-disc"><strong>PWA:</strong> Sistema completo de Web Push
+                                    Notifications com service
+                                    workers.</li>
+                                <li class="leading-[18px] list-disc"><strong>Auth:</strong> Supabase Auth com OAuth
+                                    (Google/Apple) + verificação SMS via
+                                    Twilio.</li>
+                                <li class="leading-[18px] list-disc"><strong>Pagamentos:</strong> Integração Stripe com
+                                    webhooks, customer portal e
+                                    gestão de assinaturas.</li>
+                                <li class="leading-[18px] list-disc"><strong>CI/CD:</strong> GitHub Actions com deploy
+                                    automatizado para VPS e cache de
+                                    Turborepo.</li>
+                            </ul>
+                            <br>
+                            <p class="block text-gray-text leading-[18px] font-normal m-0 p-0"><strong>Stack:</strong>
+                                TypeScript, Next.js 15, React
+                                19, tRPC, Prisma, PostgreSQL, Supabase, TanStack Query, Zustand, Zod, Tailwind CSS,
+                                Stripe, Resend, Twilio, Upstash
+                                Redis, GitHub Actions.</p>
+                        </div>
+                    </li>
+                    <li class="block relative list-none pl-[140px] pr-0 py-0 m-0">
+                        <div class="absolute top-0 left-0 h-full w-px bg-dark">
+                            <svg class="absolute -left-[3px] top-[18px] h-3 w-2.5 z-[999]">
+                                <circle cx="4" cy="4" r="3" stroke="black" stroke-width="1" fill="white"></circle>
+                            </svg>
+                        </div>
+                        <div class="hidden absolute -left-[5px] top-[25px] w-2.5 h-full bg-white z-[9]"></div>
+                        <div class="block m-0 pb-1.5 pt-0 px-0 [page-break-inside:avoid]">
+                            <div class="absolute left-5 top-3 w-[120px] text-[13px] p-0 m-0">jan 2023 - dez 2023</div>
+                            <div class="block pt-2.5 pb-0 px-0 m-0">
+                                <h3 class="text-sm font-semibold m-0 p-0">Programador Front-End</h3>
+                            </div>
+                            <div class="block p-0 m-0 text-sidebar text-[13px]">Support Informática, Brazil</div>
+                        </div>
+                        <div class="block p-0 m-0">
+                            <p class="block text-gray-text leading-[18px] font-normal m-0 p-0">Desenvolvi
+                                <strong>templates de e-commerce</strong>
+                                personalizados para lojas e mantive um aplicativo em <strong>React Native</strong>
+                                utilizado por centenas de
+                                estabelecimentos na cidade, realizando <strong>upgrade de múltiplas versões do
+                                    Expo</strong>, implementando novas
+                                features e corrigindo um <strong>bug crítico</strong> que exibia valores monetários
+                                incorretos.
+                            </p>
+                            <br>
+                            <p class="block text-gray-text leading-[18px] font-normal m-0 p-0">Liderei
+                                <strong>iniciativas de otimização</strong> no
+                                site de e-commerce, <strong>reduzindo a latência em 70%</strong> (de 5 para 1,5
+                                segundos), suportando operações de
+                                alto tráfego.
+                            </p>
+                            <br>
+                            <p class="block text-gray-text leading-[18px] font-normal m-0 p-0">Arquitetei e implementei
+                                o <strong>CRM</strong> das
+                                lojas do zero, desenvolvendo a estrutura do sistema e suas funcionalidades principais.
+                            </p>
+                            <br>
+                            <p class="block text-gray-text leading-[18px] font-normal m-0 p-0"><strong>Stack:</strong>
+                                TypeScript, React, React
+                                Native, TanStack Query, Zustand, Zod, Material UI, Tailwind CSS, REST APIs, GitHub
+                                Actions.</p>
+                        </div>
+                    </li>
+                    <li class="block relative list-none pl-[140px] pr-0 py-0 m-0">
+                        <div class="absolute top-0 left-0 h-full w-px bg-dark">
+                            <svg class="absolute -left-[3px] top-[18px] h-3 w-2.5 z-[999]">
+                                <circle cx="4" cy="4" r="3" stroke="black" stroke-width="1" fill="white"></circle>
+                            </svg>
+                        </div>
+                        <div class="hidden absolute -left-[5px] top-[25px] w-2.5 h-full bg-white z-[9]"></div>
+                        <div class="block m-0 pb-1.5 pt-0 px-0 [page-break-inside:avoid]">
+                            <div class="absolute left-5 top-3 w-[120px] text-[13px] p-0 m-0">dez 2022 - jan 2023</div>
+                            <div class="block pt-2.5 pb-0 px-0 m-0">
+                                <h3 class="text-sm font-semibold m-0 p-0">Programador de E-commerce</h3>
+                            </div>
+                            <div class="block p-0 m-0 text-sidebar text-[13px]">Contrato · Freelance, Portugal</div>
+                        </div>
+                        <div class="block p-0 m-0">
+                            <p class="block text-gray-text leading-[18px] font-normal m-0 p-0">Desenvolvimento
+                                full-stack de plataforma e-commerce
+                                completa, do zero à produção.</p>
+                            <br>
+                            <ul
+                                class="[page-break-inside:auto] whitespace-normal font-normal list-outside text-gray-text m-0 pl-4 pr-0 py-0">
+                                <li class="leading-[18px] list-disc"><strong>Auth & Users:</strong> Sistema de
+                                    autenticação seguro com registro, login e
+                                    edição de perfil.</li>
+                                <li class="leading-[18px] list-disc"><strong>Product Catalog:</strong> CRUD completo de
+                                    produtos com página de detalhes,
+                                    listagem por categorias, filtros avançados e busca.</li>
+                                <li class="leading-[18px] list-disc"><strong>Shopping Cart:</strong> Carrinho funcional
+                                    com adição, remoção e revisão de
+                                    itens antes da compra.</li>
+                                <li class="leading-[18px] list-disc"><strong>Admin Dashboard:</strong> Painel central
+                                    para gestão de produtos, pedidos e
+                                    monitoramento de operações.</li>
+                                <li class="leading-[18px] list-disc"><strong>Dynamic UI:</strong> Header adaptativo
+                                    baseado em interações do usuário e
+                                    contexto da página.</li>
+                                <li class="leading-[18px] list-disc"><strong>Marketing:</strong> Sistema de newsletter
+                                    para coleta de emails e
+                                    funcionalidade de compartilhamento em redes sociais.</li>
+                            </ul>
+                            <br>
+                            <p class="block text-gray-text leading-[18px] font-normal m-0 p-0"><strong>Stack:</strong>
+                                Python, Django, PostgreSQL,
+                                HTML/CSS.</p>
+                        </div>
+                    </li>
+                    <li class="block relative list-none pl-[140px] pr-0 py-0 m-0 bg-white pb-[15px]">
+                        <div class="absolute top-0 left-0 h-[30px] w-px bg-dark">
+                            <svg class="absolute -left-[3px] top-[18px] h-3 w-2.5 z-[999]">
+                                <circle cx="4" cy="4" r="3" stroke="black" stroke-width="1" fill="white"></circle>
+                            </svg>
+                        </div>
+                        <div class="inline absolute -left-[5px] top-[25px] w-2.5 h-full bg-white z-[9]"></div>
+                        <div class="block m-0 pb-1.5 pt-0 px-0 [page-break-inside:avoid]">
+                            <div class="absolute left-5 top-3 w-[120px] text-[13px] p-0 m-0">abr 2022 - jul 2022</div>
+                            <div class="block pt-2.5 pb-0 px-0 m-0">
+                                <h3 class="text-sm font-semibold m-0 p-0">Programador Full-Stack</h3>
+                            </div>
+                            <div class="block p-0 m-0 text-sidebar text-[13px]">Contrato · Caixa Angola, Angola</div>
+                        </div>
+                        <div class="block p-0 m-0">
+                            <p class="block text-gray-text leading-[18px] font-normal m-0 p-0">Desenvolvimento Completo
+                                do Sistema</p>
+                            <br>
+                            <p class="block text-gray-text leading-[18px] font-normal m-0 p-0"><strong>Funcionalidades
+                                    Principais:</strong></p>
+                            <ul
+                                class="[page-break-inside:auto] whitespace-normal font-normal list-outside text-gray-text m-0 pl-4 pr-0 py-0">
+                                <li class="leading-[18px] list-disc"><strong>Sistema de Cadastro e Login:</strong>
+                                    Implementação segura para criação de
+                                    contas e autenticação de usuários.</li>
+                                <li class="leading-[18px] list-disc"><strong>Gerenciamento de Eventos:</strong> Sistema
+                                    para criação e gestão de eventos
+                                    com título, descrição e imagens.</li>
+                                <li class="leading-[18px] list-disc"><strong>Notas Individuais:</strong> Sistema para
+                                    atribuição e visualização de notas
+                                    específicas de cada usuário.</li>
+                                <li class="leading-[18px] list-disc"><strong>Armazenamento AWS S3:</strong> Uso de
+                                    bucket S3 para armazenamento de
+                                    arquivos estáticos.</li>
+                                <li class="leading-[18px] list-disc"><strong>Upload e Gerenciamento de Mídia:</strong>
+                                    Upload direto de arquivos de
+                                    mídia para bucket S3, incluindo visualização e gerenciamento de arquivos.</li>
+                            </ul>
+                            <br>
+                            <p class="block text-gray-text leading-[18px] font-normal m-0 p-0"><strong>Stack:</strong>
+                                Python, Django, PostgreSQL,
+                                AWS S3, HTML/CSS.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="relative w-full p-0">
+                <div
+                    class="inline-block relative w-full z-[99] m-0 font-semibold bg-white py-[19px] pb-2.5 pl-2.5 pr-0 border-t border-gray-border [page-break-inside:avoid]">
+                    <h2 class="uppercase text-[17px] font-semibold m-0 p-0">
+                        <i
+                            class="relative top-0 inline-block h-8 w-8 -ml-[15px] mr-2.5 rounded-full border border-dark">
+                            <svg class="relative top-1 left-1 h-5 w-5 fill-dark" height="24" viewBox="0 0 24 24"
+                                width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z">
+                                </path>
+                            </svg>
+                        </i>
+                        Educação
+                    </h2>
+                </div>
+
+                <div class="absolute top-0 left-2.5 h-full w-px bg-dark"></div>
+
+                <ol class="block list-none py-0 pb-0 pl-2.5 pr-0 m-0">
+                    <li class="block relative list-none pl-[140px] pr-0 py-0 m-0 bg-white pb-0">
+                        <div class="absolute top-0 left-0 h-[30px] w-px bg-dark">
+                            <svg class="absolute -left-[3px] top-[18px] h-3 w-2.5 z-[999]">
+                                <circle cx="4" cy="4" r="3" stroke="black" stroke-width="1" fill="white"></circle>
+                            </svg>
+                        </div>
+                        <div class="inline absolute -left-[5px] top-[25px] w-2.5 h-full bg-white z-[9]"></div>
+                        <div class="block m-0 pb-1.5 pt-0 px-0 [page-break-inside:avoid]">
+                            <div class="absolute left-5 top-3 w-[120px] text-[13px] p-0 m-0">2023 – 2027 (Previsto)
+                            </div>
+                            <div class="block pt-2.5 pb-0 px-0 m-0">
+                                <h3 class="text-sm font-semibold m-0 p-0">Engenharia de Software</h3>
+                            </div>
+                            <div class="block p-0 m-0 text-sidebar text-[13px]">Universidade Estácio</div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+        </section>
+
+        <div class="sidebar-bg absolute top-0 right-0 w-[215px] bg-sidebar h-full min-h-screen"></div>
+
+        <aside class="sidebar absolute right-0 z-[1] top-0 text-white px-3.5 pb-0 w-[215px] h-auto">
+            <div class="block">
+                <h2
+                    class="inline-block text-[15px] font-semibold not-italic relative w-[88%] pt-5 pb-[5px] px-0 m-0 tracking-[0.08em] uppercase">
+                    <span
+                        class="inline-block w-full m-0 p-0 font-semibold not-italic pr-0.5 z-[1] bg-sidebar">Pessoal</span>
+                </h2>
+
+                <ul class="block list-none m-0 p-0">
+                    <li class="block list-none relative text-xs m-0 pr-[5px] pb-[5px] pl-[23px] pt-0">
+                        <svg class="absolute top-0.5 -left-2 fill-white h-[15px]" height="24" viewBox="0 0 24 24"
+                            width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+                            </path>
+                        </svg>
+                        <span class="font-semibold">Nome</span><br>
+                        Pedro Lucena
+                    </li>
+
+                    <li class="block list-none relative text-xs m-0 pr-[5px] pb-[5px] pl-[23px] pt-0">
+                        <svg class="absolute top-0.5 -left-2 fill-white h-[15px]" height="24" viewBox="0 0 24 24"
+                            width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z">
+                            </path>
+                        </svg>
+                        <span class="font-semibold">Número de telefone</span><br>
+                        <a href="tel:+5579988075971" class="text-white no-underline hover:underline">(79) 98807-5971</a>
+                    </li>
+
+                    <li class="block list-none relative text-xs m-0 pr-[5px] pb-[5px] pl-[23px] pt-0">
+                        <svg class="absolute top-0.5 -left-2 fill-white h-[15px]" height="24" viewBox="0 0 24 24"
+                            width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z">
+                            </path>
+                        </svg>
+                        <span class="font-semibold">Email</span><br>
+                        <a href="mailto:pedrocontact22@gmail.com"
+                            class="text-white no-underline hover:underline">pedrocontact22@gmail.com</a>
+                    </li>
+
+                    <li class="block list-none relative text-xs m-0 pr-[5px] pb-[5px] pl-[23px] pt-0">
+                        <svg class="absolute top-0.5 -left-2 fill-white h-[15px]" height="24" viewBox="0 0 24 24"
+                            width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                            </path>
+                        </svg>
+                        <span class="font-semibold">Portfólio</span><br>
+                        <a href="https://pedrolucena.com/" target="_blank"
+                            class="text-white no-underline hover:underline">pedrolucena.com</a>
+                    </li>
+
+                    <li class="block list-none relative text-xs m-0 pr-[5px] pb-[5px] pl-[23px] pt-0">
+                        <svg class="absolute top-0.5 -left-2 fill-white h-[15px]" height="24" viewBox="0 0 24 24"
+                            width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                            </path>
+                        </svg>
+                        <span class="font-semibold">GitHub</span><br>
+                        <a href="https://github.com/PedroL22" target="_blank"
+                            class="text-white no-underline hover:underline">github.com/PedroL22</a>
+                    </li>
+
+                    <li class="block list-none relative text-xs m-0 pr-[5px] pb-0 pl-[23px] pt-0">
+                        <svg class="absolute top-0.5 -left-2 fill-white h-[15px]" height="24" viewBox="0 0 24 24"
+                            width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                            </path>
+                        </svg>
+                        <span class="font-semibold">LinkedIn</span><br>
+                        <a href="https://www.linkedin.com/in/pedrolucena22" target="_blank"
+                            class="text-white no-underline hover:underline">linkedin.com/in/pedrolucena22</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <h2
+                    class="inline-block text-[15px] font-semibold not-italic relative w-[88%] pt-5 pb-[5px] px-0 m-0 tracking-[0.08em] uppercase">
+                    <span
+                        class="inline-block w-full m-0 p-0 font-semibold not-italic pr-0.5 z-[1] bg-sidebar">Idiomas</span>
+                </h2>
+
+                <ul class="block list-none m-0 p-0">
+                    <li class="block list-none relative text-xs m-0 pr-[5px] pb-[5px] pl-0 pt-0">
+                        <span class="font-semibold">Português</span>
+                        <span class="float-right mr-2.5 inline-flex">
+                            <svg class="active" fill="#ffffff" height="14" viewBox="0 0 24 24" width="14"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                            <svg class="active" fill="#ffffff" height="14" viewBox="0 0 24 24" width="14"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                            <svg class="active" fill="#ffffff" height="14" viewBox="0 0 24 24" width="14"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                            <svg class="active" fill="#ffffff" height="14" viewBox="0 0 24 24" width="14"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                            <svg class="active" fill="#ffffff" height="14" viewBox="0 0 24 24" width="14"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="block list-none relative text-xs m-0 pr-[5px] pb-0 pl-0 pt-0">
+                        <span class="font-semibold">Inglês</span>
+                        <span class="float-right mr-2.5 inline-flex">
+                            <svg class="active" fill="#ffffff" height="14" viewBox="0 0 24 24" width="14"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                            <svg class="active" fill="#ffffff" height="14" viewBox="0 0 24 24" width="14"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                            <svg class="active" fill="#ffffff" height="14" viewBox="0 0 24 24" width="14"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                            <svg class="active" fill="#ffffff" height="14" viewBox="0 0 24 24" width="14"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                            <svg class="active" fill="#ffffff" height="14" viewBox="0 0 24 24" width="14"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+
+</body>
+
+</html>
