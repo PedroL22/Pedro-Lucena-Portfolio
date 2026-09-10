@@ -137,7 +137,12 @@ export const Header = () => {
             </li>
 
             <li className={twMerge(headerMenuItemClasses)}>
-              <Link className='text-inherit no-underline' href='/resume.pdf' rel='noopener noreferrer' target='_blank'>
+              <Link
+                className='text-inherit no-underline'
+                href='/resume-en.pdf'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
                 resume
               </Link>
             </li>
