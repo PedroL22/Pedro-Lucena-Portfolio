@@ -12,6 +12,7 @@
     "check:write": "biome check --write .",
     "typecheck": "tsc --noEmit",
     "verify": "bun run typecheck && bun run check",
+    "resume:pdf": "node scripts/build-resume-pdf.mjs",
     "react-doctor": "bunx -y react-doctor@latest .",
     "prepare": "husky"
   },
@@ -29,6 +30,7 @@
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "husky": "^9.1.7",
+    "playwright": "^1.63.0",
     "tailwind-merge": "^3.6.0",
     "tailwind-variants": "^3.2.2",
     "tailwindcss": "^4.3.0",

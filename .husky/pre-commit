@@ -1,2 +1,8 @@
 #!/usr/bin/env sh
 bun run verify
+
+# Regenerate the resume PDFs whenever the resume HTML changes.
+if git diff --cached --name-only | grep -q '^public/resume/.*\.html$'; then
+  bun run resume:pdf
+  git add public/resume-en.pdf public/resume-pt-br.pdf
+fi
